@@ -1193,56 +1193,72 @@
 "id": 22418,
 "name": "Dreadnaught Helmet",
 "icon": "inv_helmet_58",
-"displayId": 35447
+"displayId": 35447,
+"classicDisplayId": 35447,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22419,
 "name": "Dreadnaught Pauldrons",
 "icon": "inv_shoulder_29",
-"displayId": 35177
+"displayId": 35177,
+"classicDisplayId": 35177,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22416,
 "name": "Dreadnaught Breastplate",
 "icon": "inv_chest_plate02",
-"displayId": 35049
+"displayId": 35049,
+"classicDisplayId": 35049,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22423,
 "name": "Dreadnaught Bracers",
 "icon": "inv_bracer_15",
-"displayId": 35044
+"displayId": 35044,
+"classicDisplayId": 35044,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22421,
 "name": "Dreadnaught Gauntlets",
 "icon": "inv_gauntlets_28",
-"displayId": 35050
+"displayId": 35050,
+"classicDisplayId": 35050,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22422,
 "name": "Dreadnaught Waistguard",
 "icon": "inv_belt_27",
-"displayId": 35058
+"displayId": 739069,
+"classicDisplayId": 35058,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22417,
 "name": "Dreadnaught Legplates",
 "icon": "inv_pants_plate_05",
-"displayId": 35051
+"displayId": 35051,
+"classicDisplayId": 35051,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22420,
 "name": "Dreadnaught Sabatons",
 "icon": "inv_boots_plate_06",
-"displayId": 35067
+"displayId": 35067,
+"classicDisplayId": 35067,
+"db": "forever"
 }
 ]
 },
@@ -1260,56 +1276,72 @@
 "id": 16731,
 "name": "Helm of Valor",
 "icon": "inv_helmet_02",
-"displayId": 31284
+"displayId": 31284,
+"classicDisplayId": 31284,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 16733,
 "name": "Spaulders of Valor",
 "icon": "inv_shoulder_30",
-"displayId": 29964
+"displayId": 29964,
+"classicDisplayId": 29964,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 16730,
 "name": "Breastplate of Valor",
 "icon": "inv_chest_plate03",
-"displayId": 29958
+"displayId": 29958,
+"classicDisplayId": 29958,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 16735,
 "name": "Bracers of Valor",
 "icon": "inv_bracer_18",
-"displayId": 29961
+"displayId": 29961,
+"classicDisplayId": 29961,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 16737,
 "name": "Gauntlets of Valor",
 "icon": "inv_gauntlets_26",
-"displayId": 29962
+"displayId": 29962,
+"classicDisplayId": 29962,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 16736,
 "name": "Belt of Valor",
 "icon": "inv_belt_34",
-"displayId": 29959
+"displayId": 29959,
+"classicDisplayId": 29959,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 16732,
 "name": "Legplates of Valor",
 "icon": "inv_pants_04",
-"displayId": 29963
+"displayId": 29963,
+"classicDisplayId": 29963,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 16734,
 "name": "Boots of Valor",
 "icon": "inv_boots_plate_03",
-"displayId": 29960
+"displayId": 29960,
+"classicDisplayId": 29960,
+"db": "forever"
 }
 ]
 },
@@ -1327,56 +1359,72 @@
 "id": 21999,
 "name": "Helm of Heroism",
 "icon": "inv_helmet_02",
-"displayId": 34614
+"displayId": 34614,
+"classicDisplayId": 34614,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22001,
 "name": "Spaulders of Heroism",
 "icon": "inv_shoulder_30",
-"displayId": 34616
+"displayId": 34616,
+"classicDisplayId": 34616,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 21997,
 "name": "Breastplate of Heroism",
 "icon": "inv_chest_plate03",
-"displayId": 34617
+"displayId": 34617,
+"classicDisplayId": 34617,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 21996,
 "name": "Bracers of Heroism",
 "icon": "inv_bracer_18",
-"displayId": 34612
+"displayId": 34612,
+"classicDisplayId": 34612,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 21998,
 "name": "Gauntlets of Heroism",
 "icon": "inv_gauntlets_26",
-"displayId": 34613
+"displayId": 34613,
+"classicDisplayId": 34613,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 21994,
 "name": "Belt of Heroism",
 "icon": "inv_belt_34",
-"displayId": 34610
+"displayId": 34610,
+"classicDisplayId": 34610,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22000,
 "name": "Legplates of Heroism",
 "icon": "inv_pants_04",
-"displayId": 34615
+"displayId": 34615,
+"classicDisplayId": 34615,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 21995,
 "name": "Boots of Heroism",
 "icon": "inv_boots_plate_03",
-"displayId": 34611
+"displayId": 34611,
+"classicDisplayId": 34611,
+"db": "forever"
 }
 ]
 },
@@ -1528,56 +1576,72 @@
 "id": 22428,
 "name": "Redemption Headpiece",
 "icon": "inv_helmet_15",
-"displayId": 36972
+"displayId": 36972,
+"classicDisplayId": 36972,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22429,
 "name": "Redemption Spaulders",
 "icon": "inv_shoulder_14",
-"displayId": 35617
+"displayId": 35617,
+"classicDisplayId": 35617,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22425,
 "name": "Redemption Tunic",
 "icon": "inv_chest_chain_15",
-"displayId": 35618
+"displayId": 35618,
+"classicDisplayId": 35618,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22424,
 "name": "Redemption Wristguards",
 "icon": "inv_bracer_02",
-"displayId": 35619
+"displayId": 35619,
+"classicDisplayId": 35619,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22426,
 "name": "Redemption Handguards",
 "icon": "inv_gauntlets_25",
-"displayId": 35615
+"displayId": 35615,
+"classicDisplayId": 35615,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22431,
 "name": "Redemption Girdle",
 "icon": "inv_belt_22",
-"displayId": 35614
+"displayId": 739070,
+"classicDisplayId": 35614,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22427,
 "name": "Redemption Legguards",
 "icon": "inv_pants_mail_15",
-"displayId": 35616
+"displayId": 35616,
+"classicDisplayId": 35616,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22430,
 "name": "Redemption Boots",
 "icon": "inv_boots_chain_05",
-"displayId": 35613
+"displayId": 35613,
+"classicDisplayId": 35613,
+"db": "forever"
 }
 ]
 },
@@ -1595,56 +1659,72 @@
 "id": 16727,
 "name": "Lightforge Helm",
 "icon": "inv_helmet_08",
-"displayId": 31207
+"displayId": 31207,
+"classicDisplayId": 31207,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 16729,
 "name": "Lightforge Spaulders",
 "icon": "inv_shoulder_10",
-"displayId": 29971
+"displayId": 29971,
+"classicDisplayId": 29971,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 16726,
 "name": "Lightforge Breastplate",
 "icon": "inv_chest_plate03",
-"displayId": 29969
+"displayId": 29969,
+"classicDisplayId": 29969,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 16722,
 "name": "Lightforge Bracers",
 "icon": "inv_bracer_14",
-"displayId": 29968
+"displayId": 29968,
+"classicDisplayId": 29968,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 16724,
 "name": "Lightforge Gauntlets",
 "icon": "inv_gauntlets_19",
-"displayId": 29970
+"displayId": 29970,
+"classicDisplayId": 29970,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 16723,
 "name": "Lightforge Belt",
 "icon": "inv_belt_11",
-"displayId": 29966
+"displayId": 29966,
+"classicDisplayId": 29966,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 16728,
 "name": "Lightforge Legplates",
 "icon": "inv_pants_04",
-"displayId": 29972
+"displayId": 29972,
+"classicDisplayId": 29972,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 16725,
 "name": "Lightforge Boots",
 "icon": "inv_boots_plate_03",
-"displayId": 29967
+"displayId": 29967,
+"classicDisplayId": 29967,
+"db": "forever"
 }
 ]
 },
@@ -1662,56 +1742,72 @@
 "id": 22091,
 "name": "Soulforge Helm",
 "icon": "inv_helmet_08",
-"displayId": 34524
+"displayId": 34524,
+"classicDisplayId": 34524,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22093,
 "name": "Soulforge Spaulders",
 "icon": "inv_shoulder_10",
-"displayId": 34526
+"displayId": 34526,
+"classicDisplayId": 34526,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22089,
 "name": "Soulforge Breastplate",
 "icon": "inv_chest_plate03",
-"displayId": 34519
+"displayId": 34519,
+"classicDisplayId": 34519,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22088,
 "name": "Soulforge Bracers",
 "icon": "inv_bracer_14",
-"displayId": 34522
+"displayId": 34522,
+"classicDisplayId": 34522,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22090,
 "name": "Soulforge Gauntlets",
 "icon": "inv_gauntlets_19",
-"displayId": 34523
+"displayId": 34523,
+"classicDisplayId": 34523,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22086,
 "name": "Soulforge Belt",
 "icon": "inv_belt_11",
-"displayId": 34520
+"displayId": 34520,
+"classicDisplayId": 34520,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22092,
 "name": "Soulforge Legplates",
 "icon": "inv_pants_04",
-"displayId": 34525
+"displayId": 34525,
+"classicDisplayId": 34525,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22087,
 "name": "Soulforge Boots",
 "icon": "inv_boots_plate_03",
-"displayId": 34521
+"displayId": 34521,
+"classicDisplayId": 34521,
+"db": "forever"
 }
 ]
 },
@@ -1863,56 +1959,72 @@
 "id": 22438,
 "name": "Cryptstalker Headpiece",
 "icon": "inv_helmet_15",
-"displayId": 35601
+"displayId": 35601,
+"classicDisplayId": 35601,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22439,
 "name": "Cryptstalker Spaulders",
 "icon": "inv_shoulder_14",
-"displayId": 35611
+"displayId": 35611,
+"classicDisplayId": 35611,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22436,
 "name": "Cryptstalker Tunic",
 "icon": "inv_chest_chain_15",
-"displayId": 35415
+"displayId": 35415,
+"classicDisplayId": 35415,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22443,
 "name": "Cryptstalker Wristguards",
 "icon": "inv_bracer_02",
-"displayId": 35416
+"displayId": 35416,
+"classicDisplayId": 35416,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22441,
 "name": "Cryptstalker Handguards",
 "icon": "inv_gauntlets_25",
-"displayId": 35411
+"displayId": 35411,
+"classicDisplayId": 35411,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22442,
 "name": "Cryptstalker Girdle",
 "icon": "inv_belt_22",
-"displayId": 35410
+"displayId": 740690,
+"classicDisplayId": 35410,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22437,
 "name": "Cryptstalker Legguards",
 "icon": "inv_pants_mail_15",
-"displayId": 35413
+"displayId": 35413,
+"classicDisplayId": 35413,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22440,
 "name": "Cryptstalker Boots",
 "icon": "inv_boots_chain_05",
-"displayId": 35409
+"displayId": 35409,
+"classicDisplayId": 35409,
+"db": "forever"
 }
 ]
 },
@@ -1930,56 +2042,72 @@
 "id": 16677,
 "name": "Beaststalker's Cap",
 "icon": "inv_helmet_24",
-"displayId": 31410
+"displayId": 31410,
+"classicDisplayId": 31410,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 16679,
 "name": "Beaststalker's Mantle",
 "icon": "inv_shoulder_10",
-"displayId": 31409
+"displayId": 31409,
+"classicDisplayId": 31409,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 16674,
 "name": "Beaststalker's Tunic",
 "icon": "inv_chest_chain_03",
-"displayId": 31402
+"displayId": 31402,
+"classicDisplayId": 31402,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 16681,
 "name": "Beaststalker's Bindings",
 "icon": "inv_bracer_17",
-"displayId": 31405
+"displayId": 31405,
+"classicDisplayId": 31405,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 16676,
 "name": "Beaststalker's Gloves",
 "icon": "inv_gauntlets_10",
-"displayId": 31406
+"displayId": 31406,
+"classicDisplayId": 31406,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 16680,
 "name": "Beaststalker's Belt",
 "icon": "inv_belt_28",
-"displayId": 31404
+"displayId": 31404,
+"classicDisplayId": 31404,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 16678,
 "name": "Beaststalker's Pants",
 "icon": "inv_pants_03",
-"displayId": 31403
+"displayId": 31403,
+"classicDisplayId": 31403,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 16675,
 "name": "Beaststalker's Boots",
 "icon": "inv_boots_plate_07",
-"displayId": 31408
+"displayId": 31408,
+"classicDisplayId": 31408,
+"db": "forever"
 }
 ]
 },
@@ -1997,56 +2125,72 @@
 "id": 22013,
 "name": "Beastmaster's Cap",
 "icon": "inv_helmet_24",
-"displayId": 34649
+"displayId": 34649,
+"classicDisplayId": 34649,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22016,
 "name": "Beastmaster's Mantle",
 "icon": "inv_shoulder_10",
-"displayId": 34651
+"displayId": 34651,
+"classicDisplayId": 34651,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22060,
 "name": "Beastmaster's Tunic",
 "icon": "inv_chest_chain_03",
-"displayId": 34645
+"displayId": 34645,
+"classicDisplayId": 34645,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22011,
 "name": "Beastmaster's Bindings",
 "icon": "inv_bracer_17",
-"displayId": 34647
+"displayId": 34647,
+"classicDisplayId": 34647,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22015,
 "name": "Beastmaster's Gloves",
 "icon": "inv_gauntlets_10",
-"displayId": 34650
+"displayId": 34650,
+"classicDisplayId": 34650,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22010,
 "name": "Beastmaster's Belt",
 "icon": "inv_belt_28",
-"displayId": 34646
+"displayId": 34646,
+"classicDisplayId": 34646,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22017,
 "name": "Beastmaster's Pants",
 "icon": "inv_pants_03",
-"displayId": 34652
+"displayId": 34652,
+"classicDisplayId": 34652,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22061,
 "name": "Beastmaster's Boots",
 "icon": "inv_boots_plate_07",
-"displayId": 34648
+"displayId": 34648,
+"classicDisplayId": 34648,
+"db": "forever"
 }
 ]
 },
@@ -2198,56 +2342,72 @@
 "id": 22478,
 "name": "Bonescythe Helmet",
 "icon": "inv_helmet_58",
-"displayId": 35132
+"displayId": 35132,
+"classicDisplayId": 35132,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22479,
 "name": "Bonescythe Pauldrons",
 "icon": "inv_shoulder_29",
-"displayId": 35064
+"displayId": 35064,
+"classicDisplayId": 35064,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22476,
 "name": "Bonescythe Breastplate",
 "icon": "inv_chest_plate02",
-"displayId": 35054
+"displayId": 35054,
+"classicDisplayId": 35054,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22483,
 "name": "Bonescythe Bracers",
 "icon": "inv_bracer_15",
-"displayId": 35053
+"displayId": 35053,
+"classicDisplayId": 35053,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22481,
 "name": "Bonescythe Gauntlets",
 "icon": "inv_gauntlets_28",
-"displayId": 35055
+"displayId": 744870,
+"classicDisplayId": 35055,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22482,
 "name": "Bonescythe Waistguard",
 "icon": "inv_belt_27",
-"displayId": 36349
+"displayId": 739073,
+"classicDisplayId": 36349,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22477,
 "name": "Bonescythe Legplates",
 "icon": "inv_pants_plate_05",
-"displayId": 35065
+"displayId": 35065,
+"classicDisplayId": 35065,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22480,
 "name": "Bonescythe Sabatons",
 "icon": "inv_boots_plate_06",
-"displayId": 36351
+"displayId": 36351,
+"classicDisplayId": 36351,
+"db": "forever"
 }
 ]
 },
@@ -2265,56 +2425,72 @@
 "id": 16707,
 "name": "Shadowcraft Cap",
 "icon": "inv_helmet_41",
-"displayId": 16056
+"displayId": 16056,
+"classicDisplayId": 16056,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 16708,
 "name": "Shadowcraft Spaulders",
 "icon": "inv_shoulder_07",
-"displayId": 24727
+"displayId": 24727,
+"classicDisplayId": 24727,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 16721,
 "name": "Shadowcraft Tunic",
 "icon": "inv_chest_leather_07",
-"displayId": 15607
+"displayId": 15607,
+"classicDisplayId": 15607,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 16710,
 "name": "Shadowcraft Bracers",
 "icon": "inv_bracer_07",
-"displayId": 15609
+"displayId": 15609,
+"classicDisplayId": 15609,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 16712,
 "name": "Shadowcraft Gloves",
 "icon": "inv_gauntlets_24",
-"displayId": 19909
+"displayId": 19909,
+"classicDisplayId": 19909,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 16713,
 "name": "Shadowcraft Belt",
 "icon": "inv_belt_03",
-"displayId": 14853
+"displayId": 14853,
+"classicDisplayId": 14853,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 16709,
 "name": "Shadowcraft Pants",
 "icon": "inv_pants_02",
-"displayId": 9807
+"displayId": 9807,
+"classicDisplayId": 9807,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 16711,
 "name": "Shadowcraft Boots",
 "icon": "inv_boots_08",
-"displayId": 28162
+"displayId": 28162,
+"classicDisplayId": 28162,
+"db": "forever"
 }
 ]
 },
@@ -2332,56 +2508,72 @@
 "id": 22005,
 "name": "Darkmantle Cap",
 "icon": "inv_helmet_41",
-"displayId": 34700
+"displayId": 34700,
+"classicDisplayId": 34700,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22008,
 "name": "Darkmantle Spaulders",
 "icon": "inv_shoulder_07",
-"displayId": 34688
+"displayId": 34688,
+"classicDisplayId": 34688,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22009,
 "name": "Darkmantle Tunic",
 "icon": "inv_chest_leather_07",
-"displayId": 34689
+"displayId": 34689,
+"classicDisplayId": 34689,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22004,
 "name": "Darkmantle Bracers",
 "icon": "inv_bracer_07",
-"displayId": 34685
+"displayId": 34685,
+"classicDisplayId": 34685,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22006,
 "name": "Darkmantle Gloves",
 "icon": "inv_gauntlets_24",
-"displayId": 34686
+"displayId": 34686,
+"classicDisplayId": 34686,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22002,
 "name": "Darkmantle Belt",
 "icon": "inv_belt_03",
-"displayId": 34699
+"displayId": 34699,
+"classicDisplayId": 34699,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22007,
 "name": "Darkmantle Pants",
 "icon": "inv_pants_02",
-"displayId": 34687
+"displayId": 34687,
+"classicDisplayId": 34687,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22003,
 "name": "Darkmantle Boots",
 "icon": "inv_boots_08",
-"displayId": 34684
+"displayId": 34684,
+"classicDisplayId": 34684,
+"db": "forever"
 }
 ]
 },
@@ -2533,56 +2725,72 @@
 "id": 22514,
 "name": "Circlet of Faith",
 "icon": "inv_crown_01",
-"displayId": 35155
+"displayId": 35155,
+"classicDisplayId": 35155,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22515,
 "name": "Shoulderpads of Faith",
 "icon": "inv_shoulder_25",
-"displayId": 35149
+"displayId": 35149,
+"classicDisplayId": 35149,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22512,
 "name": "Robe of Faith",
 "icon": "inv_chest_cloth_43",
-"displayId": 36354
+"displayId": 36354,
+"classicDisplayId": 36354,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22519,
 "name": "Bindings of Faith",
 "icon": "inv_bracer_13",
-"displayId": 35144
+"displayId": 35144,
+"classicDisplayId": 35144,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22517,
 "name": "Gloves of Faith",
 "icon": "inv_gauntlets_17",
-"displayId": 35145
+"displayId": 740650,
+"classicDisplayId": 35145,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22518,
 "name": "Belt of Faith",
 "icon": "inv_belt_08",
-"displayId": 35143
+"displayId": 739074,
+"classicDisplayId": 35143,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22513,
 "name": "Leggings of Faith",
 "icon": "inv_pants_cloth_05",
-"displayId": 35154
+"displayId": 35154,
+"classicDisplayId": 35154,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22516,
 "name": "Sandals of Faith",
 "icon": "inv_boots_fabric_01",
-"displayId": 35148
+"displayId": 35148,
+"classicDisplayId": 35148,
+"db": "forever"
 }
 ]
 },
@@ -2600,56 +2808,72 @@
 "id": 16693,
 "name": "Devout Crown",
 "icon": "inv_crown_01",
-"displayId": 31104
+"displayId": 31104,
+"classicDisplayId": 31104,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 16695,
 "name": "Devout Mantle",
 "icon": "inv_shoulder_02",
-"displayId": 31103
+"displayId": 31103,
+"classicDisplayId": 31103,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 16690,
 "name": "Devout Robe",
 "icon": "inv_chest_cloth_11",
-"displayId": 30422
+"displayId": 30422,
+"classicDisplayId": 30422,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 16697,
 "name": "Devout Bracers",
 "icon": "inv_belt_31",
-"displayId": 30426
+"displayId": 30426,
+"classicDisplayId": 30426,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 16692,
 "name": "Devout Gloves",
 "icon": "inv_gauntlets_14",
-"displayId": 30427
+"displayId": 30427,
+"classicDisplayId": 30427,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 16696,
 "name": "Devout Belt",
 "icon": "inv_belt_10",
-"displayId": 30425
+"displayId": 30425,
+"classicDisplayId": 30425,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 16694,
 "name": "Devout Skirt",
 "icon": "inv_pants_08",
-"displayId": 30424
+"displayId": 30424,
+"classicDisplayId": 30424,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 16691,
 "name": "Devout Sandals",
 "icon": "inv_boots_05",
-"displayId": 30430
+"displayId": 30430,
+"classicDisplayId": 30430,
+"db": "forever"
 }
 ]
 },
@@ -2667,56 +2891,72 @@
 "id": 22080,
 "name": "Virtuous Crown",
 "icon": "inv_crown_01",
-"displayId": 34630
+"displayId": 34630,
+"classicDisplayId": 34630,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22082,
 "name": "Virtuous Mantle",
 "icon": "inv_shoulder_02",
-"displayId": 34632
+"displayId": 34632,
+"classicDisplayId": 34632,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22083,
 "name": "Virtuous Robe",
 "icon": "inv_chest_cloth_11",
-"displayId": 34633
+"displayId": 34633,
+"classicDisplayId": 34633,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22079,
 "name": "Virtuous Bracers",
 "icon": "inv_belt_31",
-"displayId": 34629
+"displayId": 34629,
+"classicDisplayId": 34629,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22081,
 "name": "Virtuous Gloves",
 "icon": "inv_gauntlets_14",
-"displayId": 34631
+"displayId": 34631,
+"classicDisplayId": 34631,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22078,
 "name": "Virtuous Belt",
 "icon": "inv_belt_10",
-"displayId": 34628
+"displayId": 34628,
+"classicDisplayId": 34628,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22085,
 "name": "Virtuous Skirt",
 "icon": "inv_pants_08",
-"displayId": 34635
+"displayId": 34635,
+"classicDisplayId": 34635,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22084,
 "name": "Virtuous Sandals",
 "icon": "inv_boots_05",
-"displayId": 34634
+"displayId": 34634,
+"classicDisplayId": 34634,
+"db": "forever"
 }
 ]
 },
@@ -2868,56 +3108,72 @@
 "id": 22466,
 "name": "Earthshatter Headpiece",
 "icon": "inv_helmet_15",
-"displayId": 37056
+"displayId": 37056,
+"classicDisplayId": 37056,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22467,
 "name": "Earthshatter Spaulders",
 "icon": "inv_shoulder_14",
-"displayId": 35751
+"displayId": 35751,
+"classicDisplayId": 35751,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22464,
 "name": "Earthshatter Tunic",
 "icon": "inv_chest_chain_15",
-"displayId": 35752
+"displayId": 35752,
+"classicDisplayId": 35752,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22471,
 "name": "Earthshatter Wristguards",
 "icon": "inv_bracer_02",
-"displayId": 35753
+"displayId": 35753,
+"classicDisplayId": 35753,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22469,
 "name": "Earthshatter Handguards",
 "icon": "inv_gauntlets_25",
-"displayId": 35748
+"displayId": 35748,
+"classicDisplayId": 35748,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22470,
 "name": "Earthshatter Girdle",
 "icon": "inv_belt_22",
-"displayId": 35747
+"displayId": 740689,
+"classicDisplayId": 35747,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22465,
 "name": "Earthshatter Legguards",
 "icon": "inv_pants_mail_15",
-"displayId": 35754
+"displayId": 35754,
+"classicDisplayId": 35754,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22468,
 "name": "Earthshatter Boots",
 "icon": "inv_boots_chain_05",
-"displayId": 35746
+"displayId": 35746,
+"classicDisplayId": 35746,
+"db": "forever"
 }
 ]
 },
@@ -2935,56 +3191,72 @@
 "id": 16667,
 "name": "Coif of Elements",
 "icon": "inv_helmet_04",
-"displayId": 31117
+"displayId": 31117,
+"classicDisplayId": 31117,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 16669,
 "name": "Pauldrons of Elements",
 "icon": "inv_shoulder_29",
-"displayId": 30925
+"displayId": 30925,
+"classicDisplayId": 30925,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 16666,
 "name": "Vest of Elements",
 "icon": "inv_chest_chain_11",
-"displayId": 31416
+"displayId": 31416,
+"classicDisplayId": 31416,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 16671,
 "name": "Bindings of Elements",
 "icon": "inv_bracer_02",
-"displayId": 31411
+"displayId": 31411,
+"classicDisplayId": 31411,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 16672,
 "name": "Gauntlets of Elements",
 "icon": "inv_gauntlets_11",
-"displayId": 31414
+"displayId": 31414,
+"classicDisplayId": 31414,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 16673,
 "name": "Cord of Elements",
 "icon": "inv_belt_16",
-"displayId": 31413
+"displayId": 31413,
+"classicDisplayId": 31413,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 16668,
 "name": "Kilt of Elements",
 "icon": "inv_pants_03",
-"displayId": 31415
+"displayId": 31415,
+"classicDisplayId": 31415,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 16670,
 "name": "Boots of Elements",
 "icon": "inv_boots_wolf",
-"displayId": 31412
+"displayId": 31412,
+"classicDisplayId": 31412,
+"db": "forever"
 }
 ]
 },
@@ -3002,56 +3274,72 @@
 "id": 22097,
 "name": "Coif of The Five Thunders",
 "icon": "inv_helmet_04",
-"displayId": 34693
+"displayId": 34693,
+"classicDisplayId": 34693,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22101,
 "name": "Pauldrons of The Five Thunders",
 "icon": "inv_shoulder_29",
-"displayId": 34697
+"displayId": 34697,
+"classicDisplayId": 34697,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22102,
 "name": "Vest of The Five Thunders",
 "icon": "inv_chest_chain_11",
-"displayId": 34698
+"displayId": 34698,
+"classicDisplayId": 34698,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22095,
 "name": "Bindings of The Five Thunders",
 "icon": "inv_bracer_02",
-"displayId": 34691
+"displayId": 34691,
+"classicDisplayId": 34691,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22099,
 "name": "Gauntlets of The Five Thunders",
 "icon": "inv_gauntlets_11",
-"displayId": 34695
+"displayId": 34695,
+"classicDisplayId": 34695,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22098,
 "name": "Cord of The Five Thunders",
 "icon": "inv_belt_16",
-"displayId": 34694
+"displayId": 34694,
+"classicDisplayId": 34694,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22100,
 "name": "Kilt of The Five Thunders",
 "icon": "inv_pants_03",
-"displayId": 34696
+"displayId": 34696,
+"classicDisplayId": 34696,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22096,
 "name": "Boots of The Five Thunders",
 "icon": "inv_boots_wolf",
-"displayId": 34692
+"displayId": 34692,
+"classicDisplayId": 34692,
+"db": "forever"
 }
 ]
 },
@@ -3203,56 +3491,72 @@
 "id": 22498,
 "name": "Frostfire Circlet",
 "icon": "inv_crown_01",
-"displayId": 36440
+"displayId": 36440,
+"classicDisplayId": 36440,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22499,
 "name": "Frostfire Shoulderpads",
 "icon": "inv_shoulder_25",
-"displayId": 35326
+"displayId": 35326,
+"classicDisplayId": 35326,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22496,
 "name": "Frostfire Robe",
 "icon": "inv_chest_cloth_43",
-"displayId": 35523
+"displayId": 35523,
+"classicDisplayId": 35523,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22503,
 "name": "Frostfire Bindings",
 "icon": "inv_bracer_13",
-"displayId": 35677
+"displayId": 35677,
+"classicDisplayId": 35677,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22501,
 "name": "Frostfire Gloves",
 "icon": "inv_gauntlets_17",
-"displayId": 35521
+"displayId": 740648,
+"classicDisplayId": 35521,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22502,
 "name": "Frostfire Belt",
 "icon": "inv_belt_03",
-"displayId": 35519
+"displayId": 739071,
+"classicDisplayId": 35519,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22497,
 "name": "Frostfire Leggings",
 "icon": "inv_pants_cloth_05",
-"displayId": 35522
+"displayId": 35522,
+"classicDisplayId": 35522,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22500,
 "name": "Frostfire Sandals",
 "icon": "inv_boots_fabric_01",
-"displayId": 35525
+"displayId": 35525,
+"classicDisplayId": 35525,
+"db": "forever"
 }
 ]
 },
@@ -3270,56 +3574,72 @@
 "id": 16686,
 "name": "Magister's Crown",
 "icon": "inv_crown_02",
-"displayId": 31087
+"displayId": 31087,
+"classicDisplayId": 31087,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 16689,
 "name": "Magister's Mantle",
 "icon": "inv_shoulder_23",
-"displayId": 30211
+"displayId": 30211,
+"classicDisplayId": 30211,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 16688,
 "name": "Magister's Robes",
 "icon": "inv_chest_cloth_25",
-"displayId": 29591
+"displayId": 29591,
+"classicDisplayId": 29591,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 16683,
 "name": "Magister's Bindings",
 "icon": "inv_jewelry_ring_23",
-"displayId": 29595
+"displayId": 29595,
+"classicDisplayId": 29595,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 16684,
 "name": "Magister's Gloves",
 "icon": "inv_gauntlets_17",
-"displayId": 29593
+"displayId": 29593,
+"classicDisplayId": 29593,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 16685,
 "name": "Magister's Belt",
 "icon": "inv_belt_08",
-"displayId": 29596
+"displayId": 29596,
+"classicDisplayId": 29596,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 16687,
 "name": "Magister's Leggings",
 "icon": "inv_pants_06",
-"displayId": 7939
+"displayId": 7939,
+"classicDisplayId": 7939,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 16682,
 "name": "Magister's Boots",
 "icon": "inv_boots_02",
-"displayId": 29594
+"displayId": 29594,
+"classicDisplayId": 29594,
+"db": "forever"
 }
 ]
 },
@@ -3337,56 +3657,72 @@
 "id": 22065,
 "name": "Sorcerer's Crown",
 "icon": "inv_crown_02",
-"displayId": 34602
+"displayId": 34602,
+"classicDisplayId": 34602,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22068,
 "name": "Sorcerer's Mantle",
 "icon": "inv_shoulder_23",
-"displayId": 34597
+"displayId": 34597,
+"classicDisplayId": 34597,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22069,
 "name": "Sorcerer's Robes",
 "icon": "inv_chest_cloth_25",
-"displayId": 34596
+"displayId": 34596,
+"classicDisplayId": 34596,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22063,
 "name": "Sorcerer's Bindings",
 "icon": "inv_jewelry_ring_23",
-"displayId": 34601
+"displayId": 34601,
+"classicDisplayId": 34601,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22066,
 "name": "Sorcerer's Gloves",
 "icon": "inv_gauntlets_17",
-"displayId": 34600
+"displayId": 34600,
+"classicDisplayId": 34600,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22062,
 "name": "Sorcerer's Belt",
 "icon": "inv_belt_08",
-"displayId": 34599
+"displayId": 34599,
+"classicDisplayId": 34599,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22067,
 "name": "Sorcerer's Leggings",
 "icon": "inv_pants_06",
-"displayId": 34598
+"displayId": 34598,
+"classicDisplayId": 34598,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22064,
 "name": "Sorcerer's Boots",
 "icon": "inv_boots_02",
-"displayId": 34782
+"displayId": 34782,
+"classicDisplayId": 34782,
+"db": "forever"
 }
 ]
 },
@@ -3538,56 +3874,72 @@
 "id": 22506,
 "name": "Plagueheart Circlet",
 "icon": "inv_crown_01",
-"displayId": 35182
+"displayId": 35182,
+"classicDisplayId": 35182,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22507,
 "name": "Plagueheart Shoulderpads",
 "icon": "inv_shoulder_25",
-"displayId": 35187
+"displayId": 35187,
+"classicDisplayId": 35187,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22504,
 "name": "Plagueheart Robe",
 "icon": "inv_chest_cloth_43",
-"displayId": 35185
+"displayId": 35185,
+"classicDisplayId": 35185,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22511,
 "name": "Plagueheart Bindings",
 "icon": "inv_bracer_13",
-"displayId": 35180
+"displayId": 35180,
+"classicDisplayId": 35180,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22509,
 "name": "Plagueheart Gloves",
 "icon": "inv_gauntlets_17",
-"displayId": 35183
+"displayId": 740649,
+"classicDisplayId": 35183,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22510,
 "name": "Plagueheart Belt",
 "icon": "inv_belt_03",
-"displayId": 35179
+"displayId": 739075,
+"classicDisplayId": 35179,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22505,
 "name": "Plagueheart Leggings",
 "icon": "inv_pants_cloth_05",
-"displayId": 35184
+"displayId": 35184,
+"classicDisplayId": 35184,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22508,
 "name": "Plagueheart Sandals",
 "icon": "inv_boots_fabric_01",
-"displayId": 35186
+"displayId": 35186,
+"classicDisplayId": 35186,
+"db": "forever"
 }
 ]
 },
@@ -3605,56 +3957,72 @@
 "id": 16698,
 "name": "Dreadmist Mask",
 "icon": "inv_helmet_29",
-"displayId": 31263
+"displayId": 31263,
+"classicDisplayId": 31263,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 16701,
 "name": "Dreadmist Mantle",
 "icon": "inv_misc_bone_taurenskull_01",
-"displayId": 29798
+"displayId": 29798,
+"classicDisplayId": 29798,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 16700,
 "name": "Dreadmist Robe",
 "icon": "inv_chest_cloth_49",
-"displayId": 29792
+"displayId": 29792,
+"classicDisplayId": 29792,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 16703,
 "name": "Dreadmist Bracers",
 "icon": "inv_bracer_13",
-"displayId": 29795
+"displayId": 29795,
+"classicDisplayId": 29795,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 16705,
 "name": "Dreadmist Wraps",
 "icon": "inv_gauntlets_32",
-"displayId": 29800
+"displayId": 29800,
+"classicDisplayId": 29800,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 16702,
 "name": "Dreadmist Belt",
 "icon": "inv_belt_12",
-"displayId": 29793
+"displayId": 29793,
+"classicDisplayId": 29793,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 16699,
 "name": "Dreadmist Leggings",
 "icon": "inv_pants_08",
-"displayId": 29797
+"displayId": 29797,
+"classicDisplayId": 29797,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 16704,
 "name": "Dreadmist Sandals",
 "icon": "inv_boots_05",
-"displayId": 29799
+"displayId": 29799,
+"classicDisplayId": 29799,
+"db": "forever"
 }
 ]
 },
@@ -3672,56 +4040,72 @@
 "id": 22074,
 "name": "Deathmist Mask",
 "icon": "inv_helmet_29",
-"displayId": 34624
+"displayId": 34624,
+"classicDisplayId": 34624,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22073,
 "name": "Deathmist Mantle",
 "icon": "inv_misc_bone_taurenskull_01",
-"displayId": 34623
+"displayId": 34623,
+"classicDisplayId": 34623,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22075,
 "name": "Deathmist Robe",
 "icon": "inv_chest_cloth_49",
-"displayId": 34625
+"displayId": 34625,
+"classicDisplayId": 34625,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22071,
 "name": "Deathmist Bracers",
 "icon": "inv_bracer_13",
-"displayId": 34621
+"displayId": 34621,
+"classicDisplayId": 34621,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22077,
 "name": "Deathmist Wraps",
 "icon": "inv_gauntlets_32",
-"displayId": 34627
+"displayId": 34627,
+"classicDisplayId": 34627,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22070,
 "name": "Deathmist Belt",
 "icon": "inv_belt_12",
-"displayId": 34620
+"displayId": 34620,
+"classicDisplayId": 34620,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22072,
 "name": "Deathmist Leggings",
 "icon": "inv_pants_08",
-"displayId": 34622
+"displayId": 34622,
+"classicDisplayId": 34622,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22076,
 "name": "Deathmist Sandals",
 "icon": "inv_boots_05",
-"displayId": 34626
+"displayId": 34626,
+"classicDisplayId": 34626,
+"db": "forever"
 }
 ]
 },
@@ -3873,56 +4257,72 @@
 "id": 22490,
 "name": "Dreamwalker Headpiece",
 "icon": "inv_helmet_15",
-"displayId": 35162
+"displayId": 35162,
+"classicDisplayId": 35162,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22491,
 "name": "Dreamwalker Spaulders",
 "icon": "inv_shoulder_14",
-"displayId": 35160
+"displayId": 35160,
+"classicDisplayId": 35160,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22488,
 "name": "Dreamwalker Tunic",
 "icon": "inv_chest_chain_15",
-"displayId": 35159
+"displayId": 35159,
+"classicDisplayId": 35159,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22495,
 "name": "Dreamwalker Wristguards",
 "icon": "inv_bracer_02",
-"displayId": 35158
+"displayId": 35158,
+"classicDisplayId": 35158,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22493,
 "name": "Dreamwalker Handguards",
 "icon": "inv_gauntlets_25",
-"displayId": 35167
+"displayId": 744869,
+"classicDisplayId": 35167,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22494,
 "name": "Dreamwalker Girdle",
 "icon": "inv_belt_22",
-"displayId": 35164
+"displayId": 739072,
+"classicDisplayId": 35164,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22489,
 "name": "Dreamwalker Legguards",
 "icon": "inv_pants_mail_15",
-"displayId": 35161
+"displayId": 35161,
+"classicDisplayId": 35161,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22492,
 "name": "Dreamwalker Boots",
 "icon": "inv_boots_chain_05",
-"displayId": 35173
+"displayId": 35173,
+"classicDisplayId": 35173,
+"db": "forever"
 }
 ]
 },
@@ -3940,56 +4340,72 @@
 "id": 16720,
 "name": "Wildheart Cowl",
 "icon": "inv_helmet_27",
-"displayId": 31228
+"displayId": 31228,
+"classicDisplayId": 31228,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 16718,
 "name": "Wildheart Spaulders",
 "icon": "inv_shoulder_01",
-"displayId": 30412
+"displayId": 30412,
+"classicDisplayId": 30412,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 16706,
 "name": "Wildheart Vest",
 "icon": "inv_chest_plate06",
-"displayId": 29974
+"displayId": 29974,
+"classicDisplayId": 29974,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 16714,
 "name": "Wildheart Bracers",
 "icon": "inv_bracer_09",
-"displayId": 29977
+"displayId": 29977,
+"classicDisplayId": 29977,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 16717,
 "name": "Wildheart Gloves",
 "icon": "inv_gauntlets_17",
-"displayId": 29979
+"displayId": 29979,
+"classicDisplayId": 29979,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 16716,
 "name": "Wildheart Belt",
 "icon": "inv_belt_15",
-"displayId": 29976
+"displayId": 29976,
+"classicDisplayId": 29976,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 16719,
 "name": "Wildheart Kilt",
 "icon": "inv_pants_08",
-"displayId": 29975
+"displayId": 29975,
+"classicDisplayId": 29975,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 16715,
 "name": "Wildheart Boots",
 "icon": "inv_boots_08",
-"displayId": 29981
+"displayId": 29981,
+"classicDisplayId": 29981,
+"db": "forever"
 }
 ]
 },
@@ -4007,56 +4423,72 @@
 "id": 22109,
 "name": "Feralheart Cowl",
 "icon": "inv_helmet_27",
-"displayId": 34639
+"displayId": 34639,
+"classicDisplayId": 34639,
+"db": "forever"
 },
 {
 "slot": "Shoulder",
 "id": 22112,
 "name": "Feralheart Spaulders",
 "icon": "inv_shoulder_01",
-"displayId": 34643
+"displayId": 34643,
+"classicDisplayId": 34643,
+"db": "forever"
 },
 {
 "slot": "Chest",
 "id": 22113,
 "name": "Feralheart Vest",
 "icon": "inv_chest_plate06",
-"displayId": 34644
+"displayId": 34644,
+"classicDisplayId": 34644,
+"db": "forever"
 },
 {
 "slot": "Wrist",
 "id": 22108,
 "name": "Feralheart Bracers",
 "icon": "inv_bracer_09",
-"displayId": 34641
+"displayId": 34641,
+"classicDisplayId": 34641,
+"db": "forever"
 },
 {
 "slot": "Hands",
 "id": 22110,
 "name": "Feralheart Gloves",
 "icon": "inv_gauntlets_17",
-"displayId": 34640
+"displayId": 34640,
+"classicDisplayId": 34640,
+"db": "forever"
 },
 {
 "slot": "Waist",
 "id": 22106,
 "name": "Feralheart Belt",
 "icon": "inv_belt_15",
-"displayId": 34637
+"displayId": 34637,
+"classicDisplayId": 34637,
+"db": "forever"
 },
 {
 "slot": "Legs",
 "id": 22111,
 "name": "Feralheart Kilt",
 "icon": "inv_pants_08",
-"displayId": 34642
+"displayId": 34642,
+"classicDisplayId": 34642,
+"db": "forever"
 },
 {
 "slot": "Feet",
 "id": 22107,
 "name": "Feralheart Boots",
 "icon": "inv_boots_08",
-"displayId": 34638
+"displayId": 34638,
+"classicDisplayId": 34638,
+"db": "forever"
 }
 ]
 }
