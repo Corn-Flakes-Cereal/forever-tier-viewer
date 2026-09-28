@@ -577,7 +577,7 @@ qs('#btnRandom').addEventListener('click', () => {
 qs('#btnReset').addEventListener('click', () => { cam.azimuth = CAM_DEFAULT.azimuth; cam.zenith = CAM_DEFAULT.zenith; cam.distance = CAM_DEFAULT.distance; applyCamera(); });
 
 /* ---------------- Camera / orbit controls ---------------- */
-const CAM_DEFAULT = { azimuth: Math.PI * 1.5, zenith: Math.PI / 2, distance: 13 };
+const CAM_DEFAULT = { azimuth: Math.PI * 1.5, zenith: Math.PI / 2, distance: 7 };
 const cam = { ...CAM_DEFAULT };
 let spinning = false;
 function applyCamera() {
@@ -586,10 +586,11 @@ function applyCamera() {
   r.azimuth = cam.azimuth; r.zenith = cam.zenith; r.distance = cam.distance;
 }
 function fitViewer() {
-  // The viewer sizes its canvas from the container width and the aspect it was created with;
-  // re-run its resize once layout has settled so the canvas matches the container exactly.
+  // The viewer sizes its canvas from the container width and the aspect it was created with.
+  // Its renderer.resize() must not be called without arguments (it nulls the camera), so a size
+  // change is handled by rebuilding the viewer (see the window resize handler).
   if (!viewer || !viewer.renderer) return;
-  requestAnimationFrame(() => { try { viewer.renderer.resize(); } catch (e) {} });
+  requestAnimationFrame(applyCamera);
 }
 (function orbitControls() {
   const el = qs('#viewer');
@@ -610,13 +611,13 @@ function fitViewer() {
   el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end);
   el.addEventListener('wheel', (e) => {
     e.preventDefault();
-    cam.distance = Math.min(40, Math.max(4, cam.distance * (e.deltaY > 0 ? 1.08 : 1 / 1.08)));
+    cam.distance = Math.min(30, Math.max(2.5, cam.distance * (e.deltaY > 0 ? 1.08 : 1 / 1.08)));
     applyCamera();
   }, { passive: false });
   // pinch zoom
   const pts = new Map(); let pinchDist = 0;
   el.addEventListener('pointerdown', (e) => { pts.set(e.pointerId, e); if (pts.size === 2) { const [a, b] = [...pts.values()]; pinchDist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); } });
-  el.addEventListener('pointermove', (e) => { if (!pts.has(e.pointerId)) return; pts.set(e.pointerId, e); if (pts.size === 2 && pinchDist) { const [a, b] = [...pts.values()]; const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); cam.distance = Math.min(40, Math.max(4, cam.distance * (pinchDist / d))); pinchDist = d; applyCamera(); } });
+  el.addEventListener('pointermove', (e) => { if (!pts.has(e.pointerId)) return; pts.set(e.pointerId, e); if (pts.size === 2 && pinchDist) { const [a, b] = [...pts.values()]; const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); cam.distance = Math.min(30, Math.max(2.5, cam.distance * (pinchDist / d))); pinchDist = d; applyCamera(); } });
   const drop = (e) => { pts.delete(e.pointerId); if (pts.size < 2) pinchDist = 0; };
   el.addEventListener('pointerup', drop); el.addEventListener('pointercancel', drop);
   // keyboard
@@ -625,7 +626,7 @@ function fitViewer() {
     const step = 0.15;
     if (e.key === 'ArrowLeft') cam.azimuth += step; else if (e.key === 'ArrowRight') cam.azimuth -= step;
     else if (e.key === 'ArrowUp') cam.zenith = Math.max(0.5, cam.zenith - step); else if (e.key === 'ArrowDown') cam.zenith = Math.min(2.6, cam.zenith + step);
-    else if (e.key === '+' || e.key === '=') cam.distance = Math.max(4, cam.distance / 1.1); else if (e.key === '-') cam.distance = Math.min(40, cam.distance * 1.1);
+    else if (e.key === '+' || e.key === '=') cam.distance = Math.max(2.5, cam.distance / 1.1); else if (e.key === '-') cam.distance = Math.min(30, cam.distance * 1.1);
     else return;
     e.preventDefault(); applyCamera();
   });
