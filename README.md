@@ -22,11 +22,17 @@ It must be served over http(s); opening `index.html` straight from disk won't lo
 - Armor comes from `.../classicplus/meta/armor/<slot>/<displayId>.json`. The display IDs are hard-coded in `index.html`
   (from Wowhead's Forever item pages, `item=<id>&xml`). Role variants of a set (e.g. Justice Armor / Battlegear / Battleplate) share one appearance.
 
-## Adding more sets later
+## Data
 
-Edit the `CLASSES` array in `index.html`: each class has a `display` object with six display IDs
-(head, shoulder, chest, hands, legs, feet) and a `chestSlot` of `5` (chest) or `20` (robe). To find a display ID for a new
-item, open `https://www.wowhead.com/forever/item=<ITEM_ID>&xml` and read the `displayId` attribute on the `<icon>` element.
+All sets live in `data.js` (`window.SETS`), generated from `data/*.json`:
+- `data/hyjal-base.json` + `data/hyjal-extra.json` — Forever Season 1 Hyjal sets (Wowhead Forever DB, `item=<id>&xml`).
+- `data/<class>-classic.json` — Classic Tier 1/2/3 and Dungeon Set 1/2 (Wowhead Classic DB). Their display IDs work on the
+  `classicplus` model server.
+Each set: `{tier, name, class, role, bonus[], db, setId?, pieces:[{slot, id, name, icon, displayId}]}`.
+Tier codes: `S1` Hyjal, `T1`–`T3`, `D1`, `D2`. Slots: Head, Shoulder, Chest, Wrist, Hands, Waist, Legs, Feet.
+
+To add a set: append it to the right JSON, then regenerate `data.js` (concatenate all sets into `window.SETS = [...]`).
+To find a display ID: `https://www.wowhead.com/forever/item=<ID>&xml` (or `/classic/`) → `displayId` on the `<icon>` element.
 
 Not affiliated with Blizzard or Wowhead. Models and item data © Blizzard Entertainment.
 
