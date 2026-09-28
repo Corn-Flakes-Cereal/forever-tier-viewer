@@ -43,7 +43,7 @@
   .group h2 { margin: 0 0 8px; font: 500 11px/1 var(--font-body); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); display:flex; justify-content: space-between; align-items: baseline; }
   .group h2 span { letter-spacing: 0; text-transform: none; color: var(--gold); font-family: var(--font-mono); font-size: 11px; }
   .tiles { display: grid; gap: 6px; }
-  .tiles.races { grid-template-columns: repeat(4, 1fr); }
+  .tiles.races { grid-template-columns: repeat(5, 1fr); }
   .tiles.classes { grid-template-columns: repeat(3, 1fr); }
   .tiles.tiers { grid-template-columns: repeat(3, 1fr); }
   .tile { background: var(--panel); border: 1px solid var(--line); color: var(--text); border-radius: var(--radius); padding: 8px 6px; font: 500 12px/1.2 var(--font-body); cursor: pointer; text-align: center; position: relative; transition: border-color .12s, background .12s; }
@@ -79,6 +79,14 @@
   #viewer canvas { display: block; max-width: 100%; filter: brightness(var(--bright, 1.1)) contrast(1.02); }
   .stage.bg-stone { --stage-bg: #4a4540; }
   .stage.bg-light { --stage-bg: #d9d2c4; }
+  .stage .backdrop { position: absolute; inset: 0; background: center/cover no-repeat; opacity: 0; transition: opacity .5s; pointer-events: none; filter: brightness(.55) saturate(.9); }
+  .stage .backdrop.on { opacity: 1; }
+  .stage .backdrop::after { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 50% 60%, rgba(0,0,0,0) 30%, rgba(10,8,5,.55) 100%); }
+  #viewer { z-index: 1; }
+  .caption, .doll, .toolbar, .notice { z-index: 2; }
+  .toolbar select { width: auto; padding: 6px 8px; font-size: 12px; }
+  .tile:disabled { opacity: .35; cursor: not-allowed; }
+  .tile:disabled:hover { border-color: var(--line); }
   .stage.bg-light .caption .set { color: #6b4e0c; } .stage.bg-light .caption .who { color: #4a4238; }
   .caption { position:absolute; left: 50%; transform: translateX(-50%); top: 12px; pointer-events:none; text-align: center; max-width: 60%; }
   .caption .set { font: 700 18px/1.1 var(--font-display); color: var(--gold-2); letter-spacing: .03em; text-wrap: balance; }
@@ -171,6 +179,7 @@
   </aside>
 
   <section class="stage" id="stage">
+    <div class="backdrop" id="backdrop"></div>
     <div id="viewer"></div>
     <div class="caption"><div class="set" id="capSet"></div><div class="who" id="capWho"></div></div>
     <div class="doll left" id="dollLeft"></div>
@@ -188,11 +197,19 @@
         <button class="btn" id="btnSpin" type="button" aria-pressed="false" title="Auto-rotate">Spin</button>
         <button class="btn" id="btnRotR" type="button" title="Rotate right">⟳</button>
         <label class="slider" title="Brightness">☀ <input type="range" id="bright" min="0.7" max="1.8" step="0.05" value="1.1"></label>
-        <div class="seg" id="bgPick" title="Backdrop">
-          <button type="button" data-bg="" aria-pressed="true">Dark</button>
-          <button type="button" data-bg="bg-stone">Stone</button>
-          <button type="button" data-bg="bg-light">Light</button>
-        </div>
+        <select id="bgPick" title="Backdrop" aria-label="Backdrop">
+          <option value="auto">Home city (auto)</option>
+          <option value="stormwind">Stormwind</option>
+          <option value="ironforge">Ironforge</option>
+          <option value="darnassus">Darnassus</option>
+          <option value="orgrimmar">Orgrimmar</option>
+          <option value="thunderbluff">Thunder Bluff</option>
+          <option value="undercity">Undercity</option>
+          <option value="zephras">Zephras Isle</option>
+          <option value="">Plain dark</option>
+          <option value="bg-stone">Plain stone</option>
+          <option value="bg-light">Plain light</option>
+        </select>
         <button class="btn" id="btnReset" type="button">Reset camera</button>
       </div>
     </div>
@@ -231,10 +248,30 @@
 
 <script>
 /* ---------------- Static tables ---------------- */
+// Race/class combinations as of WoW: Forever (Classic combos plus Forever's additions: Dwarf Shaman, Gnome Priest,
+// Orc Mage, Troll Warlock, Undead Paladin, and the Skyborne). `model` = ChrModel ids on the model server (Skyborne: 218/219);
+// classic races use race*2-1+gender for HD and 256 + that for the legacy SD models.
 const RACES = [
-  { id:1, name:'Human', fac:'a' }, { id:3, name:'Dwarf', fac:'a' }, { id:4, name:'Night Elf', fac:'a' }, { id:7, name:'Gnome', fac:'a' },
-  { id:2, name:'Orc', fac:'h' }, { id:5, name:'Undead', fac:'h' }, { id:6, name:'Tauren', fac:'h' }, { id:8, name:'Troll', fac:'h' },
+  { id:1, name:'Human', fac:'a', city:'stormwind', classes:['warrior','hunter','mage','rogue','priest','warlock','paladin'] },
+  { id:3, name:'Dwarf', fac:'a', city:'ironforge', classes:['warrior','hunter','rogue','priest','paladin','shaman'] },
+  { id:4, name:'Night Elf', fac:'a', city:'darnassus', classes:['warrior','hunter','rogue','priest','druid'] },
+  { id:7, name:'Gnome', fac:'a', city:'ironforge', classes:['warrior','mage','rogue','priest','warlock'] },
+  { id:95, name:'Skyborne', sub:'High Order', fac:'a', city:'zephras', model:[218,219], modelRace:95, classes:['warrior','hunter','mage','rogue','druid'] },
+  { id:2, name:'Orc', fac:'h', city:'orgrimmar', classes:['warrior','hunter','mage','rogue','warlock','shaman'] },
+  { id:5, name:'Undead', fac:'h', city:'undercity', classes:['warrior','mage','rogue','priest','warlock','paladin'] },
+  { id:6, name:'Tauren', fac:'h', city:'thunderbluff', classes:['warrior','hunter','druid','shaman'] },
+  { id:8, name:'Troll', fac:'h', city:'orgrimmar', classes:['warrior','hunter','mage','rogue','priest','warlock','shaman'] },
+  { id:96, name:'Skyborne', sub:'Windshaper', fac:'h', city:'zephras', model:[218,219], modelRace:95, classes:['warrior','hunter','rogue','druid','shaman'] },
 ];
+const CITIES = {
+  stormwind:   { name:'Stormwind City', img:'https://warcraft.wiki.gg/images/Stormwind_City_Classic.jpg' },
+  ironforge:   { name:'Ironforge', img:'https://warcraft.wiki.gg/images/Ironforge_-_WoW_fansite_kit.jpg' },
+  darnassus:   { name:'Darnassus', img:'https://warcraft.wiki.gg/images/DarnSkyPic.jpg' },
+  orgrimmar:   { name:'Orgrimmar', img:'https://warcraft.wiki.gg/images/Valley_of_Strength_Cata_2.jpg' },
+  thunderbluff:{ name:'Thunder Bluff', img:'https://warcraft.wiki.gg/images/ThunderbluffCraigSymonds.jpg' },
+  undercity:   { name:'Undercity', img:'https://warcraft.wiki.gg/images/Undercity.jpg' },
+  zephras:     { name:'Zephras Isle', img:'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VNUVL6VY9G7G1790055107744.png' },
+};
 const CLASSES = [
   { key:'warrior', name:'Warrior', color:'#C69B6D', armor:'Plate' }, { key:'paladin', name:'Paladin', color:'#F48CBA', armor:'Plate' },
   { key:'hunter', name:'Hunter', color:'#AAD372', armor:'Mail' }, { key:'rogue', name:'Rogue', color:'#FFF468', armor:'Leather' },
@@ -260,7 +297,7 @@ const SETS = window.SETS || [];
 /* ---------------- State ---------------- */
 const state = {
   race: 1, gender: 0, hd: 1,
-  cls: 'warrior', tier: 'S1', setName: null,
+  cls: 'warrior', tier: 'S1', setName: null, backdrop: 'auto',
   equipped: {},           // slot key -> bool
   custom: null, choice: {},
 };
@@ -304,7 +341,14 @@ function notice(html) { const n = qs('#notice'); if (!html) { n.hidden = true; n
 function cls() { return CLASSES.find(c => c.key === state.cls); }
 function race() { return RACES.find(r => r.id === state.race); }
 function tier() { return TIERS.find(t => t.key === state.tier); }
-function modelId() { return state.race * 2 - 1 + state.gender; }
+function modelId() {
+  const r = race();
+  if (r.model) return r.model[state.gender];
+  const hd = r.id * 2 - 1 + state.gender;
+  return state.hd ? hd : 256 + hd;
+}
+function modelRace() { return race().modelRace || race().id; }
+function raceAllows(r, clsKey) { return r.classes.includes(clsKey); }
 function setsFor(tierKey, clsKey) { return SETS.filter(s => s.tier === tierKey && s.class === clsKey); }
 function currentSet() { const list = setsFor(state.tier, state.cls); return list.find(s => s.name === state.setName) || list[0] || null; }
 function pieceFor(set, slotKey) { return set ? set.pieces.find(p => p.slot === slotKey) : null; }
@@ -375,7 +419,7 @@ async function applyItems() {
     statusOk();
   } catch (e) { console.error(e); build(); }
 }
-function applyAppearance() { if (!viewer) return; try { viewer.method('setAppearance', { race: state.race, gender: state.gender, options: characterOptions() }); } catch (e) { console.error(e); build(); } }
+function applyAppearance() { if (!viewer) return; try { viewer.method('setAppearance', { race: modelRace(), gender: state.gender, options: characterOptions() }); } catch (e) { console.error(e); build(); } }
 function setAnimation(name) { if (!viewer) return; try { viewer.renderer.actors[0].setAnimation(name); } catch (e) { try { viewer.method('setAnimation', name); } catch (e2) {} } }
 
 /* ---------------- UI rendering ---------------- */
@@ -383,8 +427,12 @@ function renderRaces() {
   const el = qs('#races'); el.innerHTML = '';
   for (const r of RACES) {
     const b = document.createElement('button'); b.type = 'button'; b.className = 'tile'; b.setAttribute('aria-pressed', String(r.id === state.race));
-    b.innerHTML = `<span class="fac ${r.fac}"></span>${r.name}`;
-    b.addEventListener('click', () => { state.race = r.id; renderRaces(); renderCaption(); build(); });
+    b.innerHTML = `<span class="fac ${r.fac}"></span>${r.name}${r.sub ? `<small>${r.sub}</small>` : ''}`;
+    b.addEventListener('click', () => {
+      state.race = r.id;
+      if (!raceAllows(r, state.cls)) { state.cls = r.classes[0]; state.setName = null; resetEquipped(); renderSets(); renderDoll(); }
+      renderRaces(); renderClasses(); renderCaption(); applyBackdrop(); build();
+    });
     el.appendChild(b);
   }
   qs('#raceLabel').textContent = `model ${modelId()}`;
@@ -394,6 +442,8 @@ function renderClasses() {
   for (const c of CLASSES) {
     const b = document.createElement('button'); b.type = 'button'; b.className = 'tile cls'; b.style.setProperty('--c', c.color);
     b.setAttribute('aria-pressed', String(c.key === state.cls)); b.textContent = c.name;
+    const ok = raceAllows(race(), c.key);
+    b.disabled = !ok; if (!ok) b.title = `${race().name} ${race().sub || ''} can't be a ${c.name} in Forever`;
     b.addEventListener('click', () => { state.cls = c.key; state.setName = null; onSetChanged(); renderClasses(); });
     el.appendChild(b);
   }
@@ -448,7 +498,8 @@ function renderDoll() {
 function renderCaption() {
   const set = currentSet();
   qs('#capSet').textContent = set ? set.name : 'No set';
-  qs('#capWho').textContent = `${race().name} ${state.gender ? 'female' : 'male'} ${cls().name} · ${tier().name}${set && set.role ? ' · ' + set.role : ''}`;
+  const r = race();
+  qs('#capWho').textContent = `${r.sub ? r.sub + ' ' : ''}${r.name} ${state.gender ? 'female' : 'male'} ${cls().name} · ${tier().name}${set && set.role ? ' · ' + set.role : ''}`;
 }
 function renderAppearance() {
   const el = qs('#appearance'); el.innerHTML = ''; if (!state.custom) return;
@@ -466,7 +517,7 @@ function onSetChanged() { resetEquipped(); renderSets(); renderDoll(); renderCap
 
 /* ---------------- Wire up ---------------- */
 qs('#gender').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; state.gender = +b.dataset.g; qs('#gender').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); renderRaces(); renderCaption(); build(); });
-qs('#hd').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; state.hd = +b.dataset.hd; qs('#hd').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); build(); });
+qs('#hd').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; if (race().model && b.dataset.hd === '0') { setStatus('ok', 'Skyborne only have HD models'); return; } state.hd = +b.dataset.hd; qs('#hd').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); build(); });
 qs('#setSelect').addEventListener('change', (e) => { state.setName = e.target.value; onSetChanged(); });
 qs('#btnStand').addEventListener('click', () => setAnimation('Stand'));
 qs('#btnWalk').addEventListener('click', () => setAnimation('Walk'));
@@ -522,12 +573,24 @@ qs('#btnRotL').addEventListener('click', () => { cam.azimuth += Math.PI / 6; app
 qs('#btnRotR').addEventListener('click', () => { cam.azimuth -= Math.PI / 6; applyCamera(); });
 qs('#btnSpin').addEventListener('click', (e) => { spinning = !spinning; e.currentTarget.setAttribute('aria-pressed', String(spinning)); });
 qs('#bright').addEventListener('input', (e) => { qs('#viewer').style.setProperty('--bright', e.target.value); });
-qs('#bgPick').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; const stage = qs('#stage'); stage.classList.remove('bg-stone', 'bg-light'); if (b.dataset.bg) stage.classList.add(b.dataset.bg); qs('#bgPick').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); });
+function applyBackdrop() {
+  const stage = qs('#stage'), bd = qs('#backdrop');
+  let v = state.backdrop; if (v === 'auto') v = race().city;
+  stage.classList.remove('bg-stone', 'bg-light');
+  if (v === 'bg-stone' || v === 'bg-light') { stage.classList.add(v); bd.classList.remove('on'); return; }
+  const city = CITIES[v];
+  if (!city) { bd.classList.remove('on'); return; }
+  const img = new Image();
+  img.onload = () => { bd.style.backgroundImage = `url("${city.img}")`; bd.classList.add('on'); };
+  img.onerror = () => { bd.classList.remove('on'); };
+  img.src = city.img;
+}
+qs('#bgPick').addEventListener('change', (e) => { state.backdrop = e.target.value; applyBackdrop(); });
 let resizeT; window.addEventListener('resize', () => { clearTimeout(resizeT); resizeT = setTimeout(() => { if (viewer) build(); }, 400); });
 
 /* ---------------- Boot ---------------- */
 resetEquipped();
-renderRaces(); renderClasses(); renderTiers(); renderSets(); renderDoll(); renderCaption();
+renderRaces(); renderClasses(); renderTiers(); renderSets(); renderDoll(); renderCaption(); applyBackdrop();
 build();
 </script>
 </body>
