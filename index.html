@@ -338,11 +338,11 @@ async function resolveBase() {
 }
 
 /* ---------------- Helpers ---------------- */
-const $ = (s) => document.querySelector(s);
+const qs = (s) => document.querySelector(s);
 function setStatus(kind, text) {
-  const el = $('#status'); el.className = 'status ' + kind; $('#statusText').textContent = text;
+  const el = qs('#status'); el.className = 'status ' + kind; qs('#statusText').textContent = text;
 }
-function notice(html) { const n = $('#notice'); if (!html) { n.hidden = true; n.innerHTML = ''; } else { n.hidden = false; n.innerHTML = html; } }
+function notice(html) { const n = qs('#notice'); if (!html) { n.hidden = true; n.innerHTML = ''; } else { n.hidden = false; n.innerHTML = html; } }
 function cls() { return CLASSES.find(c => c.key === state.cls); }
 function race() { return RACES.find(r => r.id === state.race); }
 function modelId() { return state.race * 2 - 1 + state.gender; }
@@ -438,7 +438,7 @@ function destroy() {
     try { viewer.destroy && viewer.destroy(); } catch (e) {}
     viewer = null;
   }
-  $('#viewer').innerHTML = '';
+  qs('#viewer').innerHTML = '';
 }
 async function applyItems() {
   if (!viewer) return build();
@@ -462,7 +462,7 @@ function escapeHtml(s) { return s.replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&l
 
 /* ---------------- UI rendering ---------------- */
 function renderRaces() {
-  const el = $('#races'); el.innerHTML = '';
+  const el = qs('#races'); el.innerHTML = '';
   for (const r of RACES) {
     const b = document.createElement('button');
     b.type = 'button'; b.className = 'tile'; b.setAttribute('aria-pressed', String(r.id === state.race));
@@ -470,10 +470,10 @@ function renderRaces() {
     b.addEventListener('click', () => { state.race = r.id; renderRaces(); renderCaption(); build(); });
     el.appendChild(b);
   }
-  $('#raceLabel').textContent = `model ${modelId()}`;
+  qs('#raceLabel').textContent = `model ${modelId()}`;
 }
 function renderClasses() {
-  const el = $('#classes'); el.innerHTML = '';
+  const el = qs('#classes'); el.innerHTML = '';
   for (const c of CLASSES) {
     const b = document.createElement('button');
     b.type = 'button'; b.className = 'tile cls'; b.style.setProperty('--c', c.color);
@@ -483,19 +483,19 @@ function renderClasses() {
   }
 }
 function renderSets() {
-  const c = cls(); const sel = $('#setSelect'); sel.innerHTML = '';
+  const c = cls(); const sel = qs('#setSelect'); sel.innerHTML = '';
   c.sets.forEach((s, i) => {
     const o = document.createElement('option'); o.value = i; o.textContent = `${s.name} — ${s.role}`; o.selected = i === state.set; sel.appendChild(o);
   });
-  $('#setArmor').textContent = c.armor;
+  qs('#setArmor').textContent = c.armor;
   renderBonus();
 }
 function renderBonus() {
-  const s = cls().sets[state.set]; const ul = $('#bonus'); ul.innerHTML = '';
+  const s = cls().sets[state.set]; const ul = qs('#bonus'); ul.innerHTML = '';
   s.bonus.forEach((t, i) => { const li = document.createElement('li'); li.innerHTML = `<b>${i + 2}pc</b>${escapeHtml(t)}`; ul.appendChild(li); });
 }
 function renderPieces() {
-  const c = cls(); const el = $('#pieces'); el.innerHTML = '';
+  const c = cls(); const el = qs('#pieces'); el.innerHTML = '';
   for (const s of SLOTS) {
     const lab = document.createElement('label'); lab.className = 'piece';
     lab.innerHTML = `<input type="checkbox" id="pc-${s.key}" ${state.enabled[s.key] ? 'checked' : ''}> ${s.label} <span class="did">${c.display[s.key]}</span>`;
@@ -504,14 +504,14 @@ function renderPieces() {
   }
   renderPieceCount();
 }
-function renderPieceCount() { const n = Object.values(state.enabled).filter(Boolean).length; $('#pieceCount').textContent = `${n} / 6 shown`; }
+function renderPieceCount() { const n = Object.values(state.enabled).filter(Boolean).length; qs('#pieceCount').textContent = `${n} / 6 shown`; }
 function renderCaption() {
   const s = cls().sets[state.set];
-  $('#capSet').textContent = s.name;
-  $('#capWho').textContent = `${race().name} ${state.gender ? 'female' : 'male'} ${cls().name} · ${cls().armor} · ${s.role}`;
+  qs('#capSet').textContent = s.name;
+  qs('#capWho').textContent = `${race().name} ${state.gender ? 'female' : 'male'} ${cls().name} · ${cls().armor} · ${s.role}`;
 }
 function renderAppearance() {
-  const el = $('#appearance'); el.innerHTML = '';
+  const el = qs('#appearance'); el.innerHTML = '';
   if (!state.custom) return;
   for (const opt of state.custom.Options) {
     if (!opt.Choices || opt.Choices.length < 2) continue;
@@ -527,34 +527,34 @@ function renderAppearance() {
 }
 
 /* ---------------- Wire up ---------------- */
-$('#gender').addEventListener('click', (e) => {
+qs('#gender').addEventListener('click', (e) => {
   const b = e.target.closest('button'); if (!b) return;
   state.gender = +b.dataset.g;
-  $('#gender').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  qs('#gender').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
   renderRaces(); renderCaption(); build();
 });
-$('#hd').addEventListener('click', (e) => {
+qs('#hd').addEventListener('click', (e) => {
   const b = e.target.closest('button'); if (!b) return;
   state.hd = +b.dataset.hd;
-  $('#hd').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  qs('#hd').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
   build();
 });
-$('#setSelect').addEventListener('change', (e) => { state.set = +e.target.value; renderBonus(); renderCaption(); setStatus('ok', `${race().name} · ${cls().sets[state.set].name}`); });
-$('#btnStand').addEventListener('click', () => setAnimation('Stand'));
-$('#btnWalk').addEventListener('click', () => setAnimation('Walk'));
-$('#btnAttack').addEventListener('click', () => setAnimation('AttackUnarmed'));
-$('#btnNude').addEventListener('click', () => {
+qs('#setSelect').addEventListener('change', (e) => { state.set = +e.target.value; renderBonus(); renderCaption(); setStatus('ok', `${race().name} · ${cls().sets[state.set].name}`); });
+qs('#btnStand').addEventListener('click', () => setAnimation('Stand'));
+qs('#btnWalk').addEventListener('click', () => setAnimation('Walk'));
+qs('#btnAttack').addEventListener('click', () => setAnimation('AttackUnarmed'));
+qs('#btnNude').addEventListener('click', () => {
   const allOn = Object.values(state.enabled).every(Boolean);
   for (const k in state.enabled) state.enabled[k] = !allOn;
-  $('#btnNude').textContent = allOn ? 'Dress' : 'Undress';
+  qs('#btnNude').textContent = allOn ? 'Dress' : 'Undress';
   renderPieces(); applyItems();
 });
-$('#btnRandom').addEventListener('click', () => {
+qs('#btnRandom').addEventListener('click', () => {
   if (!state.custom) return;
   for (const opt of state.custom.Options) state.choice[opt.Id] = Math.floor(Math.random() * opt.Choices.length);
   renderAppearance(); applyAppearance();
 });
-$('#btnReset').addEventListener('click', () => { if (!viewer) return; try { viewer.renderer.azimuth = Math.PI / 2 * 3; viewer.renderer.zenith = Math.PI / 2; viewer.renderer.distance = 8; } catch (e) {} });
+qs('#btnReset').addEventListener('click', () => { if (!viewer) return; try { viewer.renderer.azimuth = Math.PI / 2 * 3; viewer.renderer.zenith = Math.PI / 2; viewer.renderer.distance = 8; } catch (e) {} });
 
 let resizeT; window.addEventListener('resize', () => { clearTimeout(resizeT); resizeT = setTimeout(() => { if (viewer) build(); }, 400); });
 
