@@ -29,3 +29,12 @@ Edit the `CLASSES` array in `index.html`: each class has a `display` object with
 item, open `https://www.wowhead.com/forever/item=<ITEM_ID>&xml` and read the `displayId` attribute on the `<icon>` element.
 
 Not affiliated with Blizzard or Wowhead. Models and item data © Blizzard Entertainment.
+
+## Relay (required)
+
+Wowhead's model server blocks cross-site reads, so the page loads model files through a small relay.
+`relay/worker.js` is a Cloudflare Worker (free tier is plenty):
+
+1. dash.cloudflare.com → **Workers & Pages → Create → Start with Hello World** → name it (e.g. `hyjal-relay`) → Deploy.
+2. **Edit code**, replace everything with `relay/worker.js`, **Deploy**.
+3. Copy the worker URL (`https://hyjal-relay.<account>.workers.dev/`) into the first `RELAYS` entry in `index.html`.

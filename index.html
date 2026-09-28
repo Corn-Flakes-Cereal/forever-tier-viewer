@@ -316,23 +316,23 @@ const chestSlotCache = {};   // displayId -> 5 | 20
    so the page tries a direct connection first and then falls back to public relays.
    To use your own relay (e.g. a Cloudflare Worker that forwards to wow.zamimg.com), put its URL first. */
 const ZAM = 'https://wow.zamimg.com/modelviewer/classicplus/';
+// Each entry is a base URL that serves the same files as ZAM. The relay (relay/worker.js) maps its root to ZAM.
 const RELAYS = [
-  '',                                        // direct
-  'https://corsproxy.io/?url=',              // public relay
-  'https://api.allorigins.win/raw?url=',     // public relay
+  'https://RELAY-URL-GOES-HERE.workers.dev/',   // your Cloudflare Worker (see relay/worker.js)
+  ZAM,                                          // direct (currently blocked by Wowhead's CORS policy)
 ];
 let resolvedBase = null;
 async function resolveBase() {
   if (resolvedBase) return resolvedBase;
   const probe = `meta/charactercustomization/${modelId()}.json`;
   const errors = [];
-  for (const relay of RELAYS) {
-    const base = relay + ZAM;
+  for (const base of RELAYS) {
+    if (base.includes('RELAY-URL-GOES-HERE')) { errors.push('relay not configured'); continue; }
     try {
       const r = await fetch(base + probe, { cache: 'force-cache' });
       if (r.ok) { const j = await r.json(); if (j && (j.Options || (j.data && j.data.Options))) { resolvedBase = base; window.CONTENT_PATH = base; return base; } }
-      errors.push(`${relay || 'direct'}: HTTP ${r.status}`);
-    } catch (e) { errors.push(`${relay || 'direct'}: ${e.message}`); }
+      errors.push(`${base}: HTTP ${r.status}`);
+    } catch (e) { errors.push(`${base}: ${e.message}`); }
   }
   throw new Error('No route to the model server. Tried: ' + errors.join(' · '));
 }
