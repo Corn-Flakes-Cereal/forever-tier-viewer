@@ -1,0 +1,82 @@
+[
+  {
+    "tier": "T1",
+    "name": "Battlegear of Might",
+    "setId": 209,
+    "class": "warrior",
+    "pieces": [
+      {"slot": "Head", "id": 16866, "name": "Helm of Might", "icon": "inv_helmet_09", "displayId": 31260},
+      {"slot": "Shoulder", "id": 16868, "name": "Pauldrons of Might", "icon": "inv_shoulder_15", "displayId": 31024},
+      {"slot": "Chest", "id": 16865, "name": "Breastplate of Might", "icon": "inv_chest_plate16", "displayId": 31021},
+      {"slot": "Wrist", "id": 16861, "name": "Bracers of Might", "icon": "inv_bracer_19", "displayId": 31020},
+      {"slot": "Hands", "id": 16863, "name": "Gauntlets of Might", "icon": "inv_gauntlets_10", "displayId": 31022},
+      {"slot": "Waist", "id": 16864, "name": "Belt of Might", "icon": "inv_belt_09", "displayId": 31019},
+      {"slot": "Legs", "id": 16867, "name": "Legplates of Might", "icon": "inv_pants_04", "displayId": 31023},
+      {"slot": "Feet", "id": 16862, "name": "Sabatons of Might", "icon": "inv_boots_plate_04", "displayId": 31025}
+    ]
+  },
+  {
+    "tier": "T2",
+    "name": "Battlegear of Wrath",
+    "setId": 218,
+    "class": "warrior",
+    "pieces": [
+      {"slot": "Head", "id": 16963, "name": "Helm of Wrath", "icon": "inv_helmet_71", "displayId": 34215},
+      {"slot": "Shoulder", "id": 16961, "name": "Pauldrons of Wrath", "icon": "inv_shoulder_34", "displayId": 34253},
+      {"slot": "Chest", "id": 16966, "name": "Breastplate of Wrath", "icon": "inv_chest_plate16", "displayId": 33983},
+      {"slot": "Wrist", "id": 16959, "name": "Bracelets of Wrath", "icon": "inv_bracer_19", "displayId": 33982},
+      {"slot": "Hands", "id": 16964, "name": "Gauntlets of Wrath", "icon": "inv_gauntlets_10", "displayId": 33984},
+      {"slot": "Waist", "id": 16960, "name": "Waistband of Wrath", "icon": "inv_belt_09", "displayId": 33990},
+      {"slot": "Legs", "id": 16962, "name": "Legplates of Wrath", "icon": "inv_pants_04", "displayId": 33986},
+      {"slot": "Feet", "id": 16965, "name": "Sabatons of Wrath", "icon": "inv_boots_plate_04", "displayId": 33989}
+    ]
+  },
+  {
+    "tier": "T3",
+    "name": "Dreadnaught's Battlegear",
+    "setId": 523,
+    "class": "warrior",
+    "pieces": [
+      {"slot": "Head", "id": 22418, "name": "Dreadnaught Helmet", "icon": "inv_helmet_58", "displayId": 35447},
+      {"slot": "Shoulder", "id": 22419, "name": "Dreadnaught Pauldrons", "icon": "inv_shoulder_29", "displayId": 35177},
+      {"slot": "Chest", "id": 22416, "name": "Dreadnaught Breastplate", "icon": "inv_chest_plate02", "displayId": 35049},
+      {"slot": "Wrist", "id": 22423, "name": "Dreadnaught Bracers", "icon": "inv_bracer_15", "displayId": 35044},
+      {"slot": "Hands", "id": 22421, "name": "Dreadnaught Gauntlets", "icon": "inv_gauntlets_28", "displayId": 35050},
+      {"slot": "Waist", "id": 22422, "name": "Dreadnaught Waistguard", "icon": "inv_belt_27", "displayId": 35058},
+      {"slot": "Legs", "id": 22417, "name": "Dreadnaught Legplates", "icon": "inv_pants_plate_05", "displayId": 35051},
+      {"slot": "Feet", "id": 22420, "name": "Dreadnaught Sabatons", "icon": "inv_boots_plate_06", "displayId": 35067}
+    ]
+  },
+  {
+    "tier": "D1",
+    "name": "Battlegear of Valor",
+    "setId": 189,
+    "class": "warrior",
+    "pieces": [
+      {"slot": "Head", "id": 16731, "name": "Helm of Valor", "icon": "inv_helmet_02", "displayId": 31284},
+      {"slot": "Shoulder", "id": 16733, "name": "Spaulders of Valor", "icon": "inv_shoulder_30", "displayId": 29964},
+      {"slot": "Chest", "id": 16730, "name": "Breastplate of Valor", "icon": "inv_chest_plate03", "displayId": 29958},
+      {"slot": "Wrist", "id": 16735, "name": "Bracers of Valor", "icon": "inv_bracer_18", "displayId": 29961},
+      {"slot": "Hands", "id": 16737, "name": "Gauntlets of Valor", "icon": "inv_gauntlets_26", "displayId": 29962},
+      {"slot": "Waist", "id": 16736, "name": "Belt of Valor", "icon": "inv_belt_34", "displayId": 29959},
+      {"slot": "Legs", "id": 16732, "name": "Legplates of Valor", "icon": "inv_pants_04", "displayId": 29963},
+      {"slot": "Feet", "id": 16734, "name": "Boots of Valor", "icon": "inv_boots_plate_03", "displayId": 29960}
+    ]
+  },
+  {
+    "tier": "D2",
+    "name": "Battlegear of Heroism",
+    "setId": 511,
+    "class": "warrior",
+    "pieces": [
+      {"slot": "Head", "id": 21999, "name": "Helm of Heroism", "icon": "inv_helmet_02", "displayId": 34614},
+      {"slot": "Shoulder", "id": 22001, "name": "Spaulders of Heroism", "icon": "inv_shoulder_30", "displayId": 34616},
+      {"slot": "Chest", "id": 21997, "name": "Breastplate of Heroism", "icon": "inv_chest_plate03", "displayId": 34617},
+      {"slot": "Wrist", "id": 21996, "name": "Bracers of Heroism", "icon": "inv_bracer_18", "displayId": 34612},
+      {"slot": "Hands", "id": 21998, "name": "Gauntlets of Heroism", "icon": "inv_gauntlets_26", "displayId": 34613},
+      {"slot": "Waist", "id": 21994, "name": "Belt of Heroism", "icon": "inv_belt_34", "displayId": 34610},
+      {"slot": "Legs", "id": 22000, "name": "Legplates of Heroism", "icon": "inv_pants_04", "displayId": 34615},
+      {"slot": "Feet", "id": 21995, "name": "Boots of Heroism", "icon": "inv_boots_plate_03", "displayId": 34611}
+    ]
+  }
+]

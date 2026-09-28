@@ -1,0 +1,82 @@
+[
+  {
+    "tier": "T1",
+    "name": "Giantstalker Armor",
+    "setId": 206,
+    "class": "hunter",
+    "pieces": [
+      {"slot": "Head", "id": 16846, "name": "Giantstalker's Helmet", "icon": "inv_helmet_05", "displayId": 32028},
+      {"slot": "Shoulder", "id": 16848, "name": "Giantstalker's Epaulets", "icon": "inv_shoulder_10", "displayId": 32030},
+      {"slot": "Chest", "id": 16845, "name": "Giantstalker's Breastplate", "icon": "inv_chest_chain_03", "displayId": 32022},
+      {"slot": "Wrist", "id": 16850, "name": "Giantstalker's Bracers", "icon": "inv_bracer_17", "displayId": 32018},
+      {"slot": "Hands", "id": 16852, "name": "Giantstalker's Gloves", "icon": "inv_gauntlets_10", "displayId": 32024},
+      {"slot": "Waist", "id": 16851, "name": "Giantstalker's Belt", "icon": "inv_belt_28", "displayId": 32019},
+      {"slot": "Legs", "id": 16847, "name": "Giantstalker's Leggings", "icon": "inv_pants_mail_03", "displayId": 32023},
+      {"slot": "Feet", "id": 16849, "name": "Giantstalker's Boots", "icon": "inv_boots_chain_13", "displayId": 32040}
+    ]
+  },
+  {
+    "tier": "T2",
+    "name": "Dragonstalker Armor",
+    "setId": 215,
+    "class": "hunter",
+    "pieces": [
+      {"slot": "Head", "id": 16939, "name": "Dragonstalker's Helm", "icon": "inv_helmet_05", "displayId": 34367},
+      {"slot": "Shoulder", "id": 16937, "name": "Dragonstalker's Spaulders", "icon": "inv_shoulder_10", "displayId": 34091},
+      {"slot": "Chest", "id": 16942, "name": "Dragonstalker's Breastplate", "icon": "inv_chest_chain_03", "displayId": 33667},
+      {"slot": "Wrist", "id": 16935, "name": "Dragonstalker's Bracers", "icon": "inv_bracer_17", "displayId": 33666},
+      {"slot": "Hands", "id": 16940, "name": "Dragonstalker's Gauntlets", "icon": "inv_gauntlets_10", "displayId": 33668},
+      {"slot": "Waist", "id": 16936, "name": "Dragonstalker's Belt", "icon": "inv_belt_28", "displayId": 33665},
+      {"slot": "Legs", "id": 16938, "name": "Dragonstalker's Legguards", "icon": "inv_pants_03", "displayId": 33672},
+      {"slot": "Feet", "id": 16941, "name": "Dragonstalker's Greaves", "icon": "inv_boots_plate_07", "displayId": 34269}
+    ]
+  },
+  {
+    "tier": "T3",
+    "name": "Cryptstalker Armor",
+    "setId": 530,
+    "class": "hunter",
+    "pieces": [
+      {"slot": "Head", "id": 22438, "name": "Cryptstalker Headpiece", "icon": "inv_helmet_15", "displayId": 35601},
+      {"slot": "Shoulder", "id": 22439, "name": "Cryptstalker Spaulders", "icon": "inv_shoulder_14", "displayId": 35611},
+      {"slot": "Chest", "id": 22436, "name": "Cryptstalker Tunic", "icon": "inv_chest_chain_15", "displayId": 35415},
+      {"slot": "Wrist", "id": 22443, "name": "Cryptstalker Wristguards", "icon": "inv_bracer_02", "displayId": 35416},
+      {"slot": "Hands", "id": 22441, "name": "Cryptstalker Handguards", "icon": "inv_gauntlets_25", "displayId": 35411},
+      {"slot": "Waist", "id": 22442, "name": "Cryptstalker Girdle", "icon": "inv_belt_22", "displayId": 35410},
+      {"slot": "Legs", "id": 22437, "name": "Cryptstalker Legguards", "icon": "inv_pants_mail_15", "displayId": 35413},
+      {"slot": "Feet", "id": 22440, "name": "Cryptstalker Boots", "icon": "inv_boots_chain_05", "displayId": 35409}
+    ]
+  },
+  {
+    "tier": "D1",
+    "name": "Beaststalker Armor",
+    "setId": 186,
+    "class": "hunter",
+    "pieces": [
+      {"slot": "Head", "id": 16677, "name": "Beaststalker's Cap", "icon": "inv_helmet_24", "displayId": 31410},
+      {"slot": "Shoulder", "id": 16679, "name": "Beaststalker's Mantle", "icon": "inv_shoulder_10", "displayId": 31409},
+      {"slot": "Chest", "id": 16674, "name": "Beaststalker's Tunic", "icon": "inv_chest_chain_03", "displayId": 31402},
+      {"slot": "Wrist", "id": 16681, "name": "Beaststalker's Bindings", "icon": "inv_bracer_17", "displayId": 31405},
+      {"slot": "Hands", "id": 16676, "name": "Beaststalker's Gloves", "icon": "inv_gauntlets_10", "displayId": 31406},
+      {"slot": "Waist", "id": 16680, "name": "Beaststalker's Belt", "icon": "inv_belt_28", "displayId": 31404},
+      {"slot": "Legs", "id": 16678, "name": "Beaststalker's Pants", "icon": "inv_pants_03", "displayId": 31403},
+      {"slot": "Feet", "id": 16675, "name": "Beaststalker's Boots", "icon": "inv_boots_plate_07", "displayId": 31408}
+    ]
+  },
+  {
+    "tier": "D2",
+    "name": "Beastmaster Armor",
+    "setId": 515,
+    "class": "hunter",
+    "pieces": [
+      {"slot": "Head", "id": 22013, "name": "Beastmaster's Cap", "icon": "inv_helmet_24", "displayId": 34649},
+      {"slot": "Shoulder", "id": 22016, "name": "Beastmaster's Mantle", "icon": "inv_shoulder_10", "displayId": 34651},
+      {"slot": "Chest", "id": 22060, "name": "Beastmaster's Tunic", "icon": "inv_chest_chain_03", "displayId": 34645},
+      {"slot": "Wrist", "id": 22011, "name": "Beastmaster's Bindings", "icon": "inv_bracer_17", "displayId": 34647},
+      {"slot": "Hands", "id": 22015, "name": "Beastmaster's Gloves", "icon": "inv_gauntlets_10", "displayId": 34650},
+      {"slot": "Waist", "id": 22010, "name": "Beastmaster's Belt", "icon": "inv_belt_28", "displayId": 34646},
+      {"slot": "Legs", "id": 22017, "name": "Beastmaster's Pants", "icon": "inv_pants_03", "displayId": 34652},
+      {"slot": "Feet", "id": 22061, "name": "Beastmaster's Boots", "icon": "inv_boots_plate_07", "displayId": 34648}
+    ]
+  }
+]

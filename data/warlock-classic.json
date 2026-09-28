@@ -1,0 +1,82 @@
+[
+  {
+    "tier": "T1",
+    "name": "Felheart Raiment",
+    "setId": 202,
+    "class": "warlock",
+    "pieces": [
+      {"slot": "Head", "id": 16808, "name": "Felheart Horns", "icon": "inv_helmet_08", "displayId": 31987},
+      {"slot": "Shoulder", "id": 16807, "name": "Felheart Shoulder Pads", "icon": "inv_shoulder_23", "displayId": 31974},
+      {"slot": "Chest", "id": 16809, "name": "Felheart Robes", "icon": "inv_chest_cloth_09", "displayId": 31973},
+      {"slot": "Wrist", "id": 16804, "name": "Felheart Bracers", "icon": "inv_bracer_07", "displayId": 31970},
+      {"slot": "Hands", "id": 16805, "name": "Felheart Gloves", "icon": "inv_gauntlets_19", "displayId": 31971},
+      {"slot": "Waist", "id": 16806, "name": "Felheart Belt", "icon": "inv_belt_13", "displayId": 31969},
+      {"slot": "Legs", "id": 16810, "name": "Felheart Pants", "icon": "inv_pants_cloth_14", "displayId": 31972},
+      {"slot": "Feet", "id": 16803, "name": "Felheart Slippers", "icon": "inv_boots_cloth_05", "displayId": 31975}
+    ]
+  },
+  {
+    "tier": "T2",
+    "name": "Nemesis Raiment",
+    "setId": 211,
+    "class": "warlock",
+    "pieces": [
+      {"slot": "Head", "id": 16929, "name": "Nemesis Skullcap", "icon": "inv_helmet_08", "displayId": 34369},
+      {"slot": "Shoulder", "id": 16932, "name": "Nemesis Spaulders", "icon": "inv_shoulder_19", "displayId": 34022},
+      {"slot": "Chest", "id": 16931, "name": "Nemesis Robes", "icon": "inv_chest_leather_01", "displayId": 34014},
+      {"slot": "Wrist", "id": 16934, "name": "Nemesis Bracers", "icon": "inv_bracer_07", "displayId": 34012},
+      {"slot": "Hands", "id": 16928, "name": "Nemesis Gloves", "icon": "inv_gauntlets_19", "displayId": 34013},
+      {"slot": "Waist", "id": 16933, "name": "Nemesis Belt", "icon": "inv_belt_13", "displayId": 34011},
+      {"slot": "Legs", "id": 16930, "name": "Nemesis Leggings", "icon": "inv_pants_07", "displayId": 7939},
+      {"slot": "Feet", "id": 16927, "name": "Nemesis Boots", "icon": "inv_boots_05", "displayId": 34015}
+    ]
+  },
+  {
+    "tier": "T3",
+    "name": "Plagueheart Raiment",
+    "setId": 529,
+    "class": "warlock",
+    "pieces": [
+      {"slot": "Head", "id": 22506, "name": "Plagueheart Circlet", "icon": "inv_crown_01", "displayId": 35182},
+      {"slot": "Shoulder", "id": 22507, "name": "Plagueheart Shoulderpads", "icon": "inv_shoulder_25", "displayId": 35187},
+      {"slot": "Chest", "id": 22504, "name": "Plagueheart Robe", "icon": "inv_chest_cloth_43", "displayId": 35185},
+      {"slot": "Wrist", "id": 22511, "name": "Plagueheart Bindings", "icon": "inv_bracer_13", "displayId": 35180},
+      {"slot": "Hands", "id": 22509, "name": "Plagueheart Gloves", "icon": "inv_gauntlets_17", "displayId": 35183},
+      {"slot": "Waist", "id": 22510, "name": "Plagueheart Belt", "icon": "inv_belt_03", "displayId": 35179},
+      {"slot": "Legs", "id": 22505, "name": "Plagueheart Leggings", "icon": "inv_pants_cloth_05", "displayId": 35184},
+      {"slot": "Feet", "id": 22508, "name": "Plagueheart Sandals", "icon": "inv_boots_fabric_01", "displayId": 35186}
+    ]
+  },
+  {
+    "tier": "D1",
+    "name": "Dreadmist Raiment",
+    "setId": 183,
+    "class": "warlock",
+    "pieces": [
+      {"slot": "Head", "id": 16698, "name": "Dreadmist Mask", "icon": "inv_helmet_29", "displayId": 31263},
+      {"slot": "Shoulder", "id": 16701, "name": "Dreadmist Mantle", "icon": "inv_misc_bone_taurenskull_01", "displayId": 29798},
+      {"slot": "Chest", "id": 16700, "name": "Dreadmist Robe", "icon": "inv_chest_cloth_49", "displayId": 29792},
+      {"slot": "Wrist", "id": 16703, "name": "Dreadmist Bracers", "icon": "inv_bracer_13", "displayId": 29795},
+      {"slot": "Hands", "id": 16705, "name": "Dreadmist Wraps", "icon": "inv_gauntlets_32", "displayId": 29800},
+      {"slot": "Waist", "id": 16702, "name": "Dreadmist Belt", "icon": "inv_belt_12", "displayId": 29793},
+      {"slot": "Legs", "id": 16699, "name": "Dreadmist Leggings", "icon": "inv_pants_08", "displayId": 29797},
+      {"slot": "Feet", "id": 16704, "name": "Dreadmist Sandals", "icon": "inv_boots_05", "displayId": 29799}
+    ]
+  },
+  {
+    "tier": "D2",
+    "name": "Deathmist Raiment",
+    "setId": 518,
+    "class": "warlock",
+    "pieces": [
+      {"slot": "Head", "id": 22074, "name": "Deathmist Mask", "icon": "inv_helmet_29", "displayId": 34624},
+      {"slot": "Shoulder", "id": 22073, "name": "Deathmist Mantle", "icon": "inv_misc_bone_taurenskull_01", "displayId": 34623},
+      {"slot": "Chest", "id": 22075, "name": "Deathmist Robe", "icon": "inv_chest_cloth_49", "displayId": 34625},
+      {"slot": "Wrist", "id": 22071, "name": "Deathmist Bracers", "icon": "inv_bracer_13", "displayId": 34621},
+      {"slot": "Hands", "id": 22077, "name": "Deathmist Wraps", "icon": "inv_gauntlets_32", "displayId": 34627},
+      {"slot": "Waist", "id": 22070, "name": "Deathmist Belt", "icon": "inv_belt_12", "displayId": 34620},
+      {"slot": "Legs", "id": 22072, "name": "Deathmist Leggings", "icon": "inv_pants_08", "displayId": 34622},
+      {"slot": "Feet", "id": 22076, "name": "Deathmist Sandals", "icon": "inv_boots_05", "displayId": 34626}
+    ]
+  }
+]

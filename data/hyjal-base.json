@@ -1,0 +1,345 @@
+[
+ {
+  "name": "Grovekeeper Raiment",
+  "class": "druid",
+  "role": "Restoration",
+  "pieces": [
+   {
+    "slot": "Head",
+    "id": 280977,
+    "name": "Grovekeeper Cover",
+    "icon": "inv_helm_leather_raiddruidhyjalc60_d_01",
+    "displayId": 741847
+   },
+   {
+    "slot": "Shoulder",
+    "id": 280976,
+    "name": "Grovekeeper Pauldrons",
+    "icon": "inv_shoulder_leather_raiddruidhyjalc60_d_01",
+    "displayId": 741849
+   },
+   {
+    "slot": "Chest",
+    "id": 280974,
+    "name": "Grovekeeper Chestguard",
+    "icon": "inv_robe_leather_raiddruidhyjalc60_d_01",
+    "displayId": 741844
+   },
+   {
+    "slot": "Hands",
+    "id": 280965,
+    "name": "Grovekeeper Handguards",
+    "icon": "inv_glove_leather_raiddruidhyjalc60_d_01",
+    "displayId": 741846
+   },
+   {
+    "slot": "Legs",
+    "id": 280971,
+    "name": "Grovekeeper Legguards",
+    "icon": "inv_pant_leather_raiddruidhyjalc60_d_01",
+    "displayId": 741848
+   },
+   {
+    "slot": "Feet",
+    "id": 280967,
+    "name": "Grovekeeper Boots",
+    "icon": "inv_boot_leather_raiddruidhyjalc60_d_01",
+    "displayId": 741845
+   }
+  ]
+ },
+ {
+  "name": "Justice Armor",
+  "class": "paladin",
+  "role": "Holy",
+  "pieces": [
+   {
+    "slot": "Head",
+    "id": 280936,
+    "name": "Justice Headpiece",
+    "icon": "inv_helm_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741947
+   },
+   {
+    "slot": "Shoulder",
+    "id": 280935,
+    "name": "Justice Epaulets",
+    "icon": "inv_shoulder_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741949
+   },
+   {
+    "slot": "Chest",
+    "id": 280934,
+    "name": "Justice Tunic",
+    "icon": "inv_chest_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741943
+   },
+   {
+    "slot": "Hands",
+    "id": 280931,
+    "name": "Justice Gloves",
+    "icon": "inv_glove_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741945
+   },
+   {
+    "slot": "Legs",
+    "id": 280933,
+    "name": "Justice Legplates",
+    "icon": "inv_pant_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741948
+   },
+   {
+    "slot": "Feet",
+    "id": 280932,
+    "name": "Justice Treads",
+    "icon": "inv_boot_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741944
+   }
+  ]
+ },
+ {
+  "name": "Justice Battlegear",
+  "class": "paladin",
+  "role": "Retribution",
+  "pieces": [
+   {
+    "slot": "Head",
+    "id": 280930,
+    "name": "Justice Crown",
+    "icon": "inv_helm_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741947
+   },
+   {
+    "slot": "Shoulder",
+    "id": 280929,
+    "name": "Justice Spaulders",
+    "icon": "inv_shoulder_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741949
+   },
+   {
+    "slot": "Chest",
+    "id": 280928,
+    "name": "Justice Breastplate",
+    "icon": "inv_chest_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741943
+   },
+   {
+    "slot": "Hands",
+    "id": 280925,
+    "name": "Justice Gauntlets",
+    "icon": "inv_glove_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741945
+   },
+   {
+    "slot": "Legs",
+    "id": 280927,
+    "name": "Justice Leggings",
+    "icon": "inv_pant_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741948
+   },
+   {
+    "slot": "Feet",
+    "id": 280926,
+    "name": "Justice Greaves",
+    "icon": "inv_boot_plate_raidpaladinhyjalc60_d_01",
+    "displayId": 741944
+   }
+  ]
+ },
+ {
+  "name": "Manaflare Regalia",
+  "class": "mage",
+  "role": "All specs",
+  "pieces": [
+   {
+    "slot": "Head",
+    "id": 280455,
+    "name": "Manaflare Crown",
+    "icon": "inv_helm_cloth_raidmagehyjalc60_d_01",
+    "displayId": 741496
+   },
+   {
+    "slot": "Shoulder",
+    "id": 280454,
+    "name": "Manaflare Mantle",
+    "icon": "inv_shoulder_cloth_raidmagehyjalc60_d_01",
+    "displayId": 737689
+   },
+   {
+    "slot": "Chest",
+    "id": 280450,
+    "name": "Manaflare Robes",
+    "icon": "inv_chest_cloth_raidmagehyjalc60_d_01",
+    "displayId": 741498
+   },
+   {
+    "slot": "Hands",
+    "id": 280451,
+    "name": "Manaflare Gloves",
+    "icon": "inv_glove_cloth_raidmagehyjalc60_d_01",
+    "displayId": 737695
+   },
+   {
+    "slot": "Legs",
+    "id": 280453,
+    "name": "Manaflare Pants",
+    "icon": "inv_pant_cloth_raidmagehyjalc60_d_01",
+    "displayId": 741507
+   },
+   {
+    "slot": "Feet",
+    "id": 280452,
+    "name": "Manaflare Boots",
+    "icon": "inv_boot_cloth_raidmagehyjalc60_d_01",
+    "displayId": 744106
+   }
+  ]
+ },
+ {
+  "name": "Vestments of Conviction",
+  "class": "priest",
+  "role": "Discipline / Holy",
+  "pieces": [
+   {
+    "slot": "Head",
+    "id": 280918,
+    "name": "Halo of Conviction",
+    "icon": "inv_helm_cloth_raidpriesthyjalc60_d_01",
+    "displayId": 741793
+   },
+   {
+    "slot": "Shoulder",
+    "id": 280917,
+    "name": "Pauldrons of Conviction",
+    "icon": "inv_shoulder_r_cloth_raidpriesthyjalc60_d_01",
+    "displayId": 741790
+   },
+   {
+    "slot": "Chest",
+    "id": 280912,
+    "name": "Robes of Conviction",
+    "icon": "inv_robe_cloth_raidpriesthyjalc60_d_01",
+    "displayId": 741791
+   },
+   {
+    "slot": "Hands",
+    "id": 280913,
+    "name": "Handguards of Conviction",
+    "icon": "inv_glove_cloth_raidpriesthyjalc60_d_01",
+    "displayId": 741794
+   },
+   {
+    "slot": "Legs",
+    "id": 280915,
+    "name": "Leggings of Conviction",
+    "icon": "inv_pant_cloth_raidpriesthyjalc60_d_01",
+    "displayId": 741792
+   },
+   {
+    "slot": "Feet",
+    "id": 280914,
+    "name": "Boots of Conviction",
+    "icon": "inv_boot_cloth_raidpriesthyjalc60_d_01",
+    "displayId": 741795
+   }
+  ]
+ },
+ {
+  "name": "The Spiritcaller",
+  "class": "shaman",
+  "role": "Restoration",
+  "pieces": [
+   {
+    "slot": "Head",
+    "id": 280951,
+    "name": "Spiritcaller Helmet",
+    "icon": "inv_helm_mail_raidshamanhyjalc60_d_01",
+    "displayId": 741930
+   },
+   {
+    "slot": "Shoulder",
+    "id": 280944,
+    "name": "Spiritcaller Epaulets",
+    "icon": "inv_shoulder_mail_raidshamanhyjalc60_d_01",
+    "displayId": 741932
+   },
+   {
+    "slot": "Chest",
+    "id": 280950,
+    "name": "Spiritcaller Breastplate",
+    "icon": "inv_chest_mail_raidshamanhyjalc60_d_01",
+    "displayId": 742012
+   },
+   {
+    "slot": "Hands",
+    "id": 280949,
+    "name": "Spiritcaller Gauntlets",
+    "icon": "inv_glove_mail_raidshamanhyjalc60_d_01",
+    "displayId": 741929
+   },
+   {
+    "slot": "Legs",
+    "id": 280947,
+    "name": "Spiritcaller Pants",
+    "icon": "inv_pant_mail_raidshamanhyjalc60_d_01",
+    "displayId": 742008
+   },
+   {
+    "slot": "Feet",
+    "id": 280945,
+    "name": "Spiritcaller Greaves",
+    "icon": "inv_boot_mail_raidshamanhyjalc60_d_01",
+    "displayId": 741928
+   }
+  ]
+ },
+ {
+  "name": "Wildstalker Armor",
+  "class": "hunter",
+  "role": "All specs",
+  "pieces": [
+   {
+    "slot": "Head",
+    "id": 280898,
+    "name": "Wildstalker's Helm",
+    "icon": "inv_helm_mail_raidhunterhyjalc60_d_01",
+    "displayId": 741880
+   },
+   {
+    "slot": "Shoulder",
+    "id": 280897,
+    "name": "Wildstalker's Spaulders",
+    "icon": "inv_shoulder_l_mail_raidhunterhyjalc60_d_01",
+    "displayId": 741882
+   },
+   {
+    "slot": "Chest",
+    "id": 280896,
+    "name": "Wildstalker's Breastplate",
+    "icon": "inv_chest_mail_raidhunterhyjalc60_d_01",
+    "displayId": 741877
+   },
+   {
+    "slot": "Hands",
+    "id": 280893,
+    "name": "Wildstalker's Gauntlets",
+    "icon": "inv_glove_mail_raidhunterhyjalc60_d_01",
+    "displayId": 741879
+   },
+   {
+    "slot": "Legs",
+    "id": 280895,
+    "name": "Wildstalker's Legguards",
+    "icon": "inv_pant_mail_raidhunterhyjalc60_d_01",
+    "displayId": 741881
+   },
+   {
+    "slot": "Feet",
+    "id": 280894,
+    "name": "Wildstalker's Greaves",
+    "icon": "inv_boot_mail_raidhunterhyjalc60_d_01",
+    "displayId": 741878
+   }
+  ]
+ }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "tier": "T1",
+    "name": "Lawbringer Armor",
+    "setId": 208,
+    "class": "paladin",
+    "pieces": [
+      {"slot": "Head", "id": 16854, "name": "Lawbringer Helm", "icon": "inv_helmet_05", "displayId": 31506},
+      {"slot": "Shoulder", "id": 16856, "name": "Lawbringer Spaulders", "icon": "inv_shoulder_20", "displayId": 31510},
+      {"slot": "Chest", "id": 16853, "name": "Lawbringer Chestguard", "icon": "inv_chest_plate03", "displayId": 31505},
+      {"slot": "Wrist", "id": 16857, "name": "Lawbringer Bracers", "icon": "inv_bracer_18", "displayId": 31509},
+      {"slot": "Hands", "id": 16860, "name": "Lawbringer Gauntlets", "icon": "inv_gauntlets_29", "displayId": 31507},
+      {"slot": "Waist", "id": 16858, "name": "Lawbringer Belt", "icon": "inv_belt_27", "displayId": 31353},
+      {"slot": "Legs", "id": 16855, "name": "Lawbringer Legplates", "icon": "inv_pants_04", "displayId": 31352},
+      {"slot": "Feet", "id": 16859, "name": "Lawbringer Boots", "icon": "inv_boots_plate_09", "displayId": 31354}
+    ]
+  },
+  {
+    "tier": "T2",
+    "name": "Judgement Armor",
+    "setId": 217,
+    "class": "paladin",
+    "pieces": [
+      {"slot": "Head", "id": 16955, "name": "Judgement Crown", "icon": "inv_helmet_74", "displayId": 34216},
+      {"slot": "Shoulder", "id": 16953, "name": "Judgement Spaulders", "icon": "inv_shoulder_37", "displayId": 33680},
+      {"slot": "Chest", "id": 16958, "name": "Judgement Breastplate", "icon": "inv_chest_plate03", "displayId": 33635},
+      {"slot": "Wrist", "id": 16951, "name": "Judgement Bindings", "icon": "inv_bracer_18", "displayId": 33634},
+      {"slot": "Hands", "id": 16956, "name": "Judgement Gauntlets", "icon": "inv_gauntlets_29", "displayId": 33636},
+      {"slot": "Waist", "id": 16952, "name": "Judgement Belt", "icon": "inv_belt_27", "displayId": 33633},
+      {"slot": "Legs", "id": 16954, "name": "Judgement Legplates", "icon": "inv_pants_04", "displayId": 33637},
+      {"slot": "Feet", "id": 16957, "name": "Judgement Sabatons", "icon": "inv_boots_plate_09", "displayId": 33639}
+    ]
+  },
+  {
+    "tier": "T3",
+    "name": "Redemption Armor",
+    "setId": 528,
+    "class": "paladin",
+    "pieces": [
+      {"slot": "Head", "id": 22428, "name": "Redemption Headpiece", "icon": "inv_helmet_15", "displayId": 36972},
+      {"slot": "Shoulder", "id": 22429, "name": "Redemption Spaulders", "icon": "inv_shoulder_14", "displayId": 35617},
+      {"slot": "Chest", "id": 22425, "name": "Redemption Tunic", "icon": "inv_chest_chain_15", "displayId": 35618},
+      {"slot": "Wrist", "id": 22424, "name": "Redemption Wristguards", "icon": "inv_bracer_02", "displayId": 35619},
+      {"slot": "Hands", "id": 22426, "name": "Redemption Handguards", "icon": "inv_gauntlets_25", "displayId": 35615},
+      {"slot": "Waist", "id": 22431, "name": "Redemption Girdle", "icon": "inv_belt_22", "displayId": 35614},
+      {"slot": "Legs", "id": 22427, "name": "Redemption Legguards", "icon": "inv_pants_mail_15", "displayId": 35616},
+      {"slot": "Feet", "id": 22430, "name": "Redemption Boots", "icon": "inv_boots_chain_05", "displayId": 35613}
+    ]
+  },
+  {
+    "tier": "D1",
+    "name": "Lightforge Armor",
+    "setId": 188,
+    "class": "paladin",
+    "pieces": [
+      {"slot": "Head", "id": 16727, "name": "Lightforge Helm", "icon": "inv_helmet_08", "displayId": 31207},
+      {"slot": "Shoulder", "id": 16729, "name": "Lightforge Spaulders", "icon": "inv_shoulder_10", "displayId": 29971},
+      {"slot": "Chest", "id": 16726, "name": "Lightforge Breastplate", "icon": "inv_chest_plate03", "displayId": 29969},
+      {"slot": "Wrist", "id": 16722, "name": "Lightforge Bracers", "icon": "inv_bracer_14", "displayId": 29968},
+      {"slot": "Hands", "id": 16724, "name": "Lightforge Gauntlets", "icon": "inv_gauntlets_19", "displayId": 29970},
+      {"slot": "Waist", "id": 16723, "name": "Lightforge Belt", "icon": "inv_belt_11", "displayId": 29966},
+      {"slot": "Legs", "id": 16728, "name": "Lightforge Legplates", "icon": "inv_pants_04", "displayId": 29972},
+      {"slot": "Feet", "id": 16725, "name": "Lightforge Boots", "icon": "inv_boots_plate_03", "displayId": 29967}
+    ]
+  },
+  {
+    "tier": "D2",
+    "name": "Soulforge Armor",
+    "setId": 516,
+    "class": "paladin",
+    "pieces": [
+      {"slot": "Head", "id": 22091, "name": "Soulforge Helm", "icon": "inv_helmet_08", "displayId": 34524},
+      {"slot": "Shoulder", "id": 22093, "name": "Soulforge Spaulders", "icon": "inv_shoulder_10", "displayId": 34526},
+      {"slot": "Chest", "id": 22089, "name": "Soulforge Breastplate", "icon": "inv_chest_plate03", "displayId": 34519},
+      {"slot": "Wrist", "id": 22088, "name": "Soulforge Bracers", "icon": "inv_bracer_14", "displayId": 34522},
+      {"slot": "Hands", "id": 22090, "name": "Soulforge Gauntlets", "icon": "inv_gauntlets_19", "displayId": 34523},
+      {"slot": "Waist", "id": 22086, "name": "Soulforge Belt", "icon": "inv_belt_11", "displayId": 34520},
+      {"slot": "Legs", "id": 22092, "name": "Soulforge Legplates", "icon": "inv_pants_04", "displayId": 34525},
+      {"slot": "Feet", "id": 22087, "name": "Soulforge Boots", "icon": "inv_boots_plate_03", "displayId": 34521}
+    ]
+  }
+]

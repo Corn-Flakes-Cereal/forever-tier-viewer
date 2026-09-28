@@ -4,25 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hyjal Fitting Room</title>
-<meta name="description" content="Preview the WoW: Forever Season 1 (Hyjal) class tier sets on any race and gender, dressing-room style.">
+<meta name="description" content="Preview WoW: Forever tier sets — Hyjal Season 1 plus Classic Tier 1–3 and Dungeon sets — on any race and gender, dressing-room style.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
 <style>
   :root {
     color-scheme: dark;
-    --bg: #120f0b;
-    --bg-2: #1b1610;
-    --panel: #221c14;
-    --panel-2: #2b2419;
-    --line: #3a3124;
-    --text: #efe6d3;
-    --muted: #a3967d;
-    --gold: #d9a934;
-    --gold-2: #f2cd6a;
-    --ember: #c2552b;
-    --moss: #5f9a6a;
-    --alliance: #4f7fd6;
-    --horde: #c0392b;
+    --bg: #120f0b; --bg-2: #1b1610; --panel: #221c14; --panel-2: #2b2419; --line: #3a3124;
+    --text: #efe6d3; --muted: #a3967d; --gold: #d9a934; --gold-2: #f2cd6a; --ember: #c2552b; --moss: #5f9a6a;
+    --alliance: #4f7fd6; --horde: #c0392b; --epic: #a335ee; --rare: #0070dd;
     --radius: 6px;
     --font-display: "Cinzel", "Trajan Pro", Georgia, serif;
     --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
@@ -31,58 +21,33 @@
   * { box-sizing: border-box; }
   html, body { height: 100%; }
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font: 14px/1.5 var(--font-body);
-    background-image:
-      radial-gradient(1200px 600px at 80% -10%, rgba(217,169,52,.10), transparent 60%),
-      radial-gradient(900px 500px at -10% 110%, rgba(194,85,43,.10), transparent 60%);
+    margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 var(--font-body);
+    background-image: radial-gradient(1200px 600px at 80% -10%, rgba(217,169,52,.10), transparent 60%),
+                      radial-gradient(900px 500px at -10% 110%, rgba(194,85,43,.10), transparent 60%);
   }
   a { color: var(--gold-2); }
-
-  header {
-    display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap;
-    padding: 18px 20px 12px; border-bottom: 1px solid var(--line);
-  }
-  header h1 {
-    margin: 0; font: 700 22px/1.1 var(--font-display); letter-spacing: .04em; color: var(--gold-2);
-    text-wrap: balance;
-  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 18px 20px 12px; border-bottom: 1px solid var(--line); }
+  header h1 { margin: 0; font: 700 22px/1.1 var(--font-display); letter-spacing: .04em; color: var(--gold-2); text-wrap: balance; }
   header h1 small { display:block; font: 500 11px/1.4 var(--font-body); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
   .status { font-family: var(--font-mono); font-size: 12px; color: var(--muted); display:flex; gap:10px; align-items:center; }
   .status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); display:inline-block; }
-  .status.ok .dot { background: var(--moss); }
-  .status.err .dot { background: var(--ember); }
+  .status.ok .dot { background: var(--moss); } .status.err .dot { background: var(--ember); }
   .status.busy .dot { background: var(--gold); animation: pulse 1s infinite alternate; }
   @keyframes pulse { from { opacity:.4 } to { opacity:1 } }
 
-  main {
-    display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 0;
-    min-height: calc(100% - 70px);
-  }
+  main { display: grid; grid-template-columns: 340px minmax(0, 1fr); min-height: calc(100% - 70px); }
   @media (max-width: 860px) { main { grid-template-columns: 1fr; } }
-
-  aside {
-    border-right: 1px solid var(--line); background: var(--bg-2);
-    padding: 16px; display: flex; flex-direction: column; gap: 18px; overflow-y: auto;
-  }
+  aside { border-right: 1px solid var(--line); background: var(--bg-2); padding: 16px; display: flex; flex-direction: column; gap: 18px; overflow-y: auto; }
   @media (max-width: 860px) { aside { border-right: 0; border-bottom: 1px solid var(--line); order: 2; } }
 
-  .group h2 {
-    margin: 0 0 8px; font: 500 11px/1 var(--font-body); letter-spacing: .18em; text-transform: uppercase; color: var(--muted);
-    display:flex; justify-content: space-between; align-items: baseline;
-  }
+  .group h2 { margin: 0 0 8px; font: 500 11px/1 var(--font-body); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); display:flex; justify-content: space-between; align-items: baseline; }
   .group h2 span { letter-spacing: 0; text-transform: none; color: var(--gold); font-family: var(--font-mono); font-size: 11px; }
-
   .tiles { display: grid; gap: 6px; }
   .tiles.races { grid-template-columns: repeat(4, 1fr); }
   .tiles.classes { grid-template-columns: repeat(3, 1fr); }
-  .tile {
-    background: var(--panel); border: 1px solid var(--line); color: var(--text); border-radius: var(--radius);
-    padding: 8px 6px; font: 500 12px/1.2 var(--font-body); cursor: pointer; text-align: center;
-    position: relative; transition: border-color .12s, background .12s;
-  }
+  .tiles.tiers { grid-template-columns: repeat(3, 1fr); }
+  .tile { background: var(--panel); border: 1px solid var(--line); color: var(--text); border-radius: var(--radius); padding: 8px 6px; font: 500 12px/1.2 var(--font-body); cursor: pointer; text-align: center; position: relative; transition: border-color .12s, background .12s; }
+  .tile small { display:block; font-size: 10px; color: var(--muted); font-weight: 400; }
   .tile:hover { border-color: var(--gold); }
   .tile:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 1px; }
   .tile[aria-pressed="true"] { background: var(--panel-2); border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold); color: var(--gold-2); }
@@ -90,59 +55,68 @@
   .tile .fac.a { background: var(--alliance); } .tile .fac.h { background: var(--horde); }
   .tile.cls { color: var(--c, var(--text)); }
   .tile.cls[aria-pressed="true"] { color: var(--c); border-color: var(--c); box-shadow: inset 0 0 0 1px var(--c); }
-
   .seg { display: inline-flex; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
   .seg button { background: var(--panel); color: var(--muted); border: 0; padding: 6px 12px; cursor: pointer; font: 500 12px var(--font-body); }
   .seg button[aria-pressed="true"] { background: var(--panel-2); color: var(--gold-2); }
   .seg button + button { border-left: 1px solid var(--line); }
   .row { display:flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-
-  select {
-    width: 100%; background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius);
-    padding: 7px 8px; font: 500 13px var(--font-body);
-  }
-
-  .pieces { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-  .piece {
-    display:flex; align-items:center; gap: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
-    padding: 6px 8px; cursor: pointer; font-size: 12px;
-  }
-  .piece input { accent-color: var(--gold); margin: 0; }
-  .piece .did { margin-left:auto; font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
-
-  .bonus { font-size: 12px; color: var(--muted); display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; }
+  select { width: 100%; background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); padding: 7px 8px; font: 500 13px var(--font-body); }
+  .bonus { font-size: 12px; color: var(--muted); display: grid; gap: 4px; margin: 8px 0 0; padding: 0; list-style: none; }
   .bonus b { color: var(--gold); font-family: var(--font-mono); font-weight: 400; margin-right: 6px; }
-
+  .hint { font-size: 12px; color: var(--muted); margin: 6px 0 0; }
+  .hint a { color: var(--gold-2); }
   .appearance { display: grid; gap: 6px; }
   .opt { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 4px 4px 10px; font-size: 12px; }
   .opt .ctl { display:flex; align-items:center; gap: 4px; }
   .opt .ctl button { width: 26px; height: 26px; border-radius: 4px; border: 1px solid var(--line); background: var(--panel-2); color: var(--text); cursor: pointer; }
   .opt .ctl output { min-width: 44px; text-align: center; font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
 
+  /* Stage */
   .stage { position: sticky; top: 0; display: flex; flex-direction: column; height: calc(100vh - 70px); min-height: 480px; overflow: hidden; --stage-bg: #1a150f; background: var(--stage-bg); }
-  @media (max-width: 860px) { .stage { position: relative; height: 70vh; order: 1; } }
+  @media (max-width: 860px) { .stage { position: relative; height: 72vh; order: 1; } }
   #viewer { flex: 1; min-height: 0; width: 100%; position: relative; cursor: grab; touch-action: none; user-select: none; }
   #viewer:active { cursor: grabbing; }
   #viewer canvas { display: block; max-width: 100%; filter: brightness(var(--bright, 1.1)) contrast(1.02); }
   .stage.bg-stone { --stage-bg: #4a4540; }
   .stage.bg-light { --stage-bg: #d9d2c4; }
   .stage.bg-light .caption .set { color: #6b4e0c; } .stage.bg-light .caption .who { color: #4a4238; }
-  .stage .toolbar {
-    position: absolute; left: 16px; right: 16px; bottom: 14px; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; pointer-events: none;
-  }
+  .caption { position:absolute; left: 50%; transform: translateX(-50%); top: 12px; pointer-events:none; text-align: center; max-width: 60%; }
+  .caption .set { font: 700 18px/1.1 var(--font-display); color: var(--gold-2); letter-spacing: .03em; text-wrap: balance; }
+  .caption .who { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+  /* Paperdoll slots */
+  .doll { position: absolute; top: 64px; bottom: 64px; display: flex; flex-direction: column; justify-content: center; gap: 8px; pointer-events: none; }
+  .doll.left { left: 14px; } .doll.right { right: 14px; align-items: flex-end; }
+  .slot { pointer-events: auto; display: flex; align-items: center; gap: 8px; background: rgba(34,28,20,.85); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px; cursor: pointer; max-width: 230px; transition: border-color .12s, opacity .12s; }
+  .doll.right .slot { flex-direction: row-reverse; text-align: right; }
+  .slot:hover { border-color: var(--gold); }
+  .slot:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 1px; }
+  .slot .ico { width: 44px; height: 44px; border-radius: 4px; border: 1px solid #000; background: #0a0806 center/cover no-repeat; flex: none; box-shadow: inset 0 0 0 1px var(--epic); position: relative; }
+  .slot .ico.rare { box-shadow: inset 0 0 0 1px var(--rare); }
+  .slot .ico::after { content: ''; position: absolute; inset: 0; border-radius: 4px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.08); }
+  .slot .txt { display: flex; flex-direction: column; min-width: 0; line-height: 1.2; }
+  .slot .txt .nm { font-size: 12px; font-weight: 600; color: var(--epic); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 170px; }
+  .slot .txt .nm.rare { color: var(--rare); }
+  .slot .txt .nm a { color: inherit; text-decoration: none; }
+  .slot .txt .sl { font-size: 10px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
+  .slot.off { opacity: .45; }
+  .slot.off .ico { filter: grayscale(1); box-shadow: inset 0 0 0 1px var(--line); }
+  .slot.off .txt .nm { color: var(--muted); text-decoration: line-through; }
+  .slot.empty { opacity: .35; cursor: default; }
+  .slot.empty .ico { box-shadow: inset 0 0 0 1px var(--line); background: repeating-linear-gradient(45deg, #15110c 0 6px, #1d1812 6px 12px); }
+  .stage.bg-light .slot { background: rgba(255,250,240,.9); border-color: #b8ad98; }
+  .stage.bg-light .slot .txt .sl { color: #6b6152; }
+  @media (max-width: 1100px) { .slot .txt { display: none; } .slot { padding: 3px; } .slot .ico { width: 40px; height: 40px; } }
+  @media (max-width: 860px) { .doll { top: 56px; bottom: 60px; gap: 5px; } .slot .ico { width: 34px; height: 34px; } }
+
+  .stage .toolbar { position: absolute; left: 16px; right: 16px; bottom: 14px; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; pointer-events: none; }
   .stage .toolbar > * { pointer-events: auto; }
   .btn { background: var(--panel); border: 1px solid var(--line); color: var(--text); border-radius: var(--radius); padding: 7px 12px; cursor: pointer; font: 500 12px var(--font-body); }
   .btn:hover { border-color: var(--gold); }
   .btn[aria-pressed="true"] { color: var(--gold-2); border-color: var(--gold); }
   .slider { display: flex; align-items: center; gap: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 10px; font-size: 12px; color: var(--muted); }
   .slider input[type=range] { width: 110px; accent-color: var(--gold); }
-  .caption { position:absolute; left: 16px; top: 14px; pointer-events:none; }
-  .caption .set { font: 700 18px/1.1 var(--font-display); color: var(--gold-2); letter-spacing: .03em; }
-  .caption .who { font-size: 12px; color: var(--muted); margin-top: 3px; }
-  .notice {
-    position:absolute; inset: 0; display:flex; align-items:center; justify-content:center; padding: 24px; text-align:center;
-    color: var(--muted); font-size: 13px; background: rgba(18,15,11,.6);
-  }
+  .notice { position:absolute; inset: 0; display:flex; align-items:center; justify-content:center; padding: 24px; text-align:center; color: var(--muted); font-size: 13px; background: rgba(18,15,11,.6); }
   .notice[hidden] { display: none; }
   .notice code { font-family: var(--font-mono); color: var(--gold-2); }
   footer { padding: 10px 20px 16px; border-top: 1px solid var(--line); font-size: 11px; color: var(--muted); display:flex; gap: 14px; flex-wrap: wrap; }
@@ -152,7 +126,7 @@
 <body>
 
 <header>
-  <h1>Hyjal Fitting Room <small>WoW: Forever · Season 1 tier sets · Hyjal Summit &amp; Barrow Deeps</small></h1>
+  <h1>Hyjal Fitting Room <small>WoW: Forever · tier sets on any character · Hyjal Season 1 + Classic Tier 1–3 &amp; Dungeon sets</small></h1>
   <div class="status" id="status"><span class="dot"></span><span id="statusText">Loading viewer…</span></div>
 </header>
 
@@ -179,14 +153,15 @@
     </div>
 
     <div class="group">
-      <h2>Set <span id="setArmor"></span></h2>
-      <select id="setSelect" aria-label="Tier set variant"></select>
-      <ul class="bonus" id="bonus" style="margin-top:8px"></ul>
+      <h2>Tier</h2>
+      <div class="tiles tiers" id="tiers"></div>
     </div>
 
     <div class="group">
-      <h2>Pieces <span id="pieceCount"></span></h2>
-      <div class="pieces" id="pieces"></div>
+      <h2>Set <span id="setArmor"></span></h2>
+      <select id="setSelect" aria-label="Set variant"></select>
+      <ul class="bonus" id="bonus"></ul>
+      <p class="hint" id="setHint"></p>
     </div>
 
     <div class="group">
@@ -198,12 +173,14 @@
   <section class="stage" id="stage">
     <div id="viewer"></div>
     <div class="caption"><div class="set" id="capSet"></div><div class="who" id="capWho"></div></div>
+    <div class="doll left" id="dollLeft"></div>
+    <div class="doll right" id="dollRight"></div>
     <div class="toolbar">
       <div class="row">
         <button class="btn" id="btnStand" type="button">Stand</button>
         <button class="btn" id="btnWalk" type="button">Walk</button>
         <button class="btn" id="btnAttack" type="button">Attack</button>
-        <button class="btn" id="btnNude" type="button">Undress</button>
+        <button class="btn" id="btnNude" type="button">Unequip all</button>
         <button class="btn" id="btnRandom" type="button">Random look</button>
       </div>
       <div class="row">
@@ -225,7 +202,7 @@
 
 <footer>
   <span>Models and item data © Blizzard Entertainment, served by Wowhead's model viewer (<code>classicplus</code> env). Fan project, not affiliated.</span>
-  <span>Drag to rotate · wheel to zoom · Set bonuses are datamined beta values and may change.</span>
+  <span>Drag to rotate · wheel to zoom · click a gear slot to unequip it · Hyjal set bonuses are datamined beta values and may change.</span>
 </footer>
 
 <!-- Wowhead / ZAM model viewer requires jQuery and a few WH globals -->
@@ -243,109 +220,62 @@
     INVENTORY_TYPE_TWO_HAND:17, INVENTORY_TYPE_BAG:18, INVENTORY_TYPE_TABARD:19, INVENTORY_TYPE_ROBE:20, INVENTORY_TYPE_MAIN_HAND:21,
     INVENTORY_TYPE_OFF_HAND:22, INVENTORY_TYPE_HELD_IN_OFF_HAND:23, INVENTORY_TYPE_PROJECTILE:24, INVENTORY_TYPE_THROWN:25,
     INVENTORY_TYPE_RANGED_RIGHT:26, INVENTORY_TYPE_QUIVER:27, INVENTORY_TYPE_RELIC:28 };
+  // Wowhead item tooltips on the gear-slot links
+  const whTooltips = { colorLinks: false, iconizeLinks: false, renameLinks: false };
 </script>
 <script src="https://wow.zamimg.com/modelviewer/classicplus/viewer/viewer.min.js"></script>
+<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+<script src="data.js"></script>
 
 <script>
-/* ---------------- Data ---------------- */
-// Race ids follow ChrRaces; model id = race*2-1+gender.
+/* ---------------- Static tables ---------------- */
 const RACES = [
-  { id:1, name:'Human',     fac:'a' }, { id:3, name:'Dwarf',  fac:'a' }, { id:4, name:'Night Elf', fac:'a' }, { id:7, name:'Gnome', fac:'a' },
-  { id:2, name:'Orc',       fac:'h' }, { id:5, name:'Undead', fac:'h' }, { id:6, name:'Tauren',    fac:'h' }, { id:8, name:'Troll', fac:'h' },
+  { id:1, name:'Human', fac:'a' }, { id:3, name:'Dwarf', fac:'a' }, { id:4, name:'Night Elf', fac:'a' }, { id:7, name:'Gnome', fac:'a' },
+  { id:2, name:'Orc', fac:'h' }, { id:5, name:'Undead', fac:'h' }, { id:6, name:'Tauren', fac:'h' }, { id:8, name:'Troll', fac:'h' },
 ];
-// Slots: 1 head, 3 shoulder, 5 chest / 20 robe, 10 hands, 7 legs, 8 feet.
-// Display IDs come from Wowhead's Forever DB (item=...&xml). Role variants of a set share the same appearance.
 const CLASSES = [
-  { key:'warrior', name:'Warrior', color:'#C69B6D', armor:'Plate',
-    display:{ head:741983, shoulder:741985, chest:741980, hands:741988, legs:741984, feet:741981 }, chestSlot:5,
-    sets:[
-      { name:'Battlegear of Glory', role:'Arms / Fury', bonus:['Increases your attack speed and casting speed by 1%.','Reduces the cooldown on your Intimidating Shout ability by 30 sec.','+36 Attack Power against Humanoids.','Reduces the cooldown on your Recklessness ability by 30 sec.'] },
-      { name:'Battleplate of Glory', role:'Protection', bonus:['Increased Defense +7.','Reduces the cooldown on your Intervene ability by 10 sec.','Reduces the chance for your melee attacks to be Dodged or Parried by 1.2%.','Reduces the cooldown on your Shield Wall ability by 30 sec.'] },
-    ]},
-  { key:'paladin', name:'Paladin', color:'#F48CBA', armor:'Plate',
-    display:{ head:741947, shoulder:741949, chest:741943, hands:741945, legs:741948, feet:741944 }, chestSlot:5,
-    sets:[
-      { name:'Justice Battlegear', role:'Retribution', bonus:['Increases your attack speed and casting speed by 1%.','Reduces the cooldown on your Hammer of Justice spell by 5 sec.','+36 Attack Power against Undead.','Reduces the cooldown on your Judgement spell by 0.5 sec.'] },
-      { name:'Justice Armor', role:'Holy', bonus:['Increased Spirit +10.','Reduces the cooldown on your Blessing of Protection spell by 30 sec.','Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects.','Reduces the cooldown on your Holy Shock spell by 1 sec.'] },
-      { name:'Justice Battleplate', role:'Protection', bonus:['Increased Defense +7.','Reduces the cast time on your Turn Undead spell by 1.5 sec.','Reduces the chance for your melee attacks to be Dodged or Parried by 1.2%.','Reduces the duration of Forbearance any time you gain it by 10.0 sec.'] },
-    ]},
-  { key:'hunter', name:'Hunter', color:'#AAD372', armor:'Mail',
-    display:{ head:741880, shoulder:741882, chest:741877, hands:741879, legs:741881, feet:741878 }, chestSlot:5,
-    sets:[
-      { name:'Wildstalker Armor', role:'All specs', bonus:['Increases your attack speed and casting speed by 1%.','Reduces the cooldown on your Frost Trap and Freezing Trap abilities by 3 sec.','+36 Attack Power against Beasts.','Reduces the cooldown on your Aimed Shot and Multi-Shot abilities by 1 sec.'] },
-    ]},
-  { key:'rogue', name:'Rogue', color:'#FFF468', armor:'Leather',
-    display:{ head:741823, shoulder:741825, chest:741820, hands:741822, legs:741824, feet:741821 }, chestSlot:5,
-    sets:[
-      { name:'Grimstitch Armor', role:'All specs', bonus:['Improves your chance to hit by 1.0%.','Reduces the cooldown on your Kidney Shot ability by 3 sec.','+36 Attack Power against Humanoids.','Reduces the cost of your Envenom and Eviscerate abilities by 5 Energy.'] },
-    ]},
-  { key:'priest', name:'Priest', color:'#FFFFFF', armor:'Cloth',
-    display:{ head:741793, shoulder:741790, chest:741791, hands:741794, legs:741792, feet:741795 }, chestSlot:20,
-    sets:[
-      { name:'Vestments of Conviction', role:'Discipline / Holy', bonus:['Increased Spirit +10.','Reduces the cooldown on your Fear Ward spell by 60 sec.','Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects.','Reduces the cooldown on your Penance and Prayer of Mending spells by 1 sec.'] },
-      { name:'Raiments of Conviction', role:'Shadow', bonus:['Improves your chance to hit by 1.0%.','Increases the duration of your Shackle Undead spell by 10 sec.','Increases damage done by your spells and effects by up to 21 when fighting Undead.','Reduces the cooldown on your Devouring Plague spell by 60 sec.'] },
-    ]},
-  { key:'shaman', name:'Shaman', color:'#0070DD', armor:'Mail',
-    display:{ head:741930, shoulder:741932, chest:742012, hands:741929, legs:742008, feet:741928 }, chestSlot:5,
-    sets:[
-      { name:"The Spiritcaller", role:'Restoration', bonus:['Increased Spirit +10.','Increases the radius of effect of your beneficial Fire and Water totems by 10 yards.','Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects.','Reduces the cooldown on your Riptide spell by 1 sec.'] },
-      { name:"The Spiritcaller's Storm", role:'Elemental', bonus:['Improves your chance to hit by 1.0%.','Reduces the cooldown on your Earthbind Totem spell by 2 sec.','Increases damage done by your spells and effects by up to 21 when fighting Elementals.','Reduces the cooldown on your Lava Burst spell by 1 sec.'] },
-      { name:"The Spiritcaller's Rage", role:'Enhancement', bonus:['Increases your attack speed and casting speed by 1%.','Increases the radius of effect of your beneficial Air and Earth totems by 10 yards.','+36 Attack Power against Elementals.','Reduces the cooldown on your Stormstrike ability by 0.5 sec.'] },
-    ]},
-  { key:'mage', name:'Mage', color:'#3FC7EB', armor:'Cloth',
-    display:{ head:741496, shoulder:737689, chest:741498, hands:737695, legs:741507, feet:744106 }, chestSlot:20,
-    sets:[
-      { name:'Manaflare Regalia', role:'All specs', bonus:['Improves your chance to hit by 1.0%.','Reduces the cooldown on your Counterspell spell by 5 sec.','Increases damage done by your spells and effects by up to 21 when fighting Elementals.','Your Frostfire Bolt has a 10% increased chance to trigger Missile Barrage, gains 10% crit while Combustion is active, and has a 10% increased chance to trigger Fingers of Frost.'] },
-    ]},
-  { key:'warlock', name:'Warlock', color:'#8788EE', armor:'Cloth',
-    display:{ head:741535, shoulder:741543, chest:741537, hands:741534, legs:741536, feet:741533 }, chestSlot:20,
-    sets:[
-      { name:'Demonheart Raiment', role:'All specs', bonus:['Improves your chance to hit by 1.0%.','Reduces the cast time of your Banish spell by 1.5 sec.','Increases damage done by your spells and effects by up to 21 when fighting Demons.','Your Life Tap generates 20% more Mana at no additional Health cost.'] },
-    ]},
-  { key:'druid', name:'Druid', color:'#FF7C0A', armor:'Leather',
-    display:{ head:741847, shoulder:741849, chest:741844, hands:741846, legs:741848, feet:741845 }, chestSlot:5,
-    sets:[
-      { name:'Grovekeeper Raiment', role:'Restoration', bonus:['Increased Spirit +10.','Reduces the cooldown on your Barkskin spell by 10 sec.','Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects.','Reduces the cooldown on your Swiftmend spell by 3.0 sec.'] },
-      { name:'Grovekeeper Eclipse', role:'Balance', bonus:['Improves your chance to hit by 1.0%.',"Reduces the cooldown on your Nature's Grasp spell by 15 sec.",'Increases damage done by your spells and effects by up to 21 when fighting Demons.','Increases the duration of your Insect Swarm spell by 3 sec.'] },
-      { name:'Grovekeeper Ferocity', role:'Feral (Cat)', bonus:['Increases your attack speed and casting speed by 1%.','Your Hibernate spell is castable in Cat Form with 1.5 sec less cast time, but gains a 15 sec cooldown.','+36 Attack Power against Demons.',"Reduces the cooldown on your Tiger's Fury ability by 3.0 sec."] },
-      { name:'Grovekeeper Rage', role:'Feral (Bear)', bonus:['Increased Defense +7.','Your Rebirth spell is castable in Bear Form and Dire Bear Form with 2.0 sec less cast time.','Reduces the chance for your melee attacks to be Dodged or Parried by 1.2%.','Reduces the cooldown on your Berserk ability by 15.0 sec.'] },
-    ]},
+  { key:'warrior', name:'Warrior', color:'#C69B6D', armor:'Plate' }, { key:'paladin', name:'Paladin', color:'#F48CBA', armor:'Plate' },
+  { key:'hunter', name:'Hunter', color:'#AAD372', armor:'Mail' }, { key:'rogue', name:'Rogue', color:'#FFF468', armor:'Leather' },
+  { key:'priest', name:'Priest', color:'#FFFFFF', armor:'Cloth' }, { key:'shaman', name:'Shaman', color:'#0070DD', armor:'Mail' },
+  { key:'mage', name:'Mage', color:'#3FC7EB', armor:'Cloth' }, { key:'warlock', name:'Warlock', color:'#8788EE', armor:'Cloth' },
+  { key:'druid', name:'Druid', color:'#FF7C0A', armor:'Leather' },
 ];
-const SLOTS = [
-  { key:'head', label:'Head', slot:1 }, { key:'shoulder', label:'Shoulders', slot:3 }, { key:'chest', label:'Chest', slot:5 },
-  { key:'hands', label:'Hands', slot:10 }, { key:'legs', label:'Legs', slot:7 }, { key:'feet', label:'Feet', slot:8 },
+const TIERS = [
+  { key:'S1', name:'Hyjal', sub:'Forever S1', db:'forever' },
+  { key:'T3', name:'Tier 3', sub:'Naxxramas', db:'classic' },
+  { key:'T2', name:'Tier 2', sub:'Blackwing Lair', db:'classic' },
+  { key:'T1', name:'Tier 1', sub:'Molten Core', db:'classic' },
+  { key:'D2', name:'Dungeon 2', sub:'Upgraded', db:'classic' },
+  { key:'D1', name:'Dungeon 1', sub:'Pre-raid', db:'classic' },
 ];
+// Paperdoll layout: viewer inventory-type ids; left column then right column, like the in-game character sheet.
+const SLOTS_LEFT  = [ { key:'Head', slot:1 }, { key:'Shoulder', slot:3 }, { key:'Chest', slot:5 }, { key:'Wrist', slot:9 } ];
+const SLOTS_RIGHT = [ { key:'Hands', slot:10 }, { key:'Waist', slot:6 }, { key:'Legs', slot:7 }, { key:'Feet', slot:8 } ];
+const SLOTS = [...SLOTS_LEFT, ...SLOTS_RIGHT];
 const ALL_ARMOR_SLOTS = '1,3,4,5,6,7,8,9,10,16,19,20';
+const SETS = window.SETS || [];
 
 /* ---------------- State ---------------- */
 const state = {
   race: 1, gender: 0, hd: 1,
-  cls: 'warrior', set: 0,
-  enabled: { head:true, shoulder:true, chest:true, hands:true, legs:true, feet:true },
-  custom: null,           // charactercustomization JSON for current race/gender
-  choice: {},             // optionId -> choice index
+  cls: 'warrior', tier: 'S1', setName: null,
+  equipped: {},           // slot key -> bool
+  custom: null, choice: {},
 };
-let viewer = null;
-let building = false;
-let rebuildQueued = false;
-const chestSlotCache = {};   // displayId -> 5 | 20
+let viewer = null, building = false, rebuildQueued = false;
 
-/* Wowhead's model server does not allow other websites to read it directly (no CORS headers),
-   so the page tries a direct connection first and then falls back to public relays.
-   To use your own relay (e.g. a Cloudflare Worker that forwards to wow.zamimg.com), put its URL first. */
+/* ---------------- Relay / data paths ---------------- */
 const ZAM = 'https://wow.zamimg.com/modelviewer/classicplus/';
-// Each entry is a base URL that serves the same files as ZAM. The relay (relay/worker.js) maps its root to ZAM.
+// Each entry is a base URL serving the same files as ZAM. The relay (relay/) maps its root to ZAM and adds CORS headers.
 const RELAYS = [
-  'https://relay-production-df48.up.railway.app/',  // Railway relay (project hyjal-relay, service relay)
-  ZAM,                                               // direct (currently blocked by Wowhead's CORS policy)
+  'https://relay-production-df48.up.railway.app/',
+  ZAM,
 ];
 let resolvedBase = null;
 async function resolveBase() {
   if (resolvedBase) return resolvedBase;
-  const probe = `meta/charactercustomization/${modelId()}.json`;
-  const errors = [];
+  const probe = `meta/charactercustomization/${modelId()}.json`; const errors = [];
   for (const base of RELAYS) {
-    if (base.includes('RELAY-URL-GOES-HERE')) { errors.push('relay not configured'); continue; }
     try {
       const r = await fetch(base + probe, { cache: 'force-cache' });
       if (r.ok) { const j = await r.json(); if (j && (j.Options || (j.data && j.data.Options))) { resolvedBase = base; window.CONTENT_PATH = base; return base; } }
@@ -354,139 +284,103 @@ async function resolveBase() {
   }
   throw new Error('No route to the model server. Tried: ' + errors.join(' · '));
 }
+const chestSlotCache = {};   // displayId -> 5 | 20
+async function resolveChestSlot(displayId, hint) {
+  if (chestSlotCache[displayId]) return chestSlotCache[displayId];
+  const base = await resolveBase();
+  const order = hint === 20 ? [20, 5] : [5, 20];
+  for (const s of order) {
+    try { const r = await fetch(`${base}meta/armor/${s}/${displayId}.json`, { cache: 'force-cache' }); if (r.ok) { chestSlotCache[displayId] = s; return s; } } catch (e) {}
+  }
+  chestSlotCache[displayId] = order[0]; return order[0];
+}
 
 /* ---------------- Helpers ---------------- */
 const qs = (s) => document.querySelector(s);
-function setStatus(kind, text) {
-  const el = qs('#status'); el.className = 'status ' + kind; qs('#statusText').textContent = text;
-}
+function setStatus(kind, text) { const el = qs('#status'); el.className = 'status ' + kind; qs('#statusText').textContent = text; }
 function notice(html) { const n = qs('#notice'); if (!html) { n.hidden = true; n.innerHTML = ''; } else { n.hidden = false; n.innerHTML = html; } }
 function cls() { return CLASSES.find(c => c.key === state.cls); }
 function race() { return RACES.find(r => r.id === state.race); }
+function tier() { return TIERS.find(t => t.key === state.tier); }
 function modelId() { return state.race * 2 - 1 + state.gender; }
-
-async function resolveChestSlot(c) {
-  const id = c.display.chest;
-  if (chestSlotCache[id]) return chestSlotCache[id];
-  const order = c.chestSlot === 20 ? [20, 5] : [5, 20];
-  const base = await resolveBase();
-  for (const s of order) {
-    try {
-      const r = await fetch(`${base}meta/armor/${s}/${id}.json`, { cache: 'force-cache' });
-      if (r.ok) { chestSlotCache[id] = s; return s; }
-    } catch (e) { /* CORS or network; fall through to the configured slot */ }
-  }
-  chestSlotCache[id] = c.chestSlot; return c.chestSlot;
-}
+function setsFor(tierKey, clsKey) { return SETS.filter(s => s.tier === tierKey && s.class === clsKey); }
+function currentSet() { const list = setsFor(state.tier, state.cls); return list.find(s => s.name === state.setName) || list[0] || null; }
+function pieceFor(set, slotKey) { return set ? set.pieces.find(p => p.slot === slotKey) : null; }
+function iconUrl(icon) { return `https://wow.zamimg.com/images/wow/icons/large/${icon}.jpg`; }
+function itemUrl(set, p) { return p.id ? `https://www.wowhead.com/${set.db === 'forever' ? 'forever' : 'classic'}/item=${p.id}` : null; }
+function escapeHtml(s) { return String(s).replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch])); }
+function resetEquipped() { const set = currentSet(); state.equipped = {}; for (const s of SLOTS) state.equipped[s.key] = !!pieceFor(set, s.key); }
 
 async function currentItems() {
-  const c = cls(); const chestSlot = await resolveChestSlot(c);
+  const set = currentSet(); if (!set) return [];
   const out = [];
   for (const s of SLOTS) {
-    if (!state.enabled[s.key]) continue;
-    const slot = s.key === 'chest' ? chestSlot : s.slot;
-    out.push([slot, c.display[s.key]]);
+    const p = pieceFor(set, s.key); if (!p || !state.equipped[s.key]) continue;
+    let slot = s.slot;
+    if (s.key === 'Chest') slot = await resolveChestSlot(p.displayId, /robe/i.test(p.icon || '') ? 20 : 5);
+    out.push([slot, p.displayId]);
   }
   return out;
 }
-
 function characterOptions() {
   if (!state.custom || !state.custom.Options) return [];
-  return state.custom.Options.map(opt => {
-    const idx = Math.min(state.choice[opt.Id] ?? 0, opt.Choices.length - 1);
-    return { optionId: opt.Id, choiceId: opt.Choices[idx].Id };
-  });
+  return state.custom.Options.map(opt => { const idx = Math.min(state.choice[opt.Id] ?? 0, opt.Choices.length - 1); return { optionId: opt.Id, choiceId: opt.Choices[idx].Id }; });
 }
-
 async function loadCustomization() {
-  const id = modelId();
   const base = await resolveBase();
-  const r = await fetch(`${base}meta/charactercustomization/${id}.json`, { cache: 'force-cache' });
-  if (!r.ok) throw new Error(`No customization data for model ${id} (HTTP ${r.status})`);
-  const json = await r.json();
-  state.custom = json.data || json;
-  // keep previous choices where they still fit; otherwise reset
-  const keep = {};
-  for (const opt of state.custom.Options) keep[opt.Id] = Math.min(state.choice[opt.Id] ?? 0, opt.Choices.length - 1);
-  state.choice = keep;
+  const r = await fetch(`${base}meta/charactercustomization/${modelId()}.json`, { cache: 'force-cache' });
+  if (!r.ok) throw new Error(`No customization data for model ${modelId()} (HTTP ${r.status})`);
+  const json = await r.json(); state.custom = json.data || json;
+  const keep = {}; for (const opt of state.custom.Options) keep[opt.Id] = Math.min(state.choice[opt.Id] ?? 0, opt.Choices.length - 1); state.choice = keep;
 }
 
 /* ---------------- Viewer lifecycle ---------------- */
 async function build() {
   if (building) { rebuildQueued = true; return; }
   building = true;
-  setStatus('busy', `Loading ${race().name} ${state.gender ? 'female' : 'male'}…`);
-  notice('');
+  setStatus('busy', `Loading ${race().name} ${state.gender ? 'female' : 'male'}…`); notice('');
   try {
-    if (typeof ZamModelViewer === 'undefined') {
-      throw new Error('The model viewer script did not load. If you opened this file directly from disk, serve it over http(s) (e.g. GitHub Pages) instead.');
-    }
+    if (typeof ZamModelViewer === 'undefined') throw new Error('The model viewer script did not load. Serve this page over http(s) with internet access.');
     const base = await resolveBase();
     await loadCustomization();
     const items = await currentItems();
     destroy();
     const $c = jQuery('#viewer');
-    const cw = Math.max(1, $c.width()), ch = Math.max(1, $c.height());
-    const aspect = cw / ch;
+    const aspect = Math.max(1, $c.width()) / Math.max(1, $c.height());
     viewer = new ZamModelViewer({
-      type: 2,
-      contentPath: base,
-      container: $c,
-      aspect: aspect,
-      hd: !!state.hd,
+      type: 2, contentPath: base, container: $c, aspect, hd: !!state.hd,
       dataEnv: 'classicplus', env: 'classicplus', gameDataEnv: 'classicplus',
-      models: { id: modelId(), type: 16 },
-      items: items,
+      models: { id: modelId(), type: 16 }, items,
       charCustomization: { options: characterOptions() },
     });
     renderAppearance();
-    applyCamera();
-    fitViewer();
-    const via = base === ZAM ? 'direct' : 'via relay';
-    setStatus('ok', `${race().name} · ${cls().sets[state.set].name} · ${via}`);
+    requestAnimationFrame(applyCamera);
+    statusOk();
   } catch (e) {
-    console.error(e);
-    setStatus('err', 'Viewer failed');
+    console.error(e); setStatus('err', 'Viewer failed');
     notice(`<div><p><strong>Could not load the model.</strong></p><p style="font-family:var(--font-mono);font-size:12px">${escapeHtml(e.message || String(e))}</p>
-      <p>The viewer streams models from <code>wow.zamimg.com</code>, which blocks direct cross-site reads, so the page needs a working relay. Copy the message above to the person maintaining this page.</p></div>`);
-  } finally {
-    building = false;
-    if (rebuildQueued) { rebuildQueued = false; build(); }
-  }
+      <p>The viewer streams models from <code>wow.zamimg.com</code> through a relay; if this persists, the relay may be down.</p></div>`);
+  } finally { building = false; if (rebuildQueued) { rebuildQueued = false; build(); } }
 }
-function destroy() {
-  if (viewer) {
-    try { viewer.destroy && viewer.destroy(); } catch (e) {}
-    viewer = null;
-  }
-  qs('#viewer').innerHTML = '';
-}
+function statusOk() { const set = currentSet(); setStatus('ok', `${race().name} · ${set ? set.name : 'no set'}`); }
+function destroy() { if (viewer) { try { viewer.destroy && viewer.destroy(); } catch (e) {} viewer = null; } qs('#viewer').innerHTML = ''; }
 async function applyItems() {
   if (!viewer) return build();
   try {
     viewer.method('clearSlots', ALL_ARMOR_SLOTS);
     const items = await currentItems();
     if (items.length) viewer.method('setItems', [items.map(([slot, display]) => ({ slot, display, visual: 0 }))]);
-    setStatus('ok', `${race().name} · ${cls().sets[state.set].name}`);
+    statusOk();
   } catch (e) { console.error(e); build(); }
 }
-function applyAppearance() {
-  if (!viewer) return;
-  try { viewer.method('setAppearance', { race: state.race, gender: state.gender, options: characterOptions() }); }
-  catch (e) { console.error(e); build(); }
-}
-function setAnimation(name) {
-  if (!viewer) return;
-  try { viewer.renderer.actors[0].setAnimation(name); } catch (e) { try { viewer.method('setAnimation', name); } catch (e2) {} }
-}
-function escapeHtml(s) { return s.replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch])); }
+function applyAppearance() { if (!viewer) return; try { viewer.method('setAppearance', { race: state.race, gender: state.gender, options: characterOptions() }); } catch (e) { console.error(e); build(); } }
+function setAnimation(name) { if (!viewer) return; try { viewer.renderer.actors[0].setAnimation(name); } catch (e) { try { viewer.method('setAnimation', name); } catch (e2) {} } }
 
 /* ---------------- UI rendering ---------------- */
 function renderRaces() {
   const el = qs('#races'); el.innerHTML = '';
   for (const r of RACES) {
-    const b = document.createElement('button');
-    b.type = 'button'; b.className = 'tile'; b.setAttribute('aria-pressed', String(r.id === state.race));
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'tile'; b.setAttribute('aria-pressed', String(r.id === state.race));
     b.innerHTML = `<span class="fac ${r.fac}"></span>${r.name}`;
     b.addEventListener('click', () => { state.race = r.id; renderRaces(); renderCaption(); build(); });
     el.appendChild(b);
@@ -496,132 +390,119 @@ function renderRaces() {
 function renderClasses() {
   const el = qs('#classes'); el.innerHTML = '';
   for (const c of CLASSES) {
-    const b = document.createElement('button');
-    b.type = 'button'; b.className = 'tile cls'; b.style.setProperty('--c', c.color);
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'tile cls'; b.style.setProperty('--c', c.color);
     b.setAttribute('aria-pressed', String(c.key === state.cls)); b.textContent = c.name;
-    b.addEventListener('click', () => { state.cls = c.key; state.set = 0; renderClasses(); renderSets(); renderPieces(); renderCaption(); applyItems(); });
+    b.addEventListener('click', () => { state.cls = c.key; state.setName = null; onSetChanged(); renderClasses(); });
+    el.appendChild(b);
+  }
+}
+function renderTiers() {
+  const el = qs('#tiers'); el.innerHTML = '';
+  for (const t of TIERS) {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'tile'; b.setAttribute('aria-pressed', String(t.key === state.tier));
+    b.innerHTML = `${t.name}<small>${t.sub}</small>`;
+    b.addEventListener('click', () => { state.tier = t.key; state.setName = null; onSetChanged(); renderTiers(); });
     el.appendChild(b);
   }
 }
 function renderSets() {
-  const c = cls(); const sel = qs('#setSelect'); sel.innerHTML = '';
-  c.sets.forEach((s, i) => {
-    const o = document.createElement('option'); o.value = i; o.textContent = `${s.name} — ${s.role}`; o.selected = i === state.set; sel.appendChild(o);
-  });
-  qs('#setArmor').textContent = c.armor;
-  renderBonus();
+  const list = setsFor(state.tier, state.cls); const sel = qs('#setSelect'); sel.innerHTML = '';
+  const cur = currentSet();
+  for (const s of list) { const o = document.createElement('option'); o.value = s.name; o.textContent = s.role ? `${s.name} — ${s.role}` : s.name; o.selected = cur && s.name === cur.name; sel.appendChild(o); }
+  sel.disabled = list.length < 2;
+  qs('#setArmor').textContent = cls().armor;
+  const ul = qs('#bonus'); ul.innerHTML = '';
+  if (cur && cur.bonus && cur.bonus.length) cur.bonus.forEach((t, i) => { const li = document.createElement('li'); li.innerHTML = `<b>${i + 2}pc</b>${escapeHtml(t)}`; ul.appendChild(li); });
+  const hint = qs('#setHint');
+  if (!cur) hint.textContent = 'No set for this class in this tier.';
+  else if (cur.setId) hint.innerHTML = `<a href="https://www.wowhead.com/classic/item-set=${cur.setId}" target="_blank" rel="noopener">Set on Wowhead ↗</a>`;
+  else if (cur.pieces.some(p => p.unverified)) hint.textContent = 'Some pieces of this variant are not on Wowhead yet; they share the base set appearance.';
+  else hint.textContent = '';
 }
-function renderBonus() {
-  const s = cls().sets[state.set]; const ul = qs('#bonus'); ul.innerHTML = '';
-  s.bonus.forEach((t, i) => { const li = document.createElement('li'); li.innerHTML = `<b>${i + 2}pc</b>${escapeHtml(t)}`; ul.appendChild(li); });
+function renderDoll() {
+  const set = currentSet();
+  const make = (col, defs) => {
+    col.innerHTML = '';
+    for (const s of defs) {
+      const p = pieceFor(set, s.key);
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'slot';
+      if (!p) { b.classList.add('empty'); b.disabled = true; b.innerHTML = `<span class="ico"></span><span class="txt"><span class="nm">—</span><span class="sl">${s.key}</span></span>`; col.appendChild(b); continue; }
+      const on = !!state.equipped[s.key]; if (!on) b.classList.add('off');
+      const rare = set.tier === 'D1' || set.tier === 'D2';
+      const url = itemUrl(set, p);
+      const nameHtml = url ? `<a href="${url}" target="_blank" rel="noopener" data-wowhead="item=${p.id}${set.db === 'forever' ? '&domain=forever' : '&domain=classic'}" onclick="event.stopPropagation()">${escapeHtml(p.name)}</a>` : escapeHtml(p.name);
+      b.title = `${p.name} — click to ${on ? 'unequip' : 'equip'}`;
+      b.setAttribute('aria-pressed', String(on));
+      b.innerHTML = `<span class="ico${rare ? ' rare' : ''}" style="background-image:url('${iconUrl(p.icon)}')"></span><span class="txt"><span class="nm${rare ? ' rare' : ''}">${nameHtml}</span><span class="sl">${s.key}</span></span>`;
+      b.addEventListener('click', () => { state.equipped[s.key] = !state.equipped[s.key]; renderDoll(); applyItems(); });
+      col.appendChild(b);
+    }
+  };
+  make(qs('#dollLeft'), SLOTS_LEFT); make(qs('#dollRight'), SLOTS_RIGHT);
+  const anyOn = SLOTS.some(s => pieceFor(set, s.key) && state.equipped[s.key]);
+  qs('#btnNude').textContent = anyOn ? 'Unequip all' : 'Equip all';
+  if (window.$WowheadPower && $WowheadPower.refreshLinks) { try { $WowheadPower.refreshLinks(); } catch (e) {} }
 }
-function renderPieces() {
-  const c = cls(); const el = qs('#pieces'); el.innerHTML = '';
-  for (const s of SLOTS) {
-    const lab = document.createElement('label'); lab.className = 'piece';
-    lab.innerHTML = `<input type="checkbox" id="pc-${s.key}" ${state.enabled[s.key] ? 'checked' : ''}> ${s.label} <span class="did">${c.display[s.key]}</span>`;
-    lab.querySelector('input').addEventListener('change', (e) => { state.enabled[s.key] = e.target.checked; renderPieceCount(); applyItems(); });
-    el.appendChild(lab);
-  }
-  renderPieceCount();
-}
-function renderPieceCount() { const n = Object.values(state.enabled).filter(Boolean).length; qs('#pieceCount').textContent = `${n} / 6 shown`; }
 function renderCaption() {
-  const s = cls().sets[state.set];
-  qs('#capSet').textContent = s.name;
-  qs('#capWho').textContent = `${race().name} ${state.gender ? 'female' : 'male'} ${cls().name} · ${cls().armor} · ${s.role}`;
+  const set = currentSet();
+  qs('#capSet').textContent = set ? set.name : 'No set';
+  qs('#capWho').textContent = `${race().name} ${state.gender ? 'female' : 'male'} ${cls().name} · ${tier().name}${set && set.role ? ' · ' + set.role : ''}`;
 }
 function renderAppearance() {
-  const el = qs('#appearance'); el.innerHTML = '';
-  if (!state.custom) return;
+  const el = qs('#appearance'); el.innerHTML = ''; if (!state.custom) return;
   for (const opt of state.custom.Options) {
     if (!opt.Choices || opt.Choices.length < 2) continue;
-    const row = document.createElement('div'); row.className = 'opt';
-    const idx = state.choice[opt.Id] ?? 0;
-    row.innerHTML = `<span>${escapeHtml(opt.Name)}</span>
-      <span class="ctl"><button type="button" aria-label="Previous ${escapeHtml(opt.Name)}">‹</button><output>${idx + 1} / ${opt.Choices.length}</output><button type="button" aria-label="Next ${escapeHtml(opt.Name)}">›</button></span>`;
+    const row = document.createElement('div'); row.className = 'opt'; const idx = state.choice[opt.Id] ?? 0;
+    row.innerHTML = `<span>${escapeHtml(opt.Name)}</span><span class="ctl"><button type="button" aria-label="Previous ${escapeHtml(opt.Name)}">‹</button><output>${idx + 1} / ${opt.Choices.length}</output><button type="button" aria-label="Next ${escapeHtml(opt.Name)}">›</button></span>`;
     const [prev, next] = row.querySelectorAll('button');
     const step = (d) => { const n = opt.Choices.length; state.choice[opt.Id] = ((state.choice[opt.Id] ?? 0) + d + n) % n; row.querySelector('output').textContent = `${state.choice[opt.Id] + 1} / ${n}`; applyAppearance(); };
     prev.addEventListener('click', () => step(-1)); next.addEventListener('click', () => step(1));
     el.appendChild(row);
   }
 }
+function onSetChanged() { resetEquipped(); renderSets(); renderDoll(); renderCaption(); applyItems(); }
 
 /* ---------------- Wire up ---------------- */
-qs('#gender').addEventListener('click', (e) => {
-  const b = e.target.closest('button'); if (!b) return;
-  state.gender = +b.dataset.g;
-  qs('#gender').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
-  renderRaces(); renderCaption(); build();
-});
-qs('#hd').addEventListener('click', (e) => {
-  const b = e.target.closest('button'); if (!b) return;
-  state.hd = +b.dataset.hd;
-  qs('#hd').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
-  build();
-});
-qs('#setSelect').addEventListener('change', (e) => { state.set = +e.target.value; renderBonus(); renderCaption(); setStatus('ok', `${race().name} · ${cls().sets[state.set].name}`); });
+qs('#gender').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; state.gender = +b.dataset.g; qs('#gender').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); renderRaces(); renderCaption(); build(); });
+qs('#hd').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; state.hd = +b.dataset.hd; qs('#hd').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); build(); });
+qs('#setSelect').addEventListener('change', (e) => { state.setName = e.target.value; onSetChanged(); });
 qs('#btnStand').addEventListener('click', () => setAnimation('Stand'));
 qs('#btnWalk').addEventListener('click', () => setAnimation('Walk'));
 qs('#btnAttack').addEventListener('click', () => setAnimation('AttackUnarmed'));
 qs('#btnNude').addEventListener('click', () => {
-  const allOn = Object.values(state.enabled).every(Boolean);
-  for (const k in state.enabled) state.enabled[k] = !allOn;
-  qs('#btnNude').textContent = allOn ? 'Dress' : 'Undress';
-  renderPieces(); applyItems();
+  const set = currentSet(); const anyOn = SLOTS.some(s => pieceFor(set, s.key) && state.equipped[s.key]);
+  for (const s of SLOTS) state.equipped[s.key] = !anyOn && !!pieceFor(set, s.key);
+  renderDoll(); applyItems();
 });
-qs('#btnRandom').addEventListener('click', () => {
-  if (!state.custom) return;
-  for (const opt of state.custom.Options) state.choice[opt.Id] = Math.floor(Math.random() * opt.Choices.length);
-  renderAppearance(); applyAppearance();
-});
-qs('#btnReset').addEventListener('click', () => { cam.azimuth = CAM_DEFAULT.azimuth; cam.zenith = CAM_DEFAULT.zenith; cam.distance = CAM_DEFAULT.distance; applyCamera(); });
+qs('#btnRandom').addEventListener('click', () => { if (!state.custom) return; for (const opt of state.custom.Options) state.choice[opt.Id] = Math.floor(Math.random() * opt.Choices.length); renderAppearance(); applyAppearance(); });
 
 /* ---------------- Camera / orbit controls ---------------- */
 const CAM_DEFAULT = { azimuth: Math.PI * 1.5, zenith: Math.PI / 2, distance: 7 };
 const cam = { ...CAM_DEFAULT };
 let spinning = false;
-function applyCamera() {
-  if (!viewer || !viewer.renderer) return;
-  const r = viewer.renderer;
-  r.azimuth = cam.azimuth; r.zenith = cam.zenith; r.distance = cam.distance;
-}
-function fitViewer() {
-  // The viewer sizes its canvas from the container width and the aspect it was created with.
-  // Its renderer.resize() must not be called without arguments (it nulls the camera), so a size
-  // change is handled by rebuilding the viewer (see the window resize handler).
-  if (!viewer || !viewer.renderer) return;
-  requestAnimationFrame(applyCamera);
-}
+function applyCamera() { if (!viewer || !viewer.renderer) return; const r = viewer.renderer; r.azimuth = cam.azimuth; r.zenith = cam.zenith; r.distance = cam.distance; }
+qs('#btnReset').addEventListener('click', () => { Object.assign(cam, CAM_DEFAULT); applyCamera(); });
 (function orbitControls() {
   const el = qs('#viewer');
-  let dragging = false, lastX = 0, lastY = 0, moved = 0;
+  let dragging = false, lastX = 0, lastY = 0;
+  const pts = new Map(); let pinchDist = 0;
   el.addEventListener('pointerdown', (e) => {
     if (e.button !== 0 && e.pointerType === 'mouse') return;
-    dragging = true; moved = 0; lastX = e.clientX; lastY = e.clientY; spinning = false; qs('#btnSpin').setAttribute('aria-pressed', 'false');
+    pts.set(e.pointerId, e);
+    if (pts.size === 2) { const [a, b] = [...pts.values()]; pinchDist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); }
+    dragging = true; lastX = e.clientX; lastY = e.clientY; spinning = false; qs('#btnSpin').setAttribute('aria-pressed', 'false');
     el.setPointerCapture(e.pointerId);
   });
   el.addEventListener('pointermove', (e) => {
+    if (pts.has(e.pointerId)) pts.set(e.pointerId, e);
+    if (pts.size === 2 && pinchDist) { const [a, b] = [...pts.values()]; const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); cam.distance = Math.min(30, Math.max(2.5, cam.distance * (pinchDist / d))); pinchDist = d; applyCamera(); return; }
     if (!dragging) return;
-    const dx = e.clientX - lastX, dy = e.clientY - lastY; lastX = e.clientX; lastY = e.clientY; moved += Math.abs(dx) + Math.abs(dy);
-    cam.azimuth -= dx * 0.008;
-    cam.zenith = Math.min(2.6, Math.max(0.5, cam.zenith + dy * 0.006));
-    applyCamera();
+    const dx = e.clientX - lastX, dy = e.clientY - lastY; lastX = e.clientX; lastY = e.clientY;
+    cam.azimuth -= dx * 0.008; cam.zenith = Math.min(2.6, Math.max(0.5, cam.zenith + dy * 0.006)); applyCamera();
   });
-  const end = (e) => { if (!dragging) return; dragging = false; try { el.releasePointerCapture(e.pointerId); } catch (_) {} };
+  const end = (e) => { pts.delete(e.pointerId); if (pts.size < 2) pinchDist = 0; if (pts.size === 0) dragging = false; try { el.releasePointerCapture(e.pointerId); } catch (_) {} };
   el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end);
-  el.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    cam.distance = Math.min(30, Math.max(2.5, cam.distance * (e.deltaY > 0 ? 1.08 : 1 / 1.08)));
-    applyCamera();
-  }, { passive: false });
-  // pinch zoom
-  const pts = new Map(); let pinchDist = 0;
-  el.addEventListener('pointerdown', (e) => { pts.set(e.pointerId, e); if (pts.size === 2) { const [a, b] = [...pts.values()]; pinchDist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); } });
-  el.addEventListener('pointermove', (e) => { if (!pts.has(e.pointerId)) return; pts.set(e.pointerId, e); if (pts.size === 2 && pinchDist) { const [a, b] = [...pts.values()]; const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); cam.distance = Math.min(30, Math.max(2.5, cam.distance * (pinchDist / d))); pinchDist = d; applyCamera(); } });
-  const drop = (e) => { pts.delete(e.pointerId); if (pts.size < 2) pinchDist = 0; };
-  el.addEventListener('pointerup', drop); el.addEventListener('pointercancel', drop);
-  // keyboard
+  el.addEventListener('wheel', (e) => { e.preventDefault(); cam.distance = Math.min(30, Math.max(2.5, cam.distance * (e.deltaY > 0 ? 1.08 : 1 / 1.08))); applyCamera(); }, { passive: false });
   el.tabIndex = 0;
   el.addEventListener('keydown', (e) => {
     const step = 0.15;
@@ -631,7 +512,6 @@ function fitViewer() {
     else return;
     e.preventDefault(); applyCamera();
   });
-  // auto-rotate
   let last = 0;
   function tick(t) { if (spinning) { const dt = last ? (t - last) / 1000 : 0; cam.azimuth += dt * 0.9; applyCamera(); } last = t; requestAnimationFrame(tick); }
   requestAnimationFrame(tick);
@@ -640,15 +520,12 @@ qs('#btnRotL').addEventListener('click', () => { cam.azimuth += Math.PI / 6; app
 qs('#btnRotR').addEventListener('click', () => { cam.azimuth -= Math.PI / 6; applyCamera(); });
 qs('#btnSpin').addEventListener('click', (e) => { spinning = !spinning; e.currentTarget.setAttribute('aria-pressed', String(spinning)); });
 qs('#bright').addEventListener('input', (e) => { qs('#viewer').style.setProperty('--bright', e.target.value); });
-qs('#bgPick').addEventListener('click', (e) => {
-  const b = e.target.closest('button'); if (!b) return;
-  const stage = qs('#stage'); stage.classList.remove('bg-stone', 'bg-light'); if (b.dataset.bg) stage.classList.add(b.dataset.bg);
-  qs('#bgPick').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
-});
-
+qs('#bgPick').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; const stage = qs('#stage'); stage.classList.remove('bg-stone', 'bg-light'); if (b.dataset.bg) stage.classList.add(b.dataset.bg); qs('#bgPick').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); });
 let resizeT; window.addEventListener('resize', () => { clearTimeout(resizeT); resizeT = setTimeout(() => { if (viewer) build(); }, 400); });
 
-renderRaces(); renderClasses(); renderSets(); renderPieces(); renderCaption();
+/* ---------------- Boot ---------------- */
+resetEquipped();
+renderRaces(); renderClasses(); renderTiers(); renderSets(); renderDoll(); renderCaption();
 build();
 </script>
 </body>

@@ -1,0 +1,82 @@
+[
+  {
+    "tier": "T1",
+    "name": "Nightslayer Armor",
+    "setId": 204,
+    "class": "rogue",
+    "pieces": [
+      { "slot": "Head", "id": 16821, "name": "Nightslayer Cover", "icon": "inv_helmet_41", "displayId": 31514 },
+      { "slot": "Shoulder", "id": 16823, "name": "Nightslayer Shoulder Pads", "icon": "inv_shoulder_25", "displayId": 31343 },
+      { "slot": "Chest", "id": 16820, "name": "Nightslayer Chestpiece", "icon": "inv_chest_cloth_07", "displayId": 31105 },
+      { "slot": "Wrist", "id": 16825, "name": "Nightslayer Bracelets", "icon": "inv_bracer_02", "displayId": 31106 },
+      { "slot": "Hands", "id": 16826, "name": "Nightslayer Gloves", "icon": "inv_gauntlets_21", "displayId": 31503 },
+      { "slot": "Waist", "id": 16827, "name": "Nightslayer Belt", "icon": "inv_belt_23", "displayId": 31339 },
+      { "slot": "Legs", "id": 16822, "name": "Nightslayer Pants", "icon": "inv_pants_06", "displayId": 31340 },
+      { "slot": "Feet", "id": 16824, "name": "Nightslayer Boots", "icon": "inv_boots_08", "displayId": 31109 }
+    ]
+  },
+  {
+    "tier": "T2",
+    "name": "Bloodfang Armor",
+    "setId": 213,
+    "class": "rogue",
+    "pieces": [
+      { "slot": "Head", "id": 16908, "name": "Bloodfang Hood", "icon": "inv_helmet_41", "displayId": 33743 },
+      { "slot": "Shoulder", "id": 16832, "name": "Bloodfang Spaulders", "icon": "inv_shoulder_23", "displayId": 32813 },
+      { "slot": "Chest", "id": 16905, "name": "Bloodfang Chestpiece", "icon": "inv_chest_cloth_07", "displayId": 33650 },
+      { "slot": "Wrist", "id": 16911, "name": "Bloodfang Bracers", "icon": "inv_bracer_02", "displayId": 31127 },
+      { "slot": "Hands", "id": 16907, "name": "Bloodfang Gloves", "icon": "inv_gauntlets_21", "displayId": 32815 },
+      { "slot": "Waist", "id": 16910, "name": "Bloodfang Belt", "icon": "inv_belt_23", "displayId": 31110 },
+      { "slot": "Legs", "id": 16909, "name": "Bloodfang Pants", "icon": "inv_pants_06", "displayId": 31115 },
+      { "slot": "Feet", "id": 16906, "name": "Bloodfang Boots", "icon": "inv_boots_08", "displayId": 31111 }
+    ]
+  },
+  {
+    "tier": "T3",
+    "name": "Bonescythe Armor",
+    "setId": 524,
+    "class": "rogue",
+    "pieces": [
+      { "slot": "Head", "id": 22478, "name": "Bonescythe Helmet", "icon": "inv_helmet_58", "displayId": 35132 },
+      { "slot": "Shoulder", "id": 22479, "name": "Bonescythe Pauldrons", "icon": "inv_shoulder_29", "displayId": 35064 },
+      { "slot": "Chest", "id": 22476, "name": "Bonescythe Breastplate", "icon": "inv_chest_plate02", "displayId": 35054 },
+      { "slot": "Wrist", "id": 22483, "name": "Bonescythe Bracers", "icon": "inv_bracer_15", "displayId": 35053 },
+      { "slot": "Hands", "id": 22481, "name": "Bonescythe Gauntlets", "icon": "inv_gauntlets_28", "displayId": 35055 },
+      { "slot": "Waist", "id": 22482, "name": "Bonescythe Waistguard", "icon": "inv_belt_27", "displayId": 36349 },
+      { "slot": "Legs", "id": 22477, "name": "Bonescythe Legplates", "icon": "inv_pants_plate_05", "displayId": 35065 },
+      { "slot": "Feet", "id": 22480, "name": "Bonescythe Sabatons", "icon": "inv_boots_plate_06", "displayId": 36351 }
+    ]
+  },
+  {
+    "tier": "D1",
+    "name": "Shadowcraft Armor",
+    "setId": 184,
+    "class": "rogue",
+    "pieces": [
+      { "slot": "Head", "id": 16707, "name": "Shadowcraft Cap", "icon": "inv_helmet_41", "displayId": 16056 },
+      { "slot": "Shoulder", "id": 16708, "name": "Shadowcraft Spaulders", "icon": "inv_shoulder_07", "displayId": 24727 },
+      { "slot": "Chest", "id": 16721, "name": "Shadowcraft Tunic", "icon": "inv_chest_leather_07", "displayId": 15607 },
+      { "slot": "Wrist", "id": 16710, "name": "Shadowcraft Bracers", "icon": "inv_bracer_07", "displayId": 15609 },
+      { "slot": "Hands", "id": 16712, "name": "Shadowcraft Gloves", "icon": "inv_gauntlets_24", "displayId": 19909 },
+      { "slot": "Waist", "id": 16713, "name": "Shadowcraft Belt", "icon": "inv_belt_03", "displayId": 14853 },
+      { "slot": "Legs", "id": 16709, "name": "Shadowcraft Pants", "icon": "inv_pants_02", "displayId": 9807 },
+      { "slot": "Feet", "id": 16711, "name": "Shadowcraft Boots", "icon": "inv_boots_08", "displayId": 28162 }
+    ]
+  },
+  {
+    "tier": "D2",
+    "name": "Darkmantle Armor",
+    "setId": 512,
+    "class": "rogue",
+    "pieces": [
+      { "slot": "Head", "id": 22005, "name": "Darkmantle Cap", "icon": "inv_helmet_41", "displayId": 34700 },
+      { "slot": "Shoulder", "id": 22008, "name": "Darkmantle Spaulders", "icon": "inv_shoulder_07", "displayId": 34688 },
+      { "slot": "Chest", "id": 22009, "name": "Darkmantle Tunic", "icon": "inv_chest_leather_07", "displayId": 34689 },
+      { "slot": "Wrist", "id": 22004, "name": "Darkmantle Bracers", "icon": "inv_bracer_07", "displayId": 34685 },
+      { "slot": "Hands", "id": 22006, "name": "Darkmantle Gloves", "icon": "inv_gauntlets_24", "displayId": 34686 },
+      { "slot": "Waist", "id": 22002, "name": "Darkmantle Belt", "icon": "inv_belt_03", "displayId": 34699 },
+      { "slot": "Legs", "id": 22007, "name": "Darkmantle Pants", "icon": "inv_pants_02", "displayId": 34687 },
+      { "slot": "Feet", "id": 22003, "name": "Darkmantle Boots", "icon": "inv_boots_08", "displayId": 34684 }
+    ]
+  }
+]

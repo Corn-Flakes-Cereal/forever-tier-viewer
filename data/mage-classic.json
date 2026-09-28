@@ -1,0 +1,82 @@
+[
+  {
+    "tier": "T1",
+    "name": "Arcanist Regalia",
+    "setId": 201,
+    "class": "mage",
+    "pieces": [
+      {"slot": "Head", "id": 16795, "name": "Arcanist Crown", "icon": "inv_helmet_53", "displayId": 31517},
+      {"slot": "Shoulder", "id": 16797, "name": "Arcanist Mantle", "icon": "inv_shoulder_02", "displayId": 30586},
+      {"slot": "Chest", "id": 16798, "name": "Arcanist Robes", "icon": "inv_chest_cloth_03", "displayId": 30581},
+      {"slot": "Wrist", "id": 16799, "name": "Arcanist Bindings", "icon": "inv_belt_29", "displayId": 30584},
+      {"slot": "Hands", "id": 16801, "name": "Arcanist Gloves", "icon": "inv_gauntlets_14", "displayId": 30585},
+      {"slot": "Waist", "id": 16802, "name": "Arcanist Belt", "icon": "inv_belt_30", "displayId": 30583},
+      {"slot": "Legs", "id": 16796, "name": "Arcanist Leggings", "icon": "inv_pants_08", "displayId": 30582},
+      {"slot": "Feet", "id": 16800, "name": "Arcanist Boots", "icon": "inv_boots_07", "displayId": 30587}
+    ]
+  },
+  {
+    "tier": "T2",
+    "name": "Netherwind Regalia",
+    "setId": 210,
+    "class": "mage",
+    "pieces": [
+      {"slot": "Head", "id": 16914, "name": "Netherwind Crown", "icon": "inv_helmet_70", "displayId": 34057},
+      {"slot": "Shoulder", "id": 16917, "name": "Netherwind Mantle", "icon": "inv_shoulder_32", "displayId": 34058},
+      {"slot": "Chest", "id": 16916, "name": "Netherwind Robes", "icon": "inv_chest_cloth_03", "displayId": 34038},
+      {"slot": "Wrist", "id": 16918, "name": "Netherwind Bindings", "icon": "inv_bracer_09", "displayId": 34045},
+      {"slot": "Hands", "id": 16913, "name": "Netherwind Gloves", "icon": "inv_gauntlets_14", "displayId": 34041},
+      {"slot": "Waist", "id": 16818, "name": "Netherwind Belt", "icon": "inv_belt_22", "displayId": 34046},
+      {"slot": "Legs", "id": 16915, "name": "Netherwind Pants", "icon": "inv_pants_08", "displayId": 34039},
+      {"slot": "Feet", "id": 16912, "name": "Netherwind Boots", "icon": "inv_boots_07", "displayId": 34044}
+    ]
+  },
+  {
+    "tier": "T3",
+    "name": "Frostfire Regalia",
+    "setId": 526,
+    "class": "mage",
+    "pieces": [
+      {"slot": "Head", "id": 22498, "name": "Frostfire Circlet", "icon": "inv_crown_01", "displayId": 36440},
+      {"slot": "Shoulder", "id": 22499, "name": "Frostfire Shoulderpads", "icon": "inv_shoulder_25", "displayId": 35326},
+      {"slot": "Chest", "id": 22496, "name": "Frostfire Robe", "icon": "inv_chest_cloth_43", "displayId": 35523},
+      {"slot": "Wrist", "id": 22503, "name": "Frostfire Bindings", "icon": "inv_bracer_13", "displayId": 35677},
+      {"slot": "Hands", "id": 22501, "name": "Frostfire Gloves", "icon": "inv_gauntlets_17", "displayId": 35521},
+      {"slot": "Waist", "id": 22502, "name": "Frostfire Belt", "icon": "inv_belt_03", "displayId": 35519},
+      {"slot": "Legs", "id": 22497, "name": "Frostfire Leggings", "icon": "inv_pants_cloth_05", "displayId": 35522},
+      {"slot": "Feet", "id": 22500, "name": "Frostfire Sandals", "icon": "inv_boots_fabric_01", "displayId": 35525}
+    ]
+  },
+  {
+    "tier": "D1",
+    "name": "Magister's Regalia",
+    "setId": 181,
+    "class": "mage",
+    "pieces": [
+      {"slot": "Head", "id": 16686, "name": "Magister's Crown", "icon": "inv_crown_02", "displayId": 31087},
+      {"slot": "Shoulder", "id": 16689, "name": "Magister's Mantle", "icon": "inv_shoulder_23", "displayId": 30211},
+      {"slot": "Chest", "id": 16688, "name": "Magister's Robes", "icon": "inv_chest_cloth_25", "displayId": 29591},
+      {"slot": "Wrist", "id": 16683, "name": "Magister's Bindings", "icon": "inv_jewelry_ring_23", "displayId": 29595},
+      {"slot": "Hands", "id": 16684, "name": "Magister's Gloves", "icon": "inv_gauntlets_17", "displayId": 29593},
+      {"slot": "Waist", "id": 16685, "name": "Magister's Belt", "icon": "inv_belt_08", "displayId": 29596},
+      {"slot": "Legs", "id": 16687, "name": "Magister's Leggings", "icon": "inv_pants_06", "displayId": 7939},
+      {"slot": "Feet", "id": 16682, "name": "Magister's Boots", "icon": "inv_boots_02", "displayId": 29594}
+    ]
+  },
+  {
+    "tier": "D2",
+    "name": "Sorcerer's Regalia",
+    "setId": 517,
+    "class": "mage",
+    "pieces": [
+      {"slot": "Head", "id": 22065, "name": "Sorcerer's Crown", "icon": "inv_crown_02", "displayId": 34602},
+      {"slot": "Shoulder", "id": 22068, "name": "Sorcerer's Mantle", "icon": "inv_shoulder_23", "displayId": 34597},
+      {"slot": "Chest", "id": 22069, "name": "Sorcerer's Robes", "icon": "inv_chest_cloth_25", "displayId": 34596},
+      {"slot": "Wrist", "id": 22063, "name": "Sorcerer's Bindings", "icon": "inv_jewelry_ring_23", "displayId": 34601},
+      {"slot": "Hands", "id": 22066, "name": "Sorcerer's Gloves", "icon": "inv_gauntlets_17", "displayId": 34600},
+      {"slot": "Waist", "id": 22062, "name": "Sorcerer's Belt", "icon": "inv_belt_08", "displayId": 34599},
+      {"slot": "Legs", "id": 22067, "name": "Sorcerer's Leggings", "icon": "inv_pants_06", "displayId": 34598},
+      {"slot": "Feet", "id": 22064, "name": "Sorcerer's Boots", "icon": "inv_boots_02", "displayId": 34782}
+    ]
+  }
+]

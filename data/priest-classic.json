@@ -1,0 +1,82 @@
+[
+  {
+    "tier": "T1",
+    "name": "Vestments of Prophecy",
+    "setId": 203,
+    "class": "priest",
+    "pieces": [
+      {"slot": "Head", "id": 16813, "name": "Circlet of Prophecy", "icon": "inv_helmet_34", "displayId": 31371},
+      {"slot": "Shoulder", "id": 16816, "name": "Mantle of Prophecy", "icon": "inv_shoulder_02", "displayId": 30623},
+      {"slot": "Chest", "id": 16815, "name": "Robes of Prophecy", "icon": "inv_chest_cloth_03", "displayId": 31490},
+      {"slot": "Wrist", "id": 16819, "name": "Vambraces of Prophecy", "icon": "inv_bracer_09", "displayId": 30617},
+      {"slot": "Hands", "id": 16812, "name": "Gloves of Prophecy", "icon": "inv_gauntlets_14", "displayId": 30620},
+      {"slot": "Waist", "id": 16817, "name": "Girdle of Prophecy", "icon": "inv_belt_22", "displayId": 30621},
+      {"slot": "Legs", "id": 16814, "name": "Pants of Prophecy", "icon": "inv_pants_08", "displayId": 27598},
+      {"slot": "Feet", "id": 16811, "name": "Boots of Prophecy", "icon": "inv_boots_07", "displayId": 31718}
+    ]
+  },
+  {
+    "tier": "T2",
+    "name": "Vestments of Transcendence",
+    "setId": 212,
+    "class": "priest",
+    "pieces": [
+      {"slot": "Head", "id": 16921, "name": "Halo of Transcendence", "icon": "inv_helmet_24", "displayId": 34233},
+      {"slot": "Shoulder", "id": 16924, "name": "Pauldrons of Transcendence", "icon": "inv_shoulder_02", "displayId": 34048},
+      {"slot": "Chest", "id": 16923, "name": "Robes of Transcendence", "icon": "inv_chest_cloth_03", "displayId": 34047},
+      {"slot": "Wrist", "id": 16926, "name": "Bindings of Transcendence", "icon": "inv_bracer_09", "displayId": 34052},
+      {"slot": "Hands", "id": 16920, "name": "Handguards of Transcendence", "icon": "inv_gauntlets_14", "displayId": 34051},
+      {"slot": "Waist", "id": 16925, "name": "Belt of Transcendence", "icon": "inv_belt_22", "displayId": 34053},
+      {"slot": "Legs", "id": 16922, "name": "Leggings of Transcendence", "icon": "inv_pants_08", "displayId": 34049},
+      {"slot": "Feet", "id": 16919, "name": "Boots of Transcendence", "icon": "inv_boots_07", "displayId": 34055}
+    ]
+  },
+  {
+    "tier": "T3",
+    "name": "Vestments of Faith",
+    "setId": 525,
+    "class": "priest",
+    "pieces": [
+      {"slot": "Head", "id": 22514, "name": "Circlet of Faith", "icon": "inv_crown_01", "displayId": 35155},
+      {"slot": "Shoulder", "id": 22515, "name": "Shoulderpads of Faith", "icon": "inv_shoulder_25", "displayId": 35149},
+      {"slot": "Chest", "id": 22512, "name": "Robe of Faith", "icon": "inv_chest_cloth_43", "displayId": 36354},
+      {"slot": "Wrist", "id": 22519, "name": "Bindings of Faith", "icon": "inv_bracer_13", "displayId": 35144},
+      {"slot": "Hands", "id": 22517, "name": "Gloves of Faith", "icon": "inv_gauntlets_17", "displayId": 35145},
+      {"slot": "Waist", "id": 22518, "name": "Belt of Faith", "icon": "inv_belt_08", "displayId": 35143},
+      {"slot": "Legs", "id": 22513, "name": "Leggings of Faith", "icon": "inv_pants_cloth_05", "displayId": 35154},
+      {"slot": "Feet", "id": 22516, "name": "Sandals of Faith", "icon": "inv_boots_fabric_01", "displayId": 35148}
+    ]
+  },
+  {
+    "tier": "D1",
+    "name": "Vestments of the Devout",
+    "setId": 182,
+    "class": "priest",
+    "pieces": [
+      {"slot": "Head", "id": 16693, "name": "Devout Crown", "icon": "inv_crown_01", "displayId": 31104},
+      {"slot": "Shoulder", "id": 16695, "name": "Devout Mantle", "icon": "inv_shoulder_02", "displayId": 31103},
+      {"slot": "Chest", "id": 16690, "name": "Devout Robe", "icon": "inv_chest_cloth_11", "displayId": 30422},
+      {"slot": "Wrist", "id": 16697, "name": "Devout Bracers", "icon": "inv_belt_31", "displayId": 30426},
+      {"slot": "Hands", "id": 16692, "name": "Devout Gloves", "icon": "inv_gauntlets_14", "displayId": 30427},
+      {"slot": "Waist", "id": 16696, "name": "Devout Belt", "icon": "inv_belt_10", "displayId": 30425},
+      {"slot": "Legs", "id": 16694, "name": "Devout Skirt", "icon": "inv_pants_08", "displayId": 30424},
+      {"slot": "Feet", "id": 16691, "name": "Devout Sandals", "icon": "inv_boots_05", "displayId": 30430}
+    ]
+  },
+  {
+    "tier": "D2",
+    "name": "Vestments of the Virtuous",
+    "setId": 514,
+    "class": "priest",
+    "pieces": [
+      {"slot": "Head", "id": 22080, "name": "Virtuous Crown", "icon": "inv_crown_01", "displayId": 34630},
+      {"slot": "Shoulder", "id": 22082, "name": "Virtuous Mantle", "icon": "inv_shoulder_02", "displayId": 34632},
+      {"slot": "Chest", "id": 22083, "name": "Virtuous Robe", "icon": "inv_chest_cloth_11", "displayId": 34633},
+      {"slot": "Wrist", "id": 22079, "name": "Virtuous Bracers", "icon": "inv_belt_31", "displayId": 34629},
+      {"slot": "Hands", "id": 22081, "name": "Virtuous Gloves", "icon": "inv_gauntlets_14", "displayId": 34631},
+      {"slot": "Waist", "id": 22078, "name": "Virtuous Belt", "icon": "inv_belt_10", "displayId": 34628},
+      {"slot": "Legs", "id": 22085, "name": "Virtuous Skirt", "icon": "inv_pants_08", "displayId": 34635},
+      {"slot": "Feet", "id": 22084, "name": "Virtuous Sandals", "icon": "inv_boots_05", "displayId": 34634}
+    ]
+  }
+]

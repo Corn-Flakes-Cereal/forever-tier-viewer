@@ -1,0 +1,4063 @@
+[
+{
+"tier": "S1",
+"name": "Grovekeeper Raiment",
+"class": "druid",
+"role": "Restoration",
+"bonus": [
+"Increased Spirit +10.",
+"Reduces the cooldown on your Barkskin spell by 10 sec.",
+"Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects.",
+"Reduces the cooldown on your Swiftmend spell by 3.0 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280977,
+"name": "Grovekeeper Cover",
+"icon": "inv_helm_leather_raiddruidhyjalc60_d_01",
+"displayId": 741847
+},
+{
+"slot": "Shoulder",
+"id": 280976,
+"name": "Grovekeeper Pauldrons",
+"icon": "inv_shoulder_leather_raiddruidhyjalc60_d_01",
+"displayId": 741849
+},
+{
+"slot": "Chest",
+"id": 280974,
+"name": "Grovekeeper Chestguard",
+"icon": "inv_robe_leather_raiddruidhyjalc60_d_01",
+"displayId": 741844
+},
+{
+"slot": "Hands",
+"id": 280965,
+"name": "Grovekeeper Handguards",
+"icon": "inv_glove_leather_raiddruidhyjalc60_d_01",
+"displayId": 741846
+},
+{
+"slot": "Legs",
+"id": 280971,
+"name": "Grovekeeper Legguards",
+"icon": "inv_pant_leather_raiddruidhyjalc60_d_01",
+"displayId": 741848
+},
+{
+"slot": "Feet",
+"id": 280967,
+"name": "Grovekeeper Boots",
+"icon": "inv_boot_leather_raiddruidhyjalc60_d_01",
+"displayId": 741845
+}
+]
+},
+{
+"tier": "S1",
+"name": "Justice Armor",
+"class": "paladin",
+"role": "Holy",
+"bonus": [
+"Increased Spirit +10.",
+"Reduces the cooldown on your Blessing of Protection spell by 30 sec.",
+"Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects.",
+"Reduces the cooldown on your Holy Shock spell by 1 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280936,
+"name": "Justice Headpiece",
+"icon": "inv_helm_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741947
+},
+{
+"slot": "Shoulder",
+"id": 280935,
+"name": "Justice Epaulets",
+"icon": "inv_shoulder_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741949
+},
+{
+"slot": "Chest",
+"id": 280934,
+"name": "Justice Tunic",
+"icon": "inv_chest_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741943
+},
+{
+"slot": "Hands",
+"id": 280931,
+"name": "Justice Gloves",
+"icon": "inv_glove_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741945
+},
+{
+"slot": "Legs",
+"id": 280933,
+"name": "Justice Legplates",
+"icon": "inv_pant_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741948
+},
+{
+"slot": "Feet",
+"id": 280932,
+"name": "Justice Treads",
+"icon": "inv_boot_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741944
+}
+]
+},
+{
+"tier": "S1",
+"name": "Justice Battlegear",
+"class": "paladin",
+"role": "Retribution",
+"bonus": [
+"Increases your attack speed and casting speed by 1%.",
+"Reduces the cooldown on your Hammer of Justice spell by 5 sec.",
+"+36 Attack Power against Undead.",
+"Reduces the cooldown on your Judgement spell by 0.5 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280930,
+"name": "Justice Crown",
+"icon": "inv_helm_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741947
+},
+{
+"slot": "Shoulder",
+"id": 280929,
+"name": "Justice Spaulders",
+"icon": "inv_shoulder_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741949
+},
+{
+"slot": "Chest",
+"id": 280928,
+"name": "Justice Breastplate",
+"icon": "inv_chest_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741943
+},
+{
+"slot": "Hands",
+"id": 280925,
+"name": "Justice Gauntlets",
+"icon": "inv_glove_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741945
+},
+{
+"slot": "Legs",
+"id": 280927,
+"name": "Justice Leggings",
+"icon": "inv_pant_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741948
+},
+{
+"slot": "Feet",
+"id": 280926,
+"name": "Justice Greaves",
+"icon": "inv_boot_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741944
+}
+]
+},
+{
+"tier": "S1",
+"name": "Manaflare Regalia",
+"class": "mage",
+"role": "All specs",
+"bonus": [
+"Improves your chance to hit by 1.0%.",
+"Reduces the cooldown on your Counterspell spell by 5 sec.",
+"Increases damage done by your spells and effects by up to 21 when fighting Elementals.",
+"Your Frostfire Bolt has a 10% increased chance to trigger Missile Barrage, gains 10% crit while Combustion is active, and has a 10% increased chance to trigger Fingers of Frost."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280455,
+"name": "Manaflare Crown",
+"icon": "inv_helm_cloth_raidmagehyjalc60_d_01",
+"displayId": 741496
+},
+{
+"slot": "Shoulder",
+"id": 280454,
+"name": "Manaflare Mantle",
+"icon": "inv_shoulder_cloth_raidmagehyjalc60_d_01",
+"displayId": 737689
+},
+{
+"slot": "Chest",
+"id": 280450,
+"name": "Manaflare Robes",
+"icon": "inv_chest_cloth_raidmagehyjalc60_d_01",
+"displayId": 741498
+},
+{
+"slot": "Hands",
+"id": 280451,
+"name": "Manaflare Gloves",
+"icon": "inv_glove_cloth_raidmagehyjalc60_d_01",
+"displayId": 737695
+},
+{
+"slot": "Legs",
+"id": 280453,
+"name": "Manaflare Pants",
+"icon": "inv_pant_cloth_raidmagehyjalc60_d_01",
+"displayId": 741507
+},
+{
+"slot": "Feet",
+"id": 280452,
+"name": "Manaflare Boots",
+"icon": "inv_boot_cloth_raidmagehyjalc60_d_01",
+"displayId": 744106
+}
+]
+},
+{
+"tier": "S1",
+"name": "Vestments of Conviction",
+"class": "priest",
+"role": "Discipline / Holy",
+"bonus": [
+"Increased Spirit +10.",
+"Reduces the cooldown on your Fear Ward spell by 60 sec.",
+"Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects.",
+"Reduces the cooldown on your Penance and Prayer of Mending spells by 1 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280918,
+"name": "Halo of Conviction",
+"icon": "inv_helm_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741793
+},
+{
+"slot": "Shoulder",
+"id": 280917,
+"name": "Pauldrons of Conviction",
+"icon": "inv_shoulder_r_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741790
+},
+{
+"slot": "Chest",
+"id": 280912,
+"name": "Robes of Conviction",
+"icon": "inv_robe_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741791
+},
+{
+"slot": "Hands",
+"id": 280913,
+"name": "Handguards of Conviction",
+"icon": "inv_glove_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741794
+},
+{
+"slot": "Legs",
+"id": 280915,
+"name": "Leggings of Conviction",
+"icon": "inv_pant_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741792
+},
+{
+"slot": "Feet",
+"id": 280914,
+"name": "Boots of Conviction",
+"icon": "inv_boot_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741795
+}
+]
+},
+{
+"tier": "S1",
+"name": "The Spiritcaller",
+"class": "shaman",
+"role": "Restoration",
+"bonus": [
+"Increased Spirit +10.",
+"Increases the radius of effect of your beneficial Fire and Water totems by 10 yards.",
+"Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects.",
+"Reduces the cooldown on your Riptide spell by 1 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280951,
+"name": "Spiritcaller Helmet",
+"icon": "inv_helm_mail_raidshamanhyjalc60_d_01",
+"displayId": 741930
+},
+{
+"slot": "Shoulder",
+"id": 280944,
+"name": "Spiritcaller Epaulets",
+"icon": "inv_shoulder_mail_raidshamanhyjalc60_d_01",
+"displayId": 741932
+},
+{
+"slot": "Chest",
+"id": 280950,
+"name": "Spiritcaller Breastplate",
+"icon": "inv_chest_mail_raidshamanhyjalc60_d_01",
+"displayId": 742012
+},
+{
+"slot": "Hands",
+"id": 280949,
+"name": "Spiritcaller Gauntlets",
+"icon": "inv_glove_mail_raidshamanhyjalc60_d_01",
+"displayId": 741929
+},
+{
+"slot": "Legs",
+"id": 280947,
+"name": "Spiritcaller Pants",
+"icon": "inv_pant_mail_raidshamanhyjalc60_d_01",
+"displayId": 742008
+},
+{
+"slot": "Feet",
+"id": 280945,
+"name": "Spiritcaller Greaves",
+"icon": "inv_boot_mail_raidshamanhyjalc60_d_01",
+"displayId": 741928
+}
+]
+},
+{
+"tier": "S1",
+"name": "Wildstalker Armor",
+"class": "hunter",
+"role": "All specs",
+"bonus": [
+"Increases your attack speed and casting speed by 1%.",
+"Reduces the cooldown on your Frost Trap and Freezing Trap abilities by 3 sec.",
+"+36 Attack Power against Beasts.",
+"Reduces the cooldown on your Aimed Shot and Multi-Shot abilities by 1 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280898,
+"name": "Wildstalker's Helm",
+"icon": "inv_helm_mail_raidhunterhyjalc60_d_01",
+"displayId": 741880
+},
+{
+"slot": "Shoulder",
+"id": 280897,
+"name": "Wildstalker's Spaulders",
+"icon": "inv_shoulder_l_mail_raidhunterhyjalc60_d_01",
+"displayId": 741882
+},
+{
+"slot": "Chest",
+"id": 280896,
+"name": "Wildstalker's Breastplate",
+"icon": "inv_chest_mail_raidhunterhyjalc60_d_01",
+"displayId": 741877
+},
+{
+"slot": "Hands",
+"id": 280893,
+"name": "Wildstalker's Gauntlets",
+"icon": "inv_glove_mail_raidhunterhyjalc60_d_01",
+"displayId": 741879
+},
+{
+"slot": "Legs",
+"id": 280895,
+"name": "Wildstalker's Legguards",
+"icon": "inv_pant_mail_raidhunterhyjalc60_d_01",
+"displayId": 741881
+},
+{
+"slot": "Feet",
+"id": 280894,
+"name": "Wildstalker's Greaves",
+"icon": "inv_boot_mail_raidhunterhyjalc60_d_01",
+"displayId": 741878
+}
+]
+},
+{
+"tier": "S1",
+"name": "Battlegear of Glory",
+"class": "warrior",
+"role": "Arms / Fury",
+"bonus": [
+"Increases your attack speed and casting speed by 1%.",
+"Reduces the cooldown on your Intimidating Shout ability by 30 sec.",
+"+36 Attack Power against Humanoids.",
+"Reduces the cooldown on your Recklessness ability by 30 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280904,
+"name": "Helm of Glory",
+"icon": "inv_helm_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741983
+},
+{
+"slot": "Shoulder",
+"id": 280903,
+"name": "Shoulders of Glory",
+"icon": "inv_shoulder_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741985
+},
+{
+"slot": "Chest",
+"id": 280902,
+"name": "Breastplate of Glory",
+"icon": "inv_chest_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741980
+},
+{
+"slot": "Hands",
+"id": 280899,
+"name": "Gauntlets of Glory",
+"icon": "inv_glove_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741988
+},
+{
+"slot": "Legs",
+"id": 280901,
+"name": "Legplates of Glory",
+"icon": "inv_pant_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741984
+},
+{
+"slot": "Feet",
+"id": 280900,
+"name": "Greaves of Glory",
+"icon": "inv_boot_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741981
+}
+]
+},
+{
+"tier": "S1",
+"name": "Battleplate of Glory",
+"class": "warrior",
+"role": "Protection",
+"bonus": [
+"Increased Defense +7.",
+"Reduces the cooldown on your Intervene ability by 10 sec.",
+"Reduces the chance for your melee attacks to be Dodged or Parried by 1.2%.",
+"Reduces the cooldown on your Shield Wall ability by 30 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280910,
+"name": "Greathelm of Glory",
+"icon": "inv_helm_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741983
+},
+{
+"slot": "Shoulder",
+"id": 280909,
+"name": "Pauldrons of Glory",
+"icon": "inv_shoulder_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741985
+},
+{
+"slot": "Chest",
+"id": 280908,
+"name": "Chestguard of Glory",
+"icon": "inv_chest_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741980
+},
+{
+"slot": "Hands",
+"id": 280905,
+"name": "Handguards of Glory",
+"icon": "inv_glove_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741988
+},
+{
+"slot": "Legs",
+"id": 280907,
+"name": "Legguards of Glory",
+"icon": "inv_pant_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741984
+},
+{
+"slot": "Feet",
+"id": 280906,
+"name": "Sabatons of Glory",
+"icon": "inv_boot_plate_raidwarriorhyjalc60_d_01",
+"displayId": 741981
+}
+]
+},
+{
+"tier": "S1",
+"name": "Demonheart Raiment",
+"class": "warlock",
+"role": "All specs",
+"bonus": [
+"Improves your chance to hit by 1.0%.",
+"Reduces the cast time of your Banish spell by 1.5 sec.",
+"Increases damage done by your spells and effects by up to 21 when fighting Demons.",
+"Your Life Tap generates 20% more Mana at no additional Health cost."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280887,
+"name": "Demonheart Skullcap",
+"icon": "inv_helm_cloth_raidwarlockhyjalc60_d_01",
+"displayId": 741535
+},
+{
+"slot": "Shoulder",
+"id": 280882,
+"name": "Demonheart Spaulders",
+"icon": "inv_shoulder_cloth_raidwarlockhyjalc60_d_01",
+"displayId": 741543
+},
+{
+"slot": "Chest",
+"id": 280883,
+"name": "Demonheart Robes",
+"icon": "inv_chest_cloth_raidwarlockhyjalc60_d_01",
+"displayId": 741537
+},
+{
+"slot": "Hands",
+"id": 280888,
+"name": "Demonheart Gloves",
+"icon": "inv_glove_cloth_raidwarlockhyjalc60_d_01",
+"displayId": 741534
+},
+{
+"slot": "Legs",
+"id": 280886,
+"name": "Demonheart Leggings",
+"icon": "inv_pant_cloth_raidwarlockhyjalc60_d_01",
+"displayId": 741536
+},
+{
+"slot": "Feet",
+"id": 280889,
+"name": "Demonheart Boots",
+"icon": "inv_boot_cloth_raidwarlockhyjalc60_d_01",
+"displayId": 741533
+}
+]
+},
+{
+"tier": "S1",
+"name": "Grimstitch Armor",
+"class": "rogue",
+"role": "All specs",
+"bonus": [
+"Improves your chance to hit by 1.0%.",
+"Reduces the cooldown on your Kidney Shot ability by 3 sec.",
+"+36 Attack Power against Humanoids.",
+"Reduces the cost of your Envenom and Eviscerate abilities by 5 Energy."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280877,
+"name": "Grimstitch Mask",
+"icon": "inv_helm_leather_raidroguehyjalc60_d_01",
+"displayId": 741823
+},
+{
+"slot": "Shoulder",
+"id": 280876,
+"name": "Grimstitch Spaulders",
+"icon": "inv_shoulder_leather_raidroguehyjalc60_d_01",
+"displayId": 741825
+},
+{
+"slot": "Chest",
+"id": 280879,
+"name": "Grimstitch Chestpiece",
+"icon": "inv_robe_leather_raidroguehyjalc60_d_01",
+"displayId": 741820
+},
+{
+"slot": "Hands",
+"id": 280875,
+"name": "Grimstitch Gloves",
+"icon": "inv_glove_leather_raidroguehyjalc60_d_01",
+"displayId": 741822
+},
+{
+"slot": "Legs",
+"id": 280872,
+"name": "Grimstitch Pants",
+"icon": "inv_pant_leather_raidroguehyjalc60_d_01",
+"displayId": 741824
+},
+{
+"slot": "Feet",
+"id": 280878,
+"name": "Grimstitch Boots",
+"icon": "inv_boot_leather_raidroguehyjalc60_d_01",
+"displayId": 741821
+}
+]
+},
+{
+"tier": "S1",
+"name": "Justice Battleplate",
+"class": "paladin",
+"role": "Protection",
+"bonus": [
+"Increased Defense +7.",
+"Reduces the cast time on your Turn Undead spell by 1.5 sec.",
+"Reduces the chance for your melee attacks to be Dodged or Parried by 1.2%.",
+"Reduces the duration of Forbearance any time you gain it by 10.0 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280937,
+"name": "Justice Greathelm",
+"icon": "inv_helm_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741947
+},
+{
+"slot": "Shoulder",
+"id": 280942,
+"name": "Justice Pauldrons",
+"icon": "inv_shoulder_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741949
+},
+{
+"slot": "Chest",
+"id": 280941,
+"name": "Justice Chestguard",
+"icon": "inv_chest_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741943
+},
+{
+"slot": "Hands",
+"id": 280938,
+"name": "Justice Handguards",
+"icon": "inv_glove_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741945
+},
+{
+"slot": "Legs",
+"id": 280940,
+"name": "Justice Legguards",
+"icon": "inv_pant_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741948
+},
+{
+"slot": "Feet",
+"id": 280939,
+"name": "Justice Sabatons",
+"icon": "inv_boot_plate_raidpaladinhyjalc60_d_01",
+"displayId": 741944
+}
+]
+},
+{
+"tier": "S1",
+"name": "Raiments of Conviction",
+"class": "priest",
+"role": "Shadow",
+"bonus": [
+"Improves your chance to hit by 1.0%.",
+"Increases the duration of your Shackle Undead spell by 10 sec.",
+"Increases damage done by your spells and effects by up to 21 when fighting Undead.",
+"Reduces the cooldown on your Devouring Plague spell by 60 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280924,
+"name": "Crown of Conviction",
+"icon": "inv_helm_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741793
+},
+{
+"slot": "Shoulder",
+"id": 280923,
+"name": "Mantle of Conviction",
+"icon": "inv_shoulder_r_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741790
+},
+{
+"slot": "Chest",
+"id": 280919,
+"name": "Garb of Conviction",
+"icon": "inv_robe_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741791
+},
+{
+"slot": "Hands",
+"id": 280920,
+"name": "Gloves of Conviction",
+"icon": "inv_glove_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741794
+},
+{
+"slot": "Legs",
+"id": 280922,
+"name": "Pants of Conviction",
+"icon": "inv_pant_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741792
+},
+{
+"slot": "Feet",
+"id": 280921,
+"name": "Treads of Conviction",
+"icon": "inv_boot_cloth_raidpriesthyjalc60_d_01",
+"displayId": 741795
+}
+]
+},
+{
+"tier": "S1",
+"name": "The Spiritcaller's Rage",
+"class": "shaman",
+"role": "Enhancement",
+"bonus": [
+"Increases your attack speed and casting speed by 1%.",
+"Increases the radius of effect of your beneficial Air and Earth totems by 10 yards.",
+"+36 Attack Power against Elementals.",
+"Reduces the cooldown on your Stormstrike ability by 0.5 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280957,
+"name": "Spiritcaller Crown",
+"icon": "inv_helm_mail_raidshamanhyjalc60_d_01",
+"displayId": 741930
+},
+{
+"slot": "Shoulder",
+"id": 280956,
+"name": "Spiritcaller Spaulders",
+"icon": "inv_shoulder_mail_raidshamanhyjalc60_d_01",
+"displayId": 741932
+},
+{
+"slot": "Chest",
+"id": 280955,
+"name": "Spiritcaller Armor",
+"icon": "inv_chest_mail_raidshamanhyjalc60_d_01",
+"displayId": 742012
+},
+{
+"slot": "Hands",
+"id": 280952,
+"name": "Spiritcaller Grips",
+"icon": "inv_glove_mail_raidshamanhyjalc60_d_01",
+"displayId": 741929
+},
+{
+"slot": "Legs",
+"id": 280954,
+"name": "Spiritcaller Leggings",
+"icon": "inv_pant_mail_raidshamanhyjalc60_d_01",
+"displayId": 742008
+},
+{
+"slot": "Feet",
+"id": 280953,
+"name": "Spiritcaller Treads",
+"icon": "inv_boot_mail_raidshamanhyjalc60_d_01",
+"displayId": 741928
+}
+]
+},
+{
+"tier": "S1",
+"name": "The Spiritcaller's Storm",
+"class": "shaman",
+"role": "Elemental",
+"bonus": [
+"Improves your chance to hit by 1.0%.",
+"Reduces the cooldown on your Earthbind Totem spell by 2 sec.",
+"Increases damage done by your spells and effects by up to 21 when fighting Elementals.",
+"Reduces the cooldown on your Lava Burst spell by 1 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": 280963,
+"name": "Spiritcaller Headdress",
+"icon": "inv_helm_mail_raidshamanhyjalc60_d_01",
+"displayId": 741930
+},
+{
+"slot": "Shoulder",
+"id": 280962,
+"name": "Spiritcaller Mantle",
+"icon": "inv_shoulder_mail_raidshamanhyjalc60_d_01",
+"displayId": 741932
+},
+{
+"slot": "Chest",
+"id": 280961,
+"name": "Spiritcaller Embrace",
+"icon": "inv_chest_mail_raidshamanhyjalc60_d_01",
+"displayId": 742012
+},
+{
+"slot": "Hands",
+"id": 280958,
+"name": "Spiritcaller Gloves",
+"icon": "inv_glove_mail_raidshamanhyjalc60_d_01",
+"displayId": 741929
+},
+{
+"slot": "Legs",
+"id": 280960,
+"name": "Spiritcaller Legs (Storm)",
+"icon": "inv_pant_mail_raidshamanhyjalc60_d_01",
+"displayId": 742008,
+"unverified": true
+},
+{
+"slot": "Feet",
+"id": 280959,
+"name": "Spiritcaller Feet (Storm)",
+"icon": "inv_boot_mail_raidshamanhyjalc60_d_01",
+"displayId": 741928,
+"unverified": true
+}
+]
+},
+{
+"tier": "S1",
+"name": "Grovekeeper Eclipse",
+"class": "druid",
+"role": "Balance",
+"bonus": [
+"Improves your chance to hit by 1.0%.",
+"Reduces the cooldown on your Nature's Grasp spell by 15 sec.",
+"Increases damage done by your spells and effects by up to 21 when fighting Demons.",
+"Increases the duration of your Insect Swarm spell by 3 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": null,
+"name": "Grovekeeper Eclipse Head (not on Wowhead yet)",
+"icon": "inv_helm_leather_raiddruidhyjalc60_d_01",
+"displayId": 741847,
+"unverified": true
+},
+{
+"slot": "Shoulder",
+"id": null,
+"name": "Grovekeeper Eclipse Shoulder (not on Wowhead yet)",
+"icon": "inv_shoulder_leather_raiddruidhyjalc60_d_01",
+"displayId": 741849,
+"unverified": true
+},
+{
+"slot": "Chest",
+"id": null,
+"name": "Grovekeeper Eclipse Chest (not on Wowhead yet)",
+"icon": "inv_robe_leather_raiddruidhyjalc60_d_01",
+"displayId": 741844,
+"unverified": true
+},
+{
+"slot": "Hands",
+"id": null,
+"name": "Grovekeeper Eclipse Hands (not on Wowhead yet)",
+"icon": "inv_glove_leather_raiddruidhyjalc60_d_01",
+"displayId": 741846,
+"unverified": true
+},
+{
+"slot": "Legs",
+"id": null,
+"name": "Grovekeeper Eclipse Legs (not on Wowhead yet)",
+"icon": "inv_pant_leather_raiddruidhyjalc60_d_01",
+"displayId": 741848,
+"unverified": true
+},
+{
+"slot": "Feet",
+"id": null,
+"name": "Grovekeeper Eclipse Feet (not on Wowhead yet)",
+"icon": "inv_boot_leather_raiddruidhyjalc60_d_01",
+"displayId": 741845,
+"unverified": true
+}
+]
+},
+{
+"tier": "S1",
+"name": "Grovekeeper Ferocity",
+"class": "druid",
+"role": "Feral (Cat)",
+"bonus": [
+"Increases your attack speed and casting speed by 1%.",
+"Your Hibernate spell is castable in Cat Form with 1.5 sec less cast time, but gains a 15 sec cooldown.",
+"+36 Attack Power against Demons.",
+"Reduces the cooldown on your Tiger's Fury ability by 3.0 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": null,
+"name": "Grovekeeper Ferocity Head (not on Wowhead yet)",
+"icon": "inv_helm_leather_raiddruidhyjalc60_d_01",
+"displayId": 741847,
+"unverified": true
+},
+{
+"slot": "Shoulder",
+"id": null,
+"name": "Grovekeeper Ferocity Shoulder (not on Wowhead yet)",
+"icon": "inv_shoulder_leather_raiddruidhyjalc60_d_01",
+"displayId": 741849,
+"unverified": true
+},
+{
+"slot": "Chest",
+"id": null,
+"name": "Grovekeeper Ferocity Chest (not on Wowhead yet)",
+"icon": "inv_robe_leather_raiddruidhyjalc60_d_01",
+"displayId": 741844,
+"unverified": true
+},
+{
+"slot": "Hands",
+"id": null,
+"name": "Grovekeeper Ferocity Hands (not on Wowhead yet)",
+"icon": "inv_glove_leather_raiddruidhyjalc60_d_01",
+"displayId": 741846,
+"unverified": true
+},
+{
+"slot": "Legs",
+"id": null,
+"name": "Grovekeeper Ferocity Legs (not on Wowhead yet)",
+"icon": "inv_pant_leather_raiddruidhyjalc60_d_01",
+"displayId": 741848,
+"unverified": true
+},
+{
+"slot": "Feet",
+"id": null,
+"name": "Grovekeeper Ferocity Feet (not on Wowhead yet)",
+"icon": "inv_boot_leather_raiddruidhyjalc60_d_01",
+"displayId": 741845,
+"unverified": true
+}
+]
+},
+{
+"tier": "S1",
+"name": "Grovekeeper Rage",
+"class": "druid",
+"role": "Feral (Bear)",
+"bonus": [
+"Increased Defense +7.",
+"Your Rebirth spell is castable in Bear Form and Dire Bear Form with 2.0 sec less cast time.",
+"Reduces the chance for your melee attacks to be Dodged or Parried by 1.2%.",
+"Reduces the cooldown on your Berserk ability by 15.0 sec."
+],
+"db": "forever",
+"pieces": [
+{
+"slot": "Head",
+"id": null,
+"name": "Grovekeeper Rage Head (not on Wowhead yet)",
+"icon": "inv_helm_leather_raiddruidhyjalc60_d_01",
+"displayId": 741847,
+"unverified": true
+},
+{
+"slot": "Shoulder",
+"id": null,
+"name": "Grovekeeper Rage Shoulder (not on Wowhead yet)",
+"icon": "inv_shoulder_leather_raiddruidhyjalc60_d_01",
+"displayId": 741849,
+"unverified": true
+},
+{
+"slot": "Chest",
+"id": null,
+"name": "Grovekeeper Rage Chest (not on Wowhead yet)",
+"icon": "inv_robe_leather_raiddruidhyjalc60_d_01",
+"displayId": 741844,
+"unverified": true
+},
+{
+"slot": "Hands",
+"id": null,
+"name": "Grovekeeper Rage Hands (not on Wowhead yet)",
+"icon": "inv_glove_leather_raiddruidhyjalc60_d_01",
+"displayId": 741846,
+"unverified": true
+},
+{
+"slot": "Legs",
+"id": null,
+"name": "Grovekeeper Rage Legs (not on Wowhead yet)",
+"icon": "inv_pant_leather_raiddruidhyjalc60_d_01",
+"displayId": 741848,
+"unverified": true
+},
+{
+"slot": "Feet",
+"id": null,
+"name": "Grovekeeper Rage Feet (not on Wowhead yet)",
+"icon": "inv_boot_leather_raiddruidhyjalc60_d_01",
+"displayId": 741845,
+"unverified": true
+}
+]
+},
+{
+"tier": "T1",
+"name": "Battlegear of Might",
+"class": "warrior",
+"setId": 209,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16866,
+"name": "Helm of Might",
+"icon": "inv_helmet_09",
+"displayId": 31260
+},
+{
+"slot": "Shoulder",
+"id": 16868,
+"name": "Pauldrons of Might",
+"icon": "inv_shoulder_15",
+"displayId": 31024
+},
+{
+"slot": "Chest",
+"id": 16865,
+"name": "Breastplate of Might",
+"icon": "inv_chest_plate16",
+"displayId": 31021
+},
+{
+"slot": "Wrist",
+"id": 16861,
+"name": "Bracers of Might",
+"icon": "inv_bracer_19",
+"displayId": 31020
+},
+{
+"slot": "Hands",
+"id": 16863,
+"name": "Gauntlets of Might",
+"icon": "inv_gauntlets_10",
+"displayId": 31022
+},
+{
+"slot": "Waist",
+"id": 16864,
+"name": "Belt of Might",
+"icon": "inv_belt_09",
+"displayId": 31019
+},
+{
+"slot": "Legs",
+"id": 16867,
+"name": "Legplates of Might",
+"icon": "inv_pants_04",
+"displayId": 31023
+},
+{
+"slot": "Feet",
+"id": 16862,
+"name": "Sabatons of Might",
+"icon": "inv_boots_plate_04",
+"displayId": 31025
+}
+]
+},
+{
+"tier": "T2",
+"name": "Battlegear of Wrath",
+"class": "warrior",
+"setId": 218,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16963,
+"name": "Helm of Wrath",
+"icon": "inv_helmet_71",
+"displayId": 34215
+},
+{
+"slot": "Shoulder",
+"id": 16961,
+"name": "Pauldrons of Wrath",
+"icon": "inv_shoulder_34",
+"displayId": 34253
+},
+{
+"slot": "Chest",
+"id": 16966,
+"name": "Breastplate of Wrath",
+"icon": "inv_chest_plate16",
+"displayId": 33983
+},
+{
+"slot": "Wrist",
+"id": 16959,
+"name": "Bracelets of Wrath",
+"icon": "inv_bracer_19",
+"displayId": 33982
+},
+{
+"slot": "Hands",
+"id": 16964,
+"name": "Gauntlets of Wrath",
+"icon": "inv_gauntlets_10",
+"displayId": 33984
+},
+{
+"slot": "Waist",
+"id": 16960,
+"name": "Waistband of Wrath",
+"icon": "inv_belt_09",
+"displayId": 33990
+},
+{
+"slot": "Legs",
+"id": 16962,
+"name": "Legplates of Wrath",
+"icon": "inv_pants_04",
+"displayId": 33986
+},
+{
+"slot": "Feet",
+"id": 16965,
+"name": "Sabatons of Wrath",
+"icon": "inv_boots_plate_04",
+"displayId": 33989
+}
+]
+},
+{
+"tier": "T3",
+"name": "Dreadnaught's Battlegear",
+"class": "warrior",
+"setId": 523,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22418,
+"name": "Dreadnaught Helmet",
+"icon": "inv_helmet_58",
+"displayId": 35447
+},
+{
+"slot": "Shoulder",
+"id": 22419,
+"name": "Dreadnaught Pauldrons",
+"icon": "inv_shoulder_29",
+"displayId": 35177
+},
+{
+"slot": "Chest",
+"id": 22416,
+"name": "Dreadnaught Breastplate",
+"icon": "inv_chest_plate02",
+"displayId": 35049
+},
+{
+"slot": "Wrist",
+"id": 22423,
+"name": "Dreadnaught Bracers",
+"icon": "inv_bracer_15",
+"displayId": 35044
+},
+{
+"slot": "Hands",
+"id": 22421,
+"name": "Dreadnaught Gauntlets",
+"icon": "inv_gauntlets_28",
+"displayId": 35050
+},
+{
+"slot": "Waist",
+"id": 22422,
+"name": "Dreadnaught Waistguard",
+"icon": "inv_belt_27",
+"displayId": 35058
+},
+{
+"slot": "Legs",
+"id": 22417,
+"name": "Dreadnaught Legplates",
+"icon": "inv_pants_plate_05",
+"displayId": 35051
+},
+{
+"slot": "Feet",
+"id": 22420,
+"name": "Dreadnaught Sabatons",
+"icon": "inv_boots_plate_06",
+"displayId": 35067
+}
+]
+},
+{
+"tier": "D1",
+"name": "Battlegear of Valor",
+"class": "warrior",
+"setId": 189,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16731,
+"name": "Helm of Valor",
+"icon": "inv_helmet_02",
+"displayId": 31284
+},
+{
+"slot": "Shoulder",
+"id": 16733,
+"name": "Spaulders of Valor",
+"icon": "inv_shoulder_30",
+"displayId": 29964
+},
+{
+"slot": "Chest",
+"id": 16730,
+"name": "Breastplate of Valor",
+"icon": "inv_chest_plate03",
+"displayId": 29958
+},
+{
+"slot": "Wrist",
+"id": 16735,
+"name": "Bracers of Valor",
+"icon": "inv_bracer_18",
+"displayId": 29961
+},
+{
+"slot": "Hands",
+"id": 16737,
+"name": "Gauntlets of Valor",
+"icon": "inv_gauntlets_26",
+"displayId": 29962
+},
+{
+"slot": "Waist",
+"id": 16736,
+"name": "Belt of Valor",
+"icon": "inv_belt_34",
+"displayId": 29959
+},
+{
+"slot": "Legs",
+"id": 16732,
+"name": "Legplates of Valor",
+"icon": "inv_pants_04",
+"displayId": 29963
+},
+{
+"slot": "Feet",
+"id": 16734,
+"name": "Boots of Valor",
+"icon": "inv_boots_plate_03",
+"displayId": 29960
+}
+]
+},
+{
+"tier": "D2",
+"name": "Battlegear of Heroism",
+"class": "warrior",
+"setId": 511,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 21999,
+"name": "Helm of Heroism",
+"icon": "inv_helmet_02",
+"displayId": 34614
+},
+{
+"slot": "Shoulder",
+"id": 22001,
+"name": "Spaulders of Heroism",
+"icon": "inv_shoulder_30",
+"displayId": 34616
+},
+{
+"slot": "Chest",
+"id": 21997,
+"name": "Breastplate of Heroism",
+"icon": "inv_chest_plate03",
+"displayId": 34617
+},
+{
+"slot": "Wrist",
+"id": 21996,
+"name": "Bracers of Heroism",
+"icon": "inv_bracer_18",
+"displayId": 34612
+},
+{
+"slot": "Hands",
+"id": 21998,
+"name": "Gauntlets of Heroism",
+"icon": "inv_gauntlets_26",
+"displayId": 34613
+},
+{
+"slot": "Waist",
+"id": 21994,
+"name": "Belt of Heroism",
+"icon": "inv_belt_34",
+"displayId": 34610
+},
+{
+"slot": "Legs",
+"id": 22000,
+"name": "Legplates of Heroism",
+"icon": "inv_pants_04",
+"displayId": 34615
+},
+{
+"slot": "Feet",
+"id": 21995,
+"name": "Boots of Heroism",
+"icon": "inv_boots_plate_03",
+"displayId": 34611
+}
+]
+},
+{
+"tier": "T1",
+"name": "Lawbringer Armor",
+"class": "paladin",
+"setId": 208,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16854,
+"name": "Lawbringer Helm",
+"icon": "inv_helmet_05",
+"displayId": 31506
+},
+{
+"slot": "Shoulder",
+"id": 16856,
+"name": "Lawbringer Spaulders",
+"icon": "inv_shoulder_20",
+"displayId": 31510
+},
+{
+"slot": "Chest",
+"id": 16853,
+"name": "Lawbringer Chestguard",
+"icon": "inv_chest_plate03",
+"displayId": 31505
+},
+{
+"slot": "Wrist",
+"id": 16857,
+"name": "Lawbringer Bracers",
+"icon": "inv_bracer_18",
+"displayId": 31509
+},
+{
+"slot": "Hands",
+"id": 16860,
+"name": "Lawbringer Gauntlets",
+"icon": "inv_gauntlets_29",
+"displayId": 31507
+},
+{
+"slot": "Waist",
+"id": 16858,
+"name": "Lawbringer Belt",
+"icon": "inv_belt_27",
+"displayId": 31353
+},
+{
+"slot": "Legs",
+"id": 16855,
+"name": "Lawbringer Legplates",
+"icon": "inv_pants_04",
+"displayId": 31352
+},
+{
+"slot": "Feet",
+"id": 16859,
+"name": "Lawbringer Boots",
+"icon": "inv_boots_plate_09",
+"displayId": 31354
+}
+]
+},
+{
+"tier": "T2",
+"name": "Judgement Armor",
+"class": "paladin",
+"setId": 217,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16955,
+"name": "Judgement Crown",
+"icon": "inv_helmet_74",
+"displayId": 34216
+},
+{
+"slot": "Shoulder",
+"id": 16953,
+"name": "Judgement Spaulders",
+"icon": "inv_shoulder_37",
+"displayId": 33680
+},
+{
+"slot": "Chest",
+"id": 16958,
+"name": "Judgement Breastplate",
+"icon": "inv_chest_plate03",
+"displayId": 33635
+},
+{
+"slot": "Wrist",
+"id": 16951,
+"name": "Judgement Bindings",
+"icon": "inv_bracer_18",
+"displayId": 33634
+},
+{
+"slot": "Hands",
+"id": 16956,
+"name": "Judgement Gauntlets",
+"icon": "inv_gauntlets_29",
+"displayId": 33636
+},
+{
+"slot": "Waist",
+"id": 16952,
+"name": "Judgement Belt",
+"icon": "inv_belt_27",
+"displayId": 33633
+},
+{
+"slot": "Legs",
+"id": 16954,
+"name": "Judgement Legplates",
+"icon": "inv_pants_04",
+"displayId": 33637
+},
+{
+"slot": "Feet",
+"id": 16957,
+"name": "Judgement Sabatons",
+"icon": "inv_boots_plate_09",
+"displayId": 33639
+}
+]
+},
+{
+"tier": "T3",
+"name": "Redemption Armor",
+"class": "paladin",
+"setId": 528,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22428,
+"name": "Redemption Headpiece",
+"icon": "inv_helmet_15",
+"displayId": 36972
+},
+{
+"slot": "Shoulder",
+"id": 22429,
+"name": "Redemption Spaulders",
+"icon": "inv_shoulder_14",
+"displayId": 35617
+},
+{
+"slot": "Chest",
+"id": 22425,
+"name": "Redemption Tunic",
+"icon": "inv_chest_chain_15",
+"displayId": 35618
+},
+{
+"slot": "Wrist",
+"id": 22424,
+"name": "Redemption Wristguards",
+"icon": "inv_bracer_02",
+"displayId": 35619
+},
+{
+"slot": "Hands",
+"id": 22426,
+"name": "Redemption Handguards",
+"icon": "inv_gauntlets_25",
+"displayId": 35615
+},
+{
+"slot": "Waist",
+"id": 22431,
+"name": "Redemption Girdle",
+"icon": "inv_belt_22",
+"displayId": 35614
+},
+{
+"slot": "Legs",
+"id": 22427,
+"name": "Redemption Legguards",
+"icon": "inv_pants_mail_15",
+"displayId": 35616
+},
+{
+"slot": "Feet",
+"id": 22430,
+"name": "Redemption Boots",
+"icon": "inv_boots_chain_05",
+"displayId": 35613
+}
+]
+},
+{
+"tier": "D1",
+"name": "Lightforge Armor",
+"class": "paladin",
+"setId": 188,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16727,
+"name": "Lightforge Helm",
+"icon": "inv_helmet_08",
+"displayId": 31207
+},
+{
+"slot": "Shoulder",
+"id": 16729,
+"name": "Lightforge Spaulders",
+"icon": "inv_shoulder_10",
+"displayId": 29971
+},
+{
+"slot": "Chest",
+"id": 16726,
+"name": "Lightforge Breastplate",
+"icon": "inv_chest_plate03",
+"displayId": 29969
+},
+{
+"slot": "Wrist",
+"id": 16722,
+"name": "Lightforge Bracers",
+"icon": "inv_bracer_14",
+"displayId": 29968
+},
+{
+"slot": "Hands",
+"id": 16724,
+"name": "Lightforge Gauntlets",
+"icon": "inv_gauntlets_19",
+"displayId": 29970
+},
+{
+"slot": "Waist",
+"id": 16723,
+"name": "Lightforge Belt",
+"icon": "inv_belt_11",
+"displayId": 29966
+},
+{
+"slot": "Legs",
+"id": 16728,
+"name": "Lightforge Legplates",
+"icon": "inv_pants_04",
+"displayId": 29972
+},
+{
+"slot": "Feet",
+"id": 16725,
+"name": "Lightforge Boots",
+"icon": "inv_boots_plate_03",
+"displayId": 29967
+}
+]
+},
+{
+"tier": "D2",
+"name": "Soulforge Armor",
+"class": "paladin",
+"setId": 516,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22091,
+"name": "Soulforge Helm",
+"icon": "inv_helmet_08",
+"displayId": 34524
+},
+{
+"slot": "Shoulder",
+"id": 22093,
+"name": "Soulforge Spaulders",
+"icon": "inv_shoulder_10",
+"displayId": 34526
+},
+{
+"slot": "Chest",
+"id": 22089,
+"name": "Soulforge Breastplate",
+"icon": "inv_chest_plate03",
+"displayId": 34519
+},
+{
+"slot": "Wrist",
+"id": 22088,
+"name": "Soulforge Bracers",
+"icon": "inv_bracer_14",
+"displayId": 34522
+},
+{
+"slot": "Hands",
+"id": 22090,
+"name": "Soulforge Gauntlets",
+"icon": "inv_gauntlets_19",
+"displayId": 34523
+},
+{
+"slot": "Waist",
+"id": 22086,
+"name": "Soulforge Belt",
+"icon": "inv_belt_11",
+"displayId": 34520
+},
+{
+"slot": "Legs",
+"id": 22092,
+"name": "Soulforge Legplates",
+"icon": "inv_pants_04",
+"displayId": 34525
+},
+{
+"slot": "Feet",
+"id": 22087,
+"name": "Soulforge Boots",
+"icon": "inv_boots_plate_03",
+"displayId": 34521
+}
+]
+},
+{
+"tier": "T1",
+"name": "Giantstalker Armor",
+"class": "hunter",
+"setId": 206,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16846,
+"name": "Giantstalker's Helmet",
+"icon": "inv_helmet_05",
+"displayId": 32028
+},
+{
+"slot": "Shoulder",
+"id": 16848,
+"name": "Giantstalker's Epaulets",
+"icon": "inv_shoulder_10",
+"displayId": 32030
+},
+{
+"slot": "Chest",
+"id": 16845,
+"name": "Giantstalker's Breastplate",
+"icon": "inv_chest_chain_03",
+"displayId": 32022
+},
+{
+"slot": "Wrist",
+"id": 16850,
+"name": "Giantstalker's Bracers",
+"icon": "inv_bracer_17",
+"displayId": 32018
+},
+{
+"slot": "Hands",
+"id": 16852,
+"name": "Giantstalker's Gloves",
+"icon": "inv_gauntlets_10",
+"displayId": 32024
+},
+{
+"slot": "Waist",
+"id": 16851,
+"name": "Giantstalker's Belt",
+"icon": "inv_belt_28",
+"displayId": 32019
+},
+{
+"slot": "Legs",
+"id": 16847,
+"name": "Giantstalker's Leggings",
+"icon": "inv_pants_mail_03",
+"displayId": 32023
+},
+{
+"slot": "Feet",
+"id": 16849,
+"name": "Giantstalker's Boots",
+"icon": "inv_boots_chain_13",
+"displayId": 32040
+}
+]
+},
+{
+"tier": "T2",
+"name": "Dragonstalker Armor",
+"class": "hunter",
+"setId": 215,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16939,
+"name": "Dragonstalker's Helm",
+"icon": "inv_helmet_05",
+"displayId": 34367
+},
+{
+"slot": "Shoulder",
+"id": 16937,
+"name": "Dragonstalker's Spaulders",
+"icon": "inv_shoulder_10",
+"displayId": 34091
+},
+{
+"slot": "Chest",
+"id": 16942,
+"name": "Dragonstalker's Breastplate",
+"icon": "inv_chest_chain_03",
+"displayId": 33667
+},
+{
+"slot": "Wrist",
+"id": 16935,
+"name": "Dragonstalker's Bracers",
+"icon": "inv_bracer_17",
+"displayId": 33666
+},
+{
+"slot": "Hands",
+"id": 16940,
+"name": "Dragonstalker's Gauntlets",
+"icon": "inv_gauntlets_10",
+"displayId": 33668
+},
+{
+"slot": "Waist",
+"id": 16936,
+"name": "Dragonstalker's Belt",
+"icon": "inv_belt_28",
+"displayId": 33665
+},
+{
+"slot": "Legs",
+"id": 16938,
+"name": "Dragonstalker's Legguards",
+"icon": "inv_pants_03",
+"displayId": 33672
+},
+{
+"slot": "Feet",
+"id": 16941,
+"name": "Dragonstalker's Greaves",
+"icon": "inv_boots_plate_07",
+"displayId": 34269
+}
+]
+},
+{
+"tier": "T3",
+"name": "Cryptstalker Armor",
+"class": "hunter",
+"setId": 530,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22438,
+"name": "Cryptstalker Headpiece",
+"icon": "inv_helmet_15",
+"displayId": 35601
+},
+{
+"slot": "Shoulder",
+"id": 22439,
+"name": "Cryptstalker Spaulders",
+"icon": "inv_shoulder_14",
+"displayId": 35611
+},
+{
+"slot": "Chest",
+"id": 22436,
+"name": "Cryptstalker Tunic",
+"icon": "inv_chest_chain_15",
+"displayId": 35415
+},
+{
+"slot": "Wrist",
+"id": 22443,
+"name": "Cryptstalker Wristguards",
+"icon": "inv_bracer_02",
+"displayId": 35416
+},
+{
+"slot": "Hands",
+"id": 22441,
+"name": "Cryptstalker Handguards",
+"icon": "inv_gauntlets_25",
+"displayId": 35411
+},
+{
+"slot": "Waist",
+"id": 22442,
+"name": "Cryptstalker Girdle",
+"icon": "inv_belt_22",
+"displayId": 35410
+},
+{
+"slot": "Legs",
+"id": 22437,
+"name": "Cryptstalker Legguards",
+"icon": "inv_pants_mail_15",
+"displayId": 35413
+},
+{
+"slot": "Feet",
+"id": 22440,
+"name": "Cryptstalker Boots",
+"icon": "inv_boots_chain_05",
+"displayId": 35409
+}
+]
+},
+{
+"tier": "D1",
+"name": "Beaststalker Armor",
+"class": "hunter",
+"setId": 186,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16677,
+"name": "Beaststalker's Cap",
+"icon": "inv_helmet_24",
+"displayId": 31410
+},
+{
+"slot": "Shoulder",
+"id": 16679,
+"name": "Beaststalker's Mantle",
+"icon": "inv_shoulder_10",
+"displayId": 31409
+},
+{
+"slot": "Chest",
+"id": 16674,
+"name": "Beaststalker's Tunic",
+"icon": "inv_chest_chain_03",
+"displayId": 31402
+},
+{
+"slot": "Wrist",
+"id": 16681,
+"name": "Beaststalker's Bindings",
+"icon": "inv_bracer_17",
+"displayId": 31405
+},
+{
+"slot": "Hands",
+"id": 16676,
+"name": "Beaststalker's Gloves",
+"icon": "inv_gauntlets_10",
+"displayId": 31406
+},
+{
+"slot": "Waist",
+"id": 16680,
+"name": "Beaststalker's Belt",
+"icon": "inv_belt_28",
+"displayId": 31404
+},
+{
+"slot": "Legs",
+"id": 16678,
+"name": "Beaststalker's Pants",
+"icon": "inv_pants_03",
+"displayId": 31403
+},
+{
+"slot": "Feet",
+"id": 16675,
+"name": "Beaststalker's Boots",
+"icon": "inv_boots_plate_07",
+"displayId": 31408
+}
+]
+},
+{
+"tier": "D2",
+"name": "Beastmaster Armor",
+"class": "hunter",
+"setId": 515,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22013,
+"name": "Beastmaster's Cap",
+"icon": "inv_helmet_24",
+"displayId": 34649
+},
+{
+"slot": "Shoulder",
+"id": 22016,
+"name": "Beastmaster's Mantle",
+"icon": "inv_shoulder_10",
+"displayId": 34651
+},
+{
+"slot": "Chest",
+"id": 22060,
+"name": "Beastmaster's Tunic",
+"icon": "inv_chest_chain_03",
+"displayId": 34645
+},
+{
+"slot": "Wrist",
+"id": 22011,
+"name": "Beastmaster's Bindings",
+"icon": "inv_bracer_17",
+"displayId": 34647
+},
+{
+"slot": "Hands",
+"id": 22015,
+"name": "Beastmaster's Gloves",
+"icon": "inv_gauntlets_10",
+"displayId": 34650
+},
+{
+"slot": "Waist",
+"id": 22010,
+"name": "Beastmaster's Belt",
+"icon": "inv_belt_28",
+"displayId": 34646
+},
+{
+"slot": "Legs",
+"id": 22017,
+"name": "Beastmaster's Pants",
+"icon": "inv_pants_03",
+"displayId": 34652
+},
+{
+"slot": "Feet",
+"id": 22061,
+"name": "Beastmaster's Boots",
+"icon": "inv_boots_plate_07",
+"displayId": 34648
+}
+]
+},
+{
+"tier": "T1",
+"name": "Nightslayer Armor",
+"class": "rogue",
+"setId": 204,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16821,
+"name": "Nightslayer Cover",
+"icon": "inv_helmet_41",
+"displayId": 31514
+},
+{
+"slot": "Shoulder",
+"id": 16823,
+"name": "Nightslayer Shoulder Pads",
+"icon": "inv_shoulder_25",
+"displayId": 31343
+},
+{
+"slot": "Chest",
+"id": 16820,
+"name": "Nightslayer Chestpiece",
+"icon": "inv_chest_cloth_07",
+"displayId": 31105
+},
+{
+"slot": "Wrist",
+"id": 16825,
+"name": "Nightslayer Bracelets",
+"icon": "inv_bracer_02",
+"displayId": 31106
+},
+{
+"slot": "Hands",
+"id": 16826,
+"name": "Nightslayer Gloves",
+"icon": "inv_gauntlets_21",
+"displayId": 31503
+},
+{
+"slot": "Waist",
+"id": 16827,
+"name": "Nightslayer Belt",
+"icon": "inv_belt_23",
+"displayId": 31339
+},
+{
+"slot": "Legs",
+"id": 16822,
+"name": "Nightslayer Pants",
+"icon": "inv_pants_06",
+"displayId": 31340
+},
+{
+"slot": "Feet",
+"id": 16824,
+"name": "Nightslayer Boots",
+"icon": "inv_boots_08",
+"displayId": 31109
+}
+]
+},
+{
+"tier": "T2",
+"name": "Bloodfang Armor",
+"class": "rogue",
+"setId": 213,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16908,
+"name": "Bloodfang Hood",
+"icon": "inv_helmet_41",
+"displayId": 33743
+},
+{
+"slot": "Shoulder",
+"id": 16832,
+"name": "Bloodfang Spaulders",
+"icon": "inv_shoulder_23",
+"displayId": 32813
+},
+{
+"slot": "Chest",
+"id": 16905,
+"name": "Bloodfang Chestpiece",
+"icon": "inv_chest_cloth_07",
+"displayId": 33650
+},
+{
+"slot": "Wrist",
+"id": 16911,
+"name": "Bloodfang Bracers",
+"icon": "inv_bracer_02",
+"displayId": 31127
+},
+{
+"slot": "Hands",
+"id": 16907,
+"name": "Bloodfang Gloves",
+"icon": "inv_gauntlets_21",
+"displayId": 32815
+},
+{
+"slot": "Waist",
+"id": 16910,
+"name": "Bloodfang Belt",
+"icon": "inv_belt_23",
+"displayId": 31110
+},
+{
+"slot": "Legs",
+"id": 16909,
+"name": "Bloodfang Pants",
+"icon": "inv_pants_06",
+"displayId": 31115
+},
+{
+"slot": "Feet",
+"id": 16906,
+"name": "Bloodfang Boots",
+"icon": "inv_boots_08",
+"displayId": 31111
+}
+]
+},
+{
+"tier": "T3",
+"name": "Bonescythe Armor",
+"class": "rogue",
+"setId": 524,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22478,
+"name": "Bonescythe Helmet",
+"icon": "inv_helmet_58",
+"displayId": 35132
+},
+{
+"slot": "Shoulder",
+"id": 22479,
+"name": "Bonescythe Pauldrons",
+"icon": "inv_shoulder_29",
+"displayId": 35064
+},
+{
+"slot": "Chest",
+"id": 22476,
+"name": "Bonescythe Breastplate",
+"icon": "inv_chest_plate02",
+"displayId": 35054
+},
+{
+"slot": "Wrist",
+"id": 22483,
+"name": "Bonescythe Bracers",
+"icon": "inv_bracer_15",
+"displayId": 35053
+},
+{
+"slot": "Hands",
+"id": 22481,
+"name": "Bonescythe Gauntlets",
+"icon": "inv_gauntlets_28",
+"displayId": 35055
+},
+{
+"slot": "Waist",
+"id": 22482,
+"name": "Bonescythe Waistguard",
+"icon": "inv_belt_27",
+"displayId": 36349
+},
+{
+"slot": "Legs",
+"id": 22477,
+"name": "Bonescythe Legplates",
+"icon": "inv_pants_plate_05",
+"displayId": 35065
+},
+{
+"slot": "Feet",
+"id": 22480,
+"name": "Bonescythe Sabatons",
+"icon": "inv_boots_plate_06",
+"displayId": 36351
+}
+]
+},
+{
+"tier": "D1",
+"name": "Shadowcraft Armor",
+"class": "rogue",
+"setId": 184,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16707,
+"name": "Shadowcraft Cap",
+"icon": "inv_helmet_41",
+"displayId": 16056
+},
+{
+"slot": "Shoulder",
+"id": 16708,
+"name": "Shadowcraft Spaulders",
+"icon": "inv_shoulder_07",
+"displayId": 24727
+},
+{
+"slot": "Chest",
+"id": 16721,
+"name": "Shadowcraft Tunic",
+"icon": "inv_chest_leather_07",
+"displayId": 15607
+},
+{
+"slot": "Wrist",
+"id": 16710,
+"name": "Shadowcraft Bracers",
+"icon": "inv_bracer_07",
+"displayId": 15609
+},
+{
+"slot": "Hands",
+"id": 16712,
+"name": "Shadowcraft Gloves",
+"icon": "inv_gauntlets_24",
+"displayId": 19909
+},
+{
+"slot": "Waist",
+"id": 16713,
+"name": "Shadowcraft Belt",
+"icon": "inv_belt_03",
+"displayId": 14853
+},
+{
+"slot": "Legs",
+"id": 16709,
+"name": "Shadowcraft Pants",
+"icon": "inv_pants_02",
+"displayId": 9807
+},
+{
+"slot": "Feet",
+"id": 16711,
+"name": "Shadowcraft Boots",
+"icon": "inv_boots_08",
+"displayId": 28162
+}
+]
+},
+{
+"tier": "D2",
+"name": "Darkmantle Armor",
+"class": "rogue",
+"setId": 512,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22005,
+"name": "Darkmantle Cap",
+"icon": "inv_helmet_41",
+"displayId": 34700
+},
+{
+"slot": "Shoulder",
+"id": 22008,
+"name": "Darkmantle Spaulders",
+"icon": "inv_shoulder_07",
+"displayId": 34688
+},
+{
+"slot": "Chest",
+"id": 22009,
+"name": "Darkmantle Tunic",
+"icon": "inv_chest_leather_07",
+"displayId": 34689
+},
+{
+"slot": "Wrist",
+"id": 22004,
+"name": "Darkmantle Bracers",
+"icon": "inv_bracer_07",
+"displayId": 34685
+},
+{
+"slot": "Hands",
+"id": 22006,
+"name": "Darkmantle Gloves",
+"icon": "inv_gauntlets_24",
+"displayId": 34686
+},
+{
+"slot": "Waist",
+"id": 22002,
+"name": "Darkmantle Belt",
+"icon": "inv_belt_03",
+"displayId": 34699
+},
+{
+"slot": "Legs",
+"id": 22007,
+"name": "Darkmantle Pants",
+"icon": "inv_pants_02",
+"displayId": 34687
+},
+{
+"slot": "Feet",
+"id": 22003,
+"name": "Darkmantle Boots",
+"icon": "inv_boots_08",
+"displayId": 34684
+}
+]
+},
+{
+"tier": "T1",
+"name": "Vestments of Prophecy",
+"class": "priest",
+"setId": 203,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16813,
+"name": "Circlet of Prophecy",
+"icon": "inv_helmet_34",
+"displayId": 31371
+},
+{
+"slot": "Shoulder",
+"id": 16816,
+"name": "Mantle of Prophecy",
+"icon": "inv_shoulder_02",
+"displayId": 30623
+},
+{
+"slot": "Chest",
+"id": 16815,
+"name": "Robes of Prophecy",
+"icon": "inv_chest_cloth_03",
+"displayId": 31490
+},
+{
+"slot": "Wrist",
+"id": 16819,
+"name": "Vambraces of Prophecy",
+"icon": "inv_bracer_09",
+"displayId": 30617
+},
+{
+"slot": "Hands",
+"id": 16812,
+"name": "Gloves of Prophecy",
+"icon": "inv_gauntlets_14",
+"displayId": 30620
+},
+{
+"slot": "Waist",
+"id": 16817,
+"name": "Girdle of Prophecy",
+"icon": "inv_belt_22",
+"displayId": 30621
+},
+{
+"slot": "Legs",
+"id": 16814,
+"name": "Pants of Prophecy",
+"icon": "inv_pants_08",
+"displayId": 27598
+},
+{
+"slot": "Feet",
+"id": 16811,
+"name": "Boots of Prophecy",
+"icon": "inv_boots_07",
+"displayId": 31718
+}
+]
+},
+{
+"tier": "T2",
+"name": "Vestments of Transcendence",
+"class": "priest",
+"setId": 212,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16921,
+"name": "Halo of Transcendence",
+"icon": "inv_helmet_24",
+"displayId": 34233
+},
+{
+"slot": "Shoulder",
+"id": 16924,
+"name": "Pauldrons of Transcendence",
+"icon": "inv_shoulder_02",
+"displayId": 34048
+},
+{
+"slot": "Chest",
+"id": 16923,
+"name": "Robes of Transcendence",
+"icon": "inv_chest_cloth_03",
+"displayId": 34047
+},
+{
+"slot": "Wrist",
+"id": 16926,
+"name": "Bindings of Transcendence",
+"icon": "inv_bracer_09",
+"displayId": 34052
+},
+{
+"slot": "Hands",
+"id": 16920,
+"name": "Handguards of Transcendence",
+"icon": "inv_gauntlets_14",
+"displayId": 34051
+},
+{
+"slot": "Waist",
+"id": 16925,
+"name": "Belt of Transcendence",
+"icon": "inv_belt_22",
+"displayId": 34053
+},
+{
+"slot": "Legs",
+"id": 16922,
+"name": "Leggings of Transcendence",
+"icon": "inv_pants_08",
+"displayId": 34049
+},
+{
+"slot": "Feet",
+"id": 16919,
+"name": "Boots of Transcendence",
+"icon": "inv_boots_07",
+"displayId": 34055
+}
+]
+},
+{
+"tier": "T3",
+"name": "Vestments of Faith",
+"class": "priest",
+"setId": 525,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22514,
+"name": "Circlet of Faith",
+"icon": "inv_crown_01",
+"displayId": 35155
+},
+{
+"slot": "Shoulder",
+"id": 22515,
+"name": "Shoulderpads of Faith",
+"icon": "inv_shoulder_25",
+"displayId": 35149
+},
+{
+"slot": "Chest",
+"id": 22512,
+"name": "Robe of Faith",
+"icon": "inv_chest_cloth_43",
+"displayId": 36354
+},
+{
+"slot": "Wrist",
+"id": 22519,
+"name": "Bindings of Faith",
+"icon": "inv_bracer_13",
+"displayId": 35144
+},
+{
+"slot": "Hands",
+"id": 22517,
+"name": "Gloves of Faith",
+"icon": "inv_gauntlets_17",
+"displayId": 35145
+},
+{
+"slot": "Waist",
+"id": 22518,
+"name": "Belt of Faith",
+"icon": "inv_belt_08",
+"displayId": 35143
+},
+{
+"slot": "Legs",
+"id": 22513,
+"name": "Leggings of Faith",
+"icon": "inv_pants_cloth_05",
+"displayId": 35154
+},
+{
+"slot": "Feet",
+"id": 22516,
+"name": "Sandals of Faith",
+"icon": "inv_boots_fabric_01",
+"displayId": 35148
+}
+]
+},
+{
+"tier": "D1",
+"name": "Vestments of the Devout",
+"class": "priest",
+"setId": 182,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16693,
+"name": "Devout Crown",
+"icon": "inv_crown_01",
+"displayId": 31104
+},
+{
+"slot": "Shoulder",
+"id": 16695,
+"name": "Devout Mantle",
+"icon": "inv_shoulder_02",
+"displayId": 31103
+},
+{
+"slot": "Chest",
+"id": 16690,
+"name": "Devout Robe",
+"icon": "inv_chest_cloth_11",
+"displayId": 30422
+},
+{
+"slot": "Wrist",
+"id": 16697,
+"name": "Devout Bracers",
+"icon": "inv_belt_31",
+"displayId": 30426
+},
+{
+"slot": "Hands",
+"id": 16692,
+"name": "Devout Gloves",
+"icon": "inv_gauntlets_14",
+"displayId": 30427
+},
+{
+"slot": "Waist",
+"id": 16696,
+"name": "Devout Belt",
+"icon": "inv_belt_10",
+"displayId": 30425
+},
+{
+"slot": "Legs",
+"id": 16694,
+"name": "Devout Skirt",
+"icon": "inv_pants_08",
+"displayId": 30424
+},
+{
+"slot": "Feet",
+"id": 16691,
+"name": "Devout Sandals",
+"icon": "inv_boots_05",
+"displayId": 30430
+}
+]
+},
+{
+"tier": "D2",
+"name": "Vestments of the Virtuous",
+"class": "priest",
+"setId": 514,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22080,
+"name": "Virtuous Crown",
+"icon": "inv_crown_01",
+"displayId": 34630
+},
+{
+"slot": "Shoulder",
+"id": 22082,
+"name": "Virtuous Mantle",
+"icon": "inv_shoulder_02",
+"displayId": 34632
+},
+{
+"slot": "Chest",
+"id": 22083,
+"name": "Virtuous Robe",
+"icon": "inv_chest_cloth_11",
+"displayId": 34633
+},
+{
+"slot": "Wrist",
+"id": 22079,
+"name": "Virtuous Bracers",
+"icon": "inv_belt_31",
+"displayId": 34629
+},
+{
+"slot": "Hands",
+"id": 22081,
+"name": "Virtuous Gloves",
+"icon": "inv_gauntlets_14",
+"displayId": 34631
+},
+{
+"slot": "Waist",
+"id": 22078,
+"name": "Virtuous Belt",
+"icon": "inv_belt_10",
+"displayId": 34628
+},
+{
+"slot": "Legs",
+"id": 22085,
+"name": "Virtuous Skirt",
+"icon": "inv_pants_08",
+"displayId": 34635
+},
+{
+"slot": "Feet",
+"id": 22084,
+"name": "Virtuous Sandals",
+"icon": "inv_boots_05",
+"displayId": 34634
+}
+]
+},
+{
+"tier": "T1",
+"name": "The Earthfury",
+"class": "shaman",
+"setId": 207,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16842,
+"name": "Earthfury Helmet",
+"icon": "inv_helmet_09",
+"displayId": 31835
+},
+{
+"slot": "Shoulder",
+"id": 16844,
+"name": "Earthfury Epaulets",
+"icon": "inv_shoulder_29",
+"displayId": 31833
+},
+{
+"slot": "Chest",
+"id": 16841,
+"name": "Earthfury Vestments",
+"icon": "inv_chest_chain_11",
+"displayId": 31832
+},
+{
+"slot": "Wrist",
+"id": 16840,
+"name": "Earthfury Bracers",
+"icon": "inv_bracer_16",
+"displayId": 31831
+},
+{
+"slot": "Hands",
+"id": 16839,
+"name": "Earthfury Gauntlets",
+"icon": "inv_gauntlets_11",
+"displayId": 31834
+},
+{
+"slot": "Waist",
+"id": 16838,
+"name": "Earthfury Belt",
+"icon": "inv_belt_14",
+"displayId": 31829
+},
+{
+"slot": "Legs",
+"id": 16843,
+"name": "Earthfury Legguards",
+"icon": "inv_pants_03",
+"displayId": 31836
+},
+{
+"slot": "Feet",
+"id": 16837,
+"name": "Earthfury Boots",
+"icon": "inv_boots_plate_06",
+"displayId": 31830
+}
+]
+},
+{
+"tier": "T2",
+"name": "The Ten Storms",
+"class": "shaman",
+"setId": 216,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16947,
+"name": "Helmet of Ten Storms",
+"icon": "inv_helmet_69",
+"displayId": 34217
+},
+{
+"slot": "Shoulder",
+"id": 16945,
+"name": "Epaulets of Ten Storms",
+"icon": "inv_shoulder_33",
+"displayId": 34067
+},
+{
+"slot": "Chest",
+"id": 16950,
+"name": "Breastplate of Ten Storms",
+"icon": "inv_chest_chain_11",
+"displayId": 34081
+},
+{
+"slot": "Wrist",
+"id": 16943,
+"name": "Bracers of Ten Storms",
+"icon": "inv_bracer_16",
+"displayId": 34079
+},
+{
+"slot": "Hands",
+"id": 16948,
+"name": "Gauntlets of Ten Storms",
+"icon": "inv_gauntlets_11",
+"displayId": 34082
+},
+{
+"slot": "Waist",
+"id": 16944,
+"name": "Belt of Ten Storms",
+"icon": "inv_belt_14",
+"displayId": 34078
+},
+{
+"slot": "Legs",
+"id": 16946,
+"name": "Legplates of Ten Storms",
+"icon": "inv_pants_03",
+"displayId": 34084
+},
+{
+"slot": "Feet",
+"id": 16949,
+"name": "Greaves of Ten Storms",
+"icon": "inv_boots_plate_06",
+"displayId": 34083
+}
+]
+},
+{
+"tier": "T3",
+"name": "The Earthshatterer",
+"class": "shaman",
+"setId": 527,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22466,
+"name": "Earthshatter Headpiece",
+"icon": "inv_helmet_15",
+"displayId": 37056
+},
+{
+"slot": "Shoulder",
+"id": 22467,
+"name": "Earthshatter Spaulders",
+"icon": "inv_shoulder_14",
+"displayId": 35751
+},
+{
+"slot": "Chest",
+"id": 22464,
+"name": "Earthshatter Tunic",
+"icon": "inv_chest_chain_15",
+"displayId": 35752
+},
+{
+"slot": "Wrist",
+"id": 22471,
+"name": "Earthshatter Wristguards",
+"icon": "inv_bracer_02",
+"displayId": 35753
+},
+{
+"slot": "Hands",
+"id": 22469,
+"name": "Earthshatter Handguards",
+"icon": "inv_gauntlets_25",
+"displayId": 35748
+},
+{
+"slot": "Waist",
+"id": 22470,
+"name": "Earthshatter Girdle",
+"icon": "inv_belt_22",
+"displayId": 35747
+},
+{
+"slot": "Legs",
+"id": 22465,
+"name": "Earthshatter Legguards",
+"icon": "inv_pants_mail_15",
+"displayId": 35754
+},
+{
+"slot": "Feet",
+"id": 22468,
+"name": "Earthshatter Boots",
+"icon": "inv_boots_chain_05",
+"displayId": 35746
+}
+]
+},
+{
+"tier": "D1",
+"name": "The Elements",
+"class": "shaman",
+"setId": 187,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16667,
+"name": "Coif of Elements",
+"icon": "inv_helmet_04",
+"displayId": 31117
+},
+{
+"slot": "Shoulder",
+"id": 16669,
+"name": "Pauldrons of Elements",
+"icon": "inv_shoulder_29",
+"displayId": 30925
+},
+{
+"slot": "Chest",
+"id": 16666,
+"name": "Vest of Elements",
+"icon": "inv_chest_chain_11",
+"displayId": 31416
+},
+{
+"slot": "Wrist",
+"id": 16671,
+"name": "Bindings of Elements",
+"icon": "inv_bracer_02",
+"displayId": 31411
+},
+{
+"slot": "Hands",
+"id": 16672,
+"name": "Gauntlets of Elements",
+"icon": "inv_gauntlets_11",
+"displayId": 31414
+},
+{
+"slot": "Waist",
+"id": 16673,
+"name": "Cord of Elements",
+"icon": "inv_belt_16",
+"displayId": 31413
+},
+{
+"slot": "Legs",
+"id": 16668,
+"name": "Kilt of Elements",
+"icon": "inv_pants_03",
+"displayId": 31415
+},
+{
+"slot": "Feet",
+"id": 16670,
+"name": "Boots of Elements",
+"icon": "inv_boots_wolf",
+"displayId": 31412
+}
+]
+},
+{
+"tier": "D2",
+"name": "The Five Thunders",
+"class": "shaman",
+"setId": 519,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22097,
+"name": "Coif of The Five Thunders",
+"icon": "inv_helmet_04",
+"displayId": 34693
+},
+{
+"slot": "Shoulder",
+"id": 22101,
+"name": "Pauldrons of The Five Thunders",
+"icon": "inv_shoulder_29",
+"displayId": 34697
+},
+{
+"slot": "Chest",
+"id": 22102,
+"name": "Vest of The Five Thunders",
+"icon": "inv_chest_chain_11",
+"displayId": 34698
+},
+{
+"slot": "Wrist",
+"id": 22095,
+"name": "Bindings of The Five Thunders",
+"icon": "inv_bracer_02",
+"displayId": 34691
+},
+{
+"slot": "Hands",
+"id": 22099,
+"name": "Gauntlets of The Five Thunders",
+"icon": "inv_gauntlets_11",
+"displayId": 34695
+},
+{
+"slot": "Waist",
+"id": 22098,
+"name": "Cord of The Five Thunders",
+"icon": "inv_belt_16",
+"displayId": 34694
+},
+{
+"slot": "Legs",
+"id": 22100,
+"name": "Kilt of The Five Thunders",
+"icon": "inv_pants_03",
+"displayId": 34696
+},
+{
+"slot": "Feet",
+"id": 22096,
+"name": "Boots of The Five Thunders",
+"icon": "inv_boots_wolf",
+"displayId": 34692
+}
+]
+},
+{
+"tier": "T1",
+"name": "Arcanist Regalia",
+"class": "mage",
+"setId": 201,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16795,
+"name": "Arcanist Crown",
+"icon": "inv_helmet_53",
+"displayId": 31517
+},
+{
+"slot": "Shoulder",
+"id": 16797,
+"name": "Arcanist Mantle",
+"icon": "inv_shoulder_02",
+"displayId": 30586
+},
+{
+"slot": "Chest",
+"id": 16798,
+"name": "Arcanist Robes",
+"icon": "inv_chest_cloth_03",
+"displayId": 30581
+},
+{
+"slot": "Wrist",
+"id": 16799,
+"name": "Arcanist Bindings",
+"icon": "inv_belt_29",
+"displayId": 30584
+},
+{
+"slot": "Hands",
+"id": 16801,
+"name": "Arcanist Gloves",
+"icon": "inv_gauntlets_14",
+"displayId": 30585
+},
+{
+"slot": "Waist",
+"id": 16802,
+"name": "Arcanist Belt",
+"icon": "inv_belt_30",
+"displayId": 30583
+},
+{
+"slot": "Legs",
+"id": 16796,
+"name": "Arcanist Leggings",
+"icon": "inv_pants_08",
+"displayId": 30582
+},
+{
+"slot": "Feet",
+"id": 16800,
+"name": "Arcanist Boots",
+"icon": "inv_boots_07",
+"displayId": 30587
+}
+]
+},
+{
+"tier": "T2",
+"name": "Netherwind Regalia",
+"class": "mage",
+"setId": 210,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16914,
+"name": "Netherwind Crown",
+"icon": "inv_helmet_70",
+"displayId": 34057
+},
+{
+"slot": "Shoulder",
+"id": 16917,
+"name": "Netherwind Mantle",
+"icon": "inv_shoulder_32",
+"displayId": 34058
+},
+{
+"slot": "Chest",
+"id": 16916,
+"name": "Netherwind Robes",
+"icon": "inv_chest_cloth_03",
+"displayId": 34038
+},
+{
+"slot": "Wrist",
+"id": 16918,
+"name": "Netherwind Bindings",
+"icon": "inv_bracer_09",
+"displayId": 34045
+},
+{
+"slot": "Hands",
+"id": 16913,
+"name": "Netherwind Gloves",
+"icon": "inv_gauntlets_14",
+"displayId": 34041
+},
+{
+"slot": "Waist",
+"id": 16818,
+"name": "Netherwind Belt",
+"icon": "inv_belt_22",
+"displayId": 34046
+},
+{
+"slot": "Legs",
+"id": 16915,
+"name": "Netherwind Pants",
+"icon": "inv_pants_08",
+"displayId": 34039
+},
+{
+"slot": "Feet",
+"id": 16912,
+"name": "Netherwind Boots",
+"icon": "inv_boots_07",
+"displayId": 34044
+}
+]
+},
+{
+"tier": "T3",
+"name": "Frostfire Regalia",
+"class": "mage",
+"setId": 526,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22498,
+"name": "Frostfire Circlet",
+"icon": "inv_crown_01",
+"displayId": 36440
+},
+{
+"slot": "Shoulder",
+"id": 22499,
+"name": "Frostfire Shoulderpads",
+"icon": "inv_shoulder_25",
+"displayId": 35326
+},
+{
+"slot": "Chest",
+"id": 22496,
+"name": "Frostfire Robe",
+"icon": "inv_chest_cloth_43",
+"displayId": 35523
+},
+{
+"slot": "Wrist",
+"id": 22503,
+"name": "Frostfire Bindings",
+"icon": "inv_bracer_13",
+"displayId": 35677
+},
+{
+"slot": "Hands",
+"id": 22501,
+"name": "Frostfire Gloves",
+"icon": "inv_gauntlets_17",
+"displayId": 35521
+},
+{
+"slot": "Waist",
+"id": 22502,
+"name": "Frostfire Belt",
+"icon": "inv_belt_03",
+"displayId": 35519
+},
+{
+"slot": "Legs",
+"id": 22497,
+"name": "Frostfire Leggings",
+"icon": "inv_pants_cloth_05",
+"displayId": 35522
+},
+{
+"slot": "Feet",
+"id": 22500,
+"name": "Frostfire Sandals",
+"icon": "inv_boots_fabric_01",
+"displayId": 35525
+}
+]
+},
+{
+"tier": "D1",
+"name": "Magister's Regalia",
+"class": "mage",
+"setId": 181,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16686,
+"name": "Magister's Crown",
+"icon": "inv_crown_02",
+"displayId": 31087
+},
+{
+"slot": "Shoulder",
+"id": 16689,
+"name": "Magister's Mantle",
+"icon": "inv_shoulder_23",
+"displayId": 30211
+},
+{
+"slot": "Chest",
+"id": 16688,
+"name": "Magister's Robes",
+"icon": "inv_chest_cloth_25",
+"displayId": 29591
+},
+{
+"slot": "Wrist",
+"id": 16683,
+"name": "Magister's Bindings",
+"icon": "inv_jewelry_ring_23",
+"displayId": 29595
+},
+{
+"slot": "Hands",
+"id": 16684,
+"name": "Magister's Gloves",
+"icon": "inv_gauntlets_17",
+"displayId": 29593
+},
+{
+"slot": "Waist",
+"id": 16685,
+"name": "Magister's Belt",
+"icon": "inv_belt_08",
+"displayId": 29596
+},
+{
+"slot": "Legs",
+"id": 16687,
+"name": "Magister's Leggings",
+"icon": "inv_pants_06",
+"displayId": 7939
+},
+{
+"slot": "Feet",
+"id": 16682,
+"name": "Magister's Boots",
+"icon": "inv_boots_02",
+"displayId": 29594
+}
+]
+},
+{
+"tier": "D2",
+"name": "Sorcerer's Regalia",
+"class": "mage",
+"setId": 517,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22065,
+"name": "Sorcerer's Crown",
+"icon": "inv_crown_02",
+"displayId": 34602
+},
+{
+"slot": "Shoulder",
+"id": 22068,
+"name": "Sorcerer's Mantle",
+"icon": "inv_shoulder_23",
+"displayId": 34597
+},
+{
+"slot": "Chest",
+"id": 22069,
+"name": "Sorcerer's Robes",
+"icon": "inv_chest_cloth_25",
+"displayId": 34596
+},
+{
+"slot": "Wrist",
+"id": 22063,
+"name": "Sorcerer's Bindings",
+"icon": "inv_jewelry_ring_23",
+"displayId": 34601
+},
+{
+"slot": "Hands",
+"id": 22066,
+"name": "Sorcerer's Gloves",
+"icon": "inv_gauntlets_17",
+"displayId": 34600
+},
+{
+"slot": "Waist",
+"id": 22062,
+"name": "Sorcerer's Belt",
+"icon": "inv_belt_08",
+"displayId": 34599
+},
+{
+"slot": "Legs",
+"id": 22067,
+"name": "Sorcerer's Leggings",
+"icon": "inv_pants_06",
+"displayId": 34598
+},
+{
+"slot": "Feet",
+"id": 22064,
+"name": "Sorcerer's Boots",
+"icon": "inv_boots_02",
+"displayId": 34782
+}
+]
+},
+{
+"tier": "T1",
+"name": "Felheart Raiment",
+"class": "warlock",
+"setId": 202,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16808,
+"name": "Felheart Horns",
+"icon": "inv_helmet_08",
+"displayId": 31987
+},
+{
+"slot": "Shoulder",
+"id": 16807,
+"name": "Felheart Shoulder Pads",
+"icon": "inv_shoulder_23",
+"displayId": 31974
+},
+{
+"slot": "Chest",
+"id": 16809,
+"name": "Felheart Robes",
+"icon": "inv_chest_cloth_09",
+"displayId": 31973
+},
+{
+"slot": "Wrist",
+"id": 16804,
+"name": "Felheart Bracers",
+"icon": "inv_bracer_07",
+"displayId": 31970
+},
+{
+"slot": "Hands",
+"id": 16805,
+"name": "Felheart Gloves",
+"icon": "inv_gauntlets_19",
+"displayId": 31971
+},
+{
+"slot": "Waist",
+"id": 16806,
+"name": "Felheart Belt",
+"icon": "inv_belt_13",
+"displayId": 31969
+},
+{
+"slot": "Legs",
+"id": 16810,
+"name": "Felheart Pants",
+"icon": "inv_pants_cloth_14",
+"displayId": 31972
+},
+{
+"slot": "Feet",
+"id": 16803,
+"name": "Felheart Slippers",
+"icon": "inv_boots_cloth_05",
+"displayId": 31975
+}
+]
+},
+{
+"tier": "T2",
+"name": "Nemesis Raiment",
+"class": "warlock",
+"setId": 211,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16929,
+"name": "Nemesis Skullcap",
+"icon": "inv_helmet_08",
+"displayId": 34369
+},
+{
+"slot": "Shoulder",
+"id": 16932,
+"name": "Nemesis Spaulders",
+"icon": "inv_shoulder_19",
+"displayId": 34022
+},
+{
+"slot": "Chest",
+"id": 16931,
+"name": "Nemesis Robes",
+"icon": "inv_chest_leather_01",
+"displayId": 34014
+},
+{
+"slot": "Wrist",
+"id": 16934,
+"name": "Nemesis Bracers",
+"icon": "inv_bracer_07",
+"displayId": 34012
+},
+{
+"slot": "Hands",
+"id": 16928,
+"name": "Nemesis Gloves",
+"icon": "inv_gauntlets_19",
+"displayId": 34013
+},
+{
+"slot": "Waist",
+"id": 16933,
+"name": "Nemesis Belt",
+"icon": "inv_belt_13",
+"displayId": 34011
+},
+{
+"slot": "Legs",
+"id": 16930,
+"name": "Nemesis Leggings",
+"icon": "inv_pants_07",
+"displayId": 7939
+},
+{
+"slot": "Feet",
+"id": 16927,
+"name": "Nemesis Boots",
+"icon": "inv_boots_05",
+"displayId": 34015
+}
+]
+},
+{
+"tier": "T3",
+"name": "Plagueheart Raiment",
+"class": "warlock",
+"setId": 529,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22506,
+"name": "Plagueheart Circlet",
+"icon": "inv_crown_01",
+"displayId": 35182
+},
+{
+"slot": "Shoulder",
+"id": 22507,
+"name": "Plagueheart Shoulderpads",
+"icon": "inv_shoulder_25",
+"displayId": 35187
+},
+{
+"slot": "Chest",
+"id": 22504,
+"name": "Plagueheart Robe",
+"icon": "inv_chest_cloth_43",
+"displayId": 35185
+},
+{
+"slot": "Wrist",
+"id": 22511,
+"name": "Plagueheart Bindings",
+"icon": "inv_bracer_13",
+"displayId": 35180
+},
+{
+"slot": "Hands",
+"id": 22509,
+"name": "Plagueheart Gloves",
+"icon": "inv_gauntlets_17",
+"displayId": 35183
+},
+{
+"slot": "Waist",
+"id": 22510,
+"name": "Plagueheart Belt",
+"icon": "inv_belt_03",
+"displayId": 35179
+},
+{
+"slot": "Legs",
+"id": 22505,
+"name": "Plagueheart Leggings",
+"icon": "inv_pants_cloth_05",
+"displayId": 35184
+},
+{
+"slot": "Feet",
+"id": 22508,
+"name": "Plagueheart Sandals",
+"icon": "inv_boots_fabric_01",
+"displayId": 35186
+}
+]
+},
+{
+"tier": "D1",
+"name": "Dreadmist Raiment",
+"class": "warlock",
+"setId": 183,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16698,
+"name": "Dreadmist Mask",
+"icon": "inv_helmet_29",
+"displayId": 31263
+},
+{
+"slot": "Shoulder",
+"id": 16701,
+"name": "Dreadmist Mantle",
+"icon": "inv_misc_bone_taurenskull_01",
+"displayId": 29798
+},
+{
+"slot": "Chest",
+"id": 16700,
+"name": "Dreadmist Robe",
+"icon": "inv_chest_cloth_49",
+"displayId": 29792
+},
+{
+"slot": "Wrist",
+"id": 16703,
+"name": "Dreadmist Bracers",
+"icon": "inv_bracer_13",
+"displayId": 29795
+},
+{
+"slot": "Hands",
+"id": 16705,
+"name": "Dreadmist Wraps",
+"icon": "inv_gauntlets_32",
+"displayId": 29800
+},
+{
+"slot": "Waist",
+"id": 16702,
+"name": "Dreadmist Belt",
+"icon": "inv_belt_12",
+"displayId": 29793
+},
+{
+"slot": "Legs",
+"id": 16699,
+"name": "Dreadmist Leggings",
+"icon": "inv_pants_08",
+"displayId": 29797
+},
+{
+"slot": "Feet",
+"id": 16704,
+"name": "Dreadmist Sandals",
+"icon": "inv_boots_05",
+"displayId": 29799
+}
+]
+},
+{
+"tier": "D2",
+"name": "Deathmist Raiment",
+"class": "warlock",
+"setId": 518,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22074,
+"name": "Deathmist Mask",
+"icon": "inv_helmet_29",
+"displayId": 34624
+},
+{
+"slot": "Shoulder",
+"id": 22073,
+"name": "Deathmist Mantle",
+"icon": "inv_misc_bone_taurenskull_01",
+"displayId": 34623
+},
+{
+"slot": "Chest",
+"id": 22075,
+"name": "Deathmist Robe",
+"icon": "inv_chest_cloth_49",
+"displayId": 34625
+},
+{
+"slot": "Wrist",
+"id": 22071,
+"name": "Deathmist Bracers",
+"icon": "inv_bracer_13",
+"displayId": 34621
+},
+{
+"slot": "Hands",
+"id": 22077,
+"name": "Deathmist Wraps",
+"icon": "inv_gauntlets_32",
+"displayId": 34627
+},
+{
+"slot": "Waist",
+"id": 22070,
+"name": "Deathmist Belt",
+"icon": "inv_belt_12",
+"displayId": 34620
+},
+{
+"slot": "Legs",
+"id": 22072,
+"name": "Deathmist Leggings",
+"icon": "inv_pants_08",
+"displayId": 34622
+},
+{
+"slot": "Feet",
+"id": 22076,
+"name": "Deathmist Sandals",
+"icon": "inv_boots_05",
+"displayId": 34626
+}
+]
+},
+{
+"tier": "T1",
+"name": "Cenarion Raiment",
+"class": "druid",
+"setId": 205,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16834,
+"name": "Cenarion Helm",
+"icon": "inv_helmet_09",
+"displayId": 32790
+},
+{
+"slot": "Shoulder",
+"id": 16836,
+"name": "Cenarion Spaulders",
+"icon": "inv_shoulder_07",
+"displayId": 32016
+},
+{
+"slot": "Chest",
+"id": 16833,
+"name": "Cenarion Vestments",
+"icon": "inv_chest_cloth_06",
+"displayId": 31797
+},
+{
+"slot": "Wrist",
+"id": 16830,
+"name": "Cenarion Bracers",
+"icon": "inv_bracer_03",
+"displayId": 31725
+},
+{
+"slot": "Hands",
+"id": 16831,
+"name": "Cenarion Gloves",
+"icon": "inv_gauntlets_07",
+"displayId": 31726
+},
+{
+"slot": "Waist",
+"id": 16828,
+"name": "Cenarion Belt",
+"icon": "inv_belt_06",
+"displayId": 31722
+},
+{
+"slot": "Legs",
+"id": 16835,
+"name": "Cenarion Leggings",
+"icon": "inv_pants_06",
+"displayId": 31729
+},
+{
+"slot": "Feet",
+"id": 16829,
+"name": "Cenarion Boots",
+"icon": "inv_boots_08",
+"displayId": 31724
+}
+]
+},
+{
+"tier": "T2",
+"name": "Stormrage Raiment",
+"class": "druid",
+"setId": 214,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16900,
+"name": "Stormrage Cover",
+"icon": "inv_helmet_09",
+"displayId": 33655
+},
+{
+"slot": "Shoulder",
+"id": 16902,
+"name": "Stormrage Pauldrons",
+"icon": "inv_shoulder_07",
+"displayId": 30546
+},
+{
+"slot": "Chest",
+"id": 16897,
+"name": "Stormrage Chestguard",
+"icon": "inv_chest_chain_16",
+"displayId": 30536
+},
+{
+"slot": "Wrist",
+"id": 16904,
+"name": "Stormrage Bracers",
+"icon": "inv_bracer_03",
+"displayId": 30548
+},
+{
+"slot": "Hands",
+"id": 16899,
+"name": "Stormrage Handguards",
+"icon": "inv_gauntlets_25",
+"displayId": 34016
+},
+{
+"slot": "Waist",
+"id": 16903,
+"name": "Stormrage Belt",
+"icon": "inv_belt_06",
+"displayId": 30541
+},
+{
+"slot": "Legs",
+"id": 16901,
+"name": "Stormrage Legguards",
+"icon": "inv_pants_06",
+"displayId": 30540
+},
+{
+"slot": "Feet",
+"id": 16898,
+"name": "Stormrage Boots",
+"icon": "inv_boots_08",
+"displayId": 30542
+}
+]
+},
+{
+"tier": "T3",
+"name": "Dreamwalker Raiment",
+"class": "druid",
+"setId": 521,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22490,
+"name": "Dreamwalker Headpiece",
+"icon": "inv_helmet_15",
+"displayId": 35162
+},
+{
+"slot": "Shoulder",
+"id": 22491,
+"name": "Dreamwalker Spaulders",
+"icon": "inv_shoulder_14",
+"displayId": 35160
+},
+{
+"slot": "Chest",
+"id": 22488,
+"name": "Dreamwalker Tunic",
+"icon": "inv_chest_chain_15",
+"displayId": 35159
+},
+{
+"slot": "Wrist",
+"id": 22495,
+"name": "Dreamwalker Wristguards",
+"icon": "inv_bracer_02",
+"displayId": 35158
+},
+{
+"slot": "Hands",
+"id": 22493,
+"name": "Dreamwalker Handguards",
+"icon": "inv_gauntlets_25",
+"displayId": 35167
+},
+{
+"slot": "Waist",
+"id": 22494,
+"name": "Dreamwalker Girdle",
+"icon": "inv_belt_22",
+"displayId": 35164
+},
+{
+"slot": "Legs",
+"id": 22489,
+"name": "Dreamwalker Legguards",
+"icon": "inv_pants_mail_15",
+"displayId": 35161
+},
+{
+"slot": "Feet",
+"id": 22492,
+"name": "Dreamwalker Boots",
+"icon": "inv_boots_chain_05",
+"displayId": 35173
+}
+]
+},
+{
+"tier": "D1",
+"name": "Wildheart Raiment",
+"class": "druid",
+"setId": 185,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 16720,
+"name": "Wildheart Cowl",
+"icon": "inv_helmet_27",
+"displayId": 31228
+},
+{
+"slot": "Shoulder",
+"id": 16718,
+"name": "Wildheart Spaulders",
+"icon": "inv_shoulder_01",
+"displayId": 30412
+},
+{
+"slot": "Chest",
+"id": 16706,
+"name": "Wildheart Vest",
+"icon": "inv_chest_plate06",
+"displayId": 29974
+},
+{
+"slot": "Wrist",
+"id": 16714,
+"name": "Wildheart Bracers",
+"icon": "inv_bracer_09",
+"displayId": 29977
+},
+{
+"slot": "Hands",
+"id": 16717,
+"name": "Wildheart Gloves",
+"icon": "inv_gauntlets_17",
+"displayId": 29979
+},
+{
+"slot": "Waist",
+"id": 16716,
+"name": "Wildheart Belt",
+"icon": "inv_belt_15",
+"displayId": 29976
+},
+{
+"slot": "Legs",
+"id": 16719,
+"name": "Wildheart Kilt",
+"icon": "inv_pants_08",
+"displayId": 29975
+},
+{
+"slot": "Feet",
+"id": 16715,
+"name": "Wildheart Boots",
+"icon": "inv_boots_08",
+"displayId": 29981
+}
+]
+},
+{
+"tier": "D2",
+"name": "Feralheart Raiment",
+"class": "druid",
+"setId": 513,
+"role": "",
+"bonus": [],
+"db": "classic",
+"pieces": [
+{
+"slot": "Head",
+"id": 22109,
+"name": "Feralheart Cowl",
+"icon": "inv_helmet_27",
+"displayId": 34639
+},
+{
+"slot": "Shoulder",
+"id": 22112,
+"name": "Feralheart Spaulders",
+"icon": "inv_shoulder_01",
+"displayId": 34643
+},
+{
+"slot": "Chest",
+"id": 22113,
+"name": "Feralheart Vest",
+"icon": "inv_chest_plate06",
+"displayId": 34644
+},
+{
+"slot": "Wrist",
+"id": 22108,
+"name": "Feralheart Bracers",
+"icon": "inv_bracer_09",
+"displayId": 34641
+},
+{
+"slot": "Hands",
+"id": 22110,
+"name": "Feralheart Gloves",
+"icon": "inv_gauntlets_17",
+"displayId": 34640
+},
+{
+"slot": "Waist",
+"id": 22106,
+"name": "Feralheart Belt",
+"icon": "inv_belt_15",
+"displayId": 34637
+},
+{
+"slot": "Legs",
+"id": 22111,
+"name": "Feralheart Kilt",
+"icon": "inv_pants_08",
+"displayId": 34642
+},
+{
+"slot": "Feet",
+"id": 22107,
+"name": "Feralheart Boots",
+"icon": "inv_boots_08",
+"displayId": 34638
+}
+]
+}
+]

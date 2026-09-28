@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Battlegear of Glory",
+    "class": "warrior",
+    "pieces": [
+      {"slot": "Head", "id": 280904, "name": "Helm of Glory", "icon": "inv_helm_plate_raidwarriorhyjalc60_d_01", "displayId": 741983},
+      {"slot": "Shoulder", "id": 280903, "name": "Shoulders of Glory", "icon": "inv_shoulder_plate_raidwarriorhyjalc60_d_01", "displayId": 741985},
+      {"slot": "Chest", "id": 280902, "name": "Breastplate of Glory", "icon": "inv_chest_plate_raidwarriorhyjalc60_d_01", "displayId": 741980},
+      {"slot": "Hands", "id": 280899, "name": "Gauntlets of Glory", "icon": "inv_glove_plate_raidwarriorhyjalc60_d_01", "displayId": 741988},
+      {"slot": "Legs", "id": 280901, "name": "Legplates of Glory", "icon": "inv_pant_plate_raidwarriorhyjalc60_d_01", "displayId": 741984},
+      {"slot": "Feet", "id": 280900, "name": "Greaves of Glory", "icon": "inv_boot_plate_raidwarriorhyjalc60_d_01", "displayId": 741981}
+    ]
+  },
+  {
+    "name": "Battleplate of Glory",
+    "class": "warrior",
+    "pieces": [
+      {"slot": "Head", "id": 280910, "name": "Greathelm of Glory", "icon": "inv_helm_plate_raidwarriorhyjalc60_d_01", "displayId": 741983},
+      {"slot": "Shoulder", "id": 280909, "name": "Pauldrons of Glory", "icon": "inv_shoulder_plate_raidwarriorhyjalc60_d_01", "displayId": 741985},
+      {"slot": "Chest", "id": 280908, "name": "Chestguard of Glory", "icon": "inv_chest_plate_raidwarriorhyjalc60_d_01", "displayId": 741980},
+      {"slot": "Hands", "id": 280905, "name": "Handguards of Glory", "icon": "inv_glove_plate_raidwarriorhyjalc60_d_01", "displayId": 741988},
+      {"slot": "Legs", "id": 280907, "name": "Legguards of Glory", "icon": "inv_pant_plate_raidwarriorhyjalc60_d_01", "displayId": 741984},
+      {"slot": "Feet", "id": 280906, "name": "Sabatons of Glory", "icon": "inv_boot_plate_raidwarriorhyjalc60_d_01", "displayId": 741981}
+    ]
+  },
+  {
+    "name": "Demonheart Raiment",
+    "class": "warlock",
+    "pieces": [
+      {"slot": "Head", "id": 280887, "name": "Demonheart Skullcap", "icon": "inv_helm_cloth_raidwarlockhyjalc60_d_01", "displayId": 741535},
+      {"slot": "Shoulder", "id": 280882, "name": "Demonheart Spaulders", "icon": "inv_shoulder_cloth_raidwarlockhyjalc60_d_01", "displayId": 741543},
+      {"slot": "Chest", "id": 280883, "name": "Demonheart Robes", "icon": "inv_chest_cloth_raidwarlockhyjalc60_d_01", "displayId": 741537},
+      {"slot": "Hands", "id": 280888, "name": "Demonheart Gloves", "icon": "inv_glove_cloth_raidwarlockhyjalc60_d_01", "displayId": 741534},
+      {"slot": "Legs", "id": 280886, "name": "Demonheart Leggings", "icon": "inv_pant_cloth_raidwarlockhyjalc60_d_01", "displayId": 741536},
+      {"slot": "Feet", "id": 280889, "name": "Demonheart Boots", "icon": "inv_boot_cloth_raidwarlockhyjalc60_d_01", "displayId": 741533}
+    ]
+  },
+  {
+    "name": "Grimstitch Armor",
+    "class": "rogue",
+    "pieces": [
+      {"slot": "Head", "id": 280877, "name": "Grimstitch Mask", "icon": "inv_helm_leather_raidroguehyjalc60_d_01", "displayId": 741823},
+      {"slot": "Shoulder", "id": 280876, "name": "Grimstitch Spaulders", "icon": "inv_shoulder_leather_raidroguehyjalc60_d_01", "displayId": 741825},
+      {"slot": "Chest", "id": 280879, "name": "Grimstitch Chestpiece", "icon": "inv_robe_leather_raidroguehyjalc60_d_01", "displayId": 741820},
+      {"slot": "Hands", "id": 280875, "name": "Grimstitch Gloves", "icon": "inv_glove_leather_raidroguehyjalc60_d_01", "displayId": 741822},
+      {"slot": "Legs", "id": 280872, "name": "Grimstitch Pants", "icon": "inv_pant_leather_raidroguehyjalc60_d_01", "displayId": 741824},
+      {"slot": "Feet", "id": 280878, "name": "Grimstitch Boots", "icon": "inv_boot_leather_raidroguehyjalc60_d_01", "displayId": 741821}
+    ]
+  },
+  {
+    "name": "Justice Battleplate",
+    "class": "paladin",
+    "pieces": [
+      {"slot": "Head", "id": 280937, "name": "Justice Greathelm", "icon": "inv_helm_plate_raidpaladinhyjalc60_d_01", "displayId": 741947},
+      {"slot": "Shoulder", "id": 280942, "name": "Justice Pauldrons", "icon": "inv_shoulder_plate_raidpaladinhyjalc60_d_01", "displayId": 741949},
+      {"slot": "Chest", "id": 280941, "name": "Justice Chestguard", "icon": "inv_chest_plate_raidpaladinhyjalc60_d_01", "displayId": 741943},
+      {"slot": "Hands", "id": 280938, "name": "Justice Handguards", "icon": "inv_glove_plate_raidpaladinhyjalc60_d_01", "displayId": 741945},
+      {"slot": "Legs", "id": 280940, "name": "Justice Legguards", "icon": "inv_pant_plate_raidpaladinhyjalc60_d_01", "displayId": 741948},
+      {"slot": "Feet", "id": 280939, "name": "Justice Sabatons", "icon": "inv_boot_plate_raidpaladinhyjalc60_d_01", "displayId": 741944}
+    ]
+  },
+  {
+    "name": "Raiments of Conviction",
+    "class": "priest",
+    "pieces": [
+      {"slot": "Head", "id": 280924, "name": "Crown of Conviction", "icon": "inv_helm_cloth_raidpriesthyjalc60_d_01", "displayId": 741793},
+      {"slot": "Shoulder", "id": 280923, "name": "Mantle of Conviction", "icon": "inv_shoulder_r_cloth_raidpriesthyjalc60_d_01", "displayId": 741790},
+      {"slot": "Chest", "id": 280919, "name": "Garb of Conviction", "icon": "inv_robe_cloth_raidpriesthyjalc60_d_01", "displayId": 741791},
+      {"slot": "Hands", "id": 280920, "name": "Gloves of Conviction", "icon": "inv_glove_cloth_raidpriesthyjalc60_d_01", "displayId": 741794},
+      {"slot": "Legs", "id": 280922, "name": "Pants of Conviction", "icon": "inv_pant_cloth_raidpriesthyjalc60_d_01", "displayId": 741792},
+      {"slot": "Feet", "id": 280921, "name": "Treads of Conviction", "icon": "inv_boot_cloth_raidpriesthyjalc60_d_01", "displayId": 741795}
+    ]
+  },
+  {
+    "name": "The Spiritcaller's Rage",
+    "class": "shaman",
+    "pieces": [
+      {"slot": "Head", "id": 280957, "name": "Spiritcaller Crown", "icon": "inv_helm_mail_raidshamanhyjalc60_d_01", "displayId": 741930},
+      {"slot": "Shoulder", "id": 280956, "name": "Spiritcaller Spaulders", "icon": "inv_shoulder_mail_raidshamanhyjalc60_d_01", "displayId": 741932},
+      {"slot": "Chest", "id": 280955, "name": "Spiritcaller Armor", "icon": "inv_chest_mail_raidshamanhyjalc60_d_01", "displayId": 742012},
+      {"slot": "Hands", "id": 280952, "name": "Spiritcaller Grips", "icon": "inv_glove_mail_raidshamanhyjalc60_d_01", "displayId": 741929},
+      {"slot": "Legs", "id": 280954, "name": "Spiritcaller Leggings", "icon": "inv_pant_mail_raidshamanhyjalc60_d_01", "displayId": 742008},
+      {"slot": "Feet", "id": 280953, "name": "Spiritcaller Treads", "icon": "inv_boot_mail_raidshamanhyjalc60_d_01", "displayId": 741928}
+    ]
+  },
+  {
+    "name": "The Spiritcaller's Storm",
+    "class": "shaman",
+    "pieces": [
+      {"slot": "Head", "id": 280963, "name": "Spiritcaller Headdress", "icon": "inv_helm_mail_raidshamanhyjalc60_d_01", "displayId": 741930},
+      {"slot": "Shoulder", "id": 280962, "name": "Spiritcaller Mantle", "icon": "inv_shoulder_mail_raidshamanhyjalc60_d_01", "displayId": 741932},
+      {"slot": "Chest", "id": 280961, "name": "Spiritcaller Embrace", "icon": "inv_chest_mail_raidshamanhyjalc60_d_01", "displayId": 742012},
+      {"slot": "Hands", "id": 280958, "name": "Spiritcaller Gloves", "icon": "inv_glove_mail_raidshamanhyjalc60_d_01", "displayId": 741929},
+      {"slot": "Legs", "id": 280960, "name": null, "icon": null, "displayId": null},
+      {"slot": "Feet", "id": 280959, "name": null, "icon": null, "displayId": null}
+    ]
+  }
+]

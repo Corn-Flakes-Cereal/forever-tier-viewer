@@ -1,0 +1,82 @@
+[
+  {
+    "tier": "T1",
+    "name": "The Earthfury",
+    "setId": 207,
+    "class": "shaman",
+    "pieces": [
+      {"slot": "Head", "id": 16842, "name": "Earthfury Helmet", "icon": "inv_helmet_09", "displayId": 31835},
+      {"slot": "Shoulder", "id": 16844, "name": "Earthfury Epaulets", "icon": "inv_shoulder_29", "displayId": 31833},
+      {"slot": "Chest", "id": 16841, "name": "Earthfury Vestments", "icon": "inv_chest_chain_11", "displayId": 31832},
+      {"slot": "Wrist", "id": 16840, "name": "Earthfury Bracers", "icon": "inv_bracer_16", "displayId": 31831},
+      {"slot": "Hands", "id": 16839, "name": "Earthfury Gauntlets", "icon": "inv_gauntlets_11", "displayId": 31834},
+      {"slot": "Waist", "id": 16838, "name": "Earthfury Belt", "icon": "inv_belt_14", "displayId": 31829},
+      {"slot": "Legs", "id": 16843, "name": "Earthfury Legguards", "icon": "inv_pants_03", "displayId": 31836},
+      {"slot": "Feet", "id": 16837, "name": "Earthfury Boots", "icon": "inv_boots_plate_06", "displayId": 31830}
+    ]
+  },
+  {
+    "tier": "T2",
+    "name": "The Ten Storms",
+    "setId": 216,
+    "class": "shaman",
+    "pieces": [
+      {"slot": "Head", "id": 16947, "name": "Helmet of Ten Storms", "icon": "inv_helmet_69", "displayId": 34217},
+      {"slot": "Shoulder", "id": 16945, "name": "Epaulets of Ten Storms", "icon": "inv_shoulder_33", "displayId": 34067},
+      {"slot": "Chest", "id": 16950, "name": "Breastplate of Ten Storms", "icon": "inv_chest_chain_11", "displayId": 34081},
+      {"slot": "Wrist", "id": 16943, "name": "Bracers of Ten Storms", "icon": "inv_bracer_16", "displayId": 34079},
+      {"slot": "Hands", "id": 16948, "name": "Gauntlets of Ten Storms", "icon": "inv_gauntlets_11", "displayId": 34082},
+      {"slot": "Waist", "id": 16944, "name": "Belt of Ten Storms", "icon": "inv_belt_14", "displayId": 34078},
+      {"slot": "Legs", "id": 16946, "name": "Legplates of Ten Storms", "icon": "inv_pants_03", "displayId": 34084},
+      {"slot": "Feet", "id": 16949, "name": "Greaves of Ten Storms", "icon": "inv_boots_plate_06", "displayId": 34083}
+    ]
+  },
+  {
+    "tier": "T3",
+    "name": "The Earthshatterer",
+    "setId": 527,
+    "class": "shaman",
+    "pieces": [
+      {"slot": "Head", "id": 22466, "name": "Earthshatter Headpiece", "icon": "inv_helmet_15", "displayId": 37056},
+      {"slot": "Shoulder", "id": 22467, "name": "Earthshatter Spaulders", "icon": "inv_shoulder_14", "displayId": 35751},
+      {"slot": "Chest", "id": 22464, "name": "Earthshatter Tunic", "icon": "inv_chest_chain_15", "displayId": 35752},
+      {"slot": "Wrist", "id": 22471, "name": "Earthshatter Wristguards", "icon": "inv_bracer_02", "displayId": 35753},
+      {"slot": "Hands", "id": 22469, "name": "Earthshatter Handguards", "icon": "inv_gauntlets_25", "displayId": 35748},
+      {"slot": "Waist", "id": 22470, "name": "Earthshatter Girdle", "icon": "inv_belt_22", "displayId": 35747},
+      {"slot": "Legs", "id": 22465, "name": "Earthshatter Legguards", "icon": "inv_pants_mail_15", "displayId": 35754},
+      {"slot": "Feet", "id": 22468, "name": "Earthshatter Boots", "icon": "inv_boots_chain_05", "displayId": 35746}
+    ]
+  },
+  {
+    "tier": "D1",
+    "name": "The Elements",
+    "setId": 187,
+    "class": "shaman",
+    "pieces": [
+      {"slot": "Head", "id": 16667, "name": "Coif of Elements", "icon": "inv_helmet_04", "displayId": 31117},
+      {"slot": "Shoulder", "id": 16669, "name": "Pauldrons of Elements", "icon": "inv_shoulder_29", "displayId": 30925},
+      {"slot": "Chest", "id": 16666, "name": "Vest of Elements", "icon": "inv_chest_chain_11", "displayId": 31416},
+      {"slot": "Wrist", "id": 16671, "name": "Bindings of Elements", "icon": "inv_bracer_02", "displayId": 31411},
+      {"slot": "Hands", "id": 16672, "name": "Gauntlets of Elements", "icon": "inv_gauntlets_11", "displayId": 31414},
+      {"slot": "Waist", "id": 16673, "name": "Cord of Elements", "icon": "inv_belt_16", "displayId": 31413},
+      {"slot": "Legs", "id": 16668, "name": "Kilt of Elements", "icon": "inv_pants_03", "displayId": 31415},
+      {"slot": "Feet", "id": 16670, "name": "Boots of Elements", "icon": "inv_boots_wolf", "displayId": 31412}
+    ]
+  },
+  {
+    "tier": "D2",
+    "name": "The Five Thunders",
+    "setId": 519,
+    "class": "shaman",
+    "pieces": [
+      {"slot": "Head", "id": 22097, "name": "Coif of The Five Thunders", "icon": "inv_helmet_04", "displayId": 34693},
+      {"slot": "Shoulder", "id": 22101, "name": "Pauldrons of The Five Thunders", "icon": "inv_shoulder_29", "displayId": 34697},
+      {"slot": "Chest", "id": 22102, "name": "Vest of The Five Thunders", "icon": "inv_chest_chain_11", "displayId": 34698},
+      {"slot": "Wrist", "id": 22095, "name": "Bindings of The Five Thunders", "icon": "inv_bracer_02", "displayId": 34691},
+      {"slot": "Hands", "id": 22099, "name": "Gauntlets of The Five Thunders", "icon": "inv_gauntlets_11", "displayId": 34695},
+      {"slot": "Waist", "id": 22098, "name": "Cord of The Five Thunders", "icon": "inv_belt_16", "displayId": 34694},
+      {"slot": "Legs", "id": 22100, "name": "Kilt of The Five Thunders", "icon": "inv_pants_03", "displayId": 34696},
+      {"slot": "Feet", "id": 22096, "name": "Boots of The Five Thunders", "icon": "inv_boots_wolf", "displayId": 34692}
+    ]
+  }
+]
