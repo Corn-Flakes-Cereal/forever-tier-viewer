@@ -388,12 +388,14 @@ async function build() {
     destroy();
     const $c = jQuery('#viewer');
     const aspect = Math.max(1, $c.width()) / Math.max(1, $c.height());
+    builtWidth = $c.width();
     viewer = new ZamModelViewer({
       type: 2, contentPath: base, container: $c, aspect, hd: true,
       dataEnv: 'classicplus', env: 'classicplus', gameDataEnv: 'classicplus',
       models: { id: modelId(), type: 16 }, items,
       charCustomization: { options: characterOptions() },
     });
+    lastBuiltCustomModel = !!race().model;
     renderAppearance();
     requestAnimationFrame(applyCamera);
     statusOk();
@@ -404,17 +406,50 @@ async function build() {
   } finally { building = false; if (rebuildQueued) { rebuildQueued = false; build(); } }
 }
 function statusOk() { const set = currentSet(); setStatus('ok', `${race().name} · ${set ? set.name : 'no set'}`); }
-function destroy() { if (viewer) { try { viewer.destroy && viewer.destroy(); } catch (e) {} viewer = null; } qs('#viewer').innerHTML = ''; }
-async function applyItems() {
-  if (!viewer) return build();
-  try {
-    viewer.method('clearSlots', ALL_ARMOR_SLOTS);
-    const items = await currentItems();
-    if (items.length) viewer.method('setItems', [items.map(([slot, display]) => ({ slot, display, visual: 0 }))]);
-    statusOk();
-  } catch (e) { console.error(e); build(); }
+function destroy() {
+  if (viewer) { try { viewer.destroy && viewer.destroy(); } catch (e) {} viewer = null; }
+  for (const c of qs('#viewer').querySelectorAll('canvas')) {
+    try { const gl = c.getContext('webgl2') || c.getContext('webgl'); const ext = gl && gl.getExtension('WEBGL_lose_context'); if (ext) ext.loseContext(); } catch (e) {}
+  }
+  qs('#viewer').innerHTML = '';
 }
-function applyAppearance() { if (!viewer) return; try { viewer.method('setAppearance', { race: modelRace(), gender: state.gender, options: characterOptions() }); } catch (e) { console.error(e); build(); } }
+let itemsSeq = 0;
+async function applyItems() {
+  if (!viewer) { if (!building) build(); return; }
+  const seq = ++itemsSeq;
+  const items = await currentItems();
+  if (seq !== itemsSeq) return;                       // a newer request superseded this one
+  // The viewer throws if asked to change gear while its model is still loading; wait and retry instead of rebuilding.
+  for (let attempt = 0; attempt < 40; attempt++) {
+    if (seq !== itemsSeq || !viewer) return;
+    try {
+      viewer.method('clearSlots', ALL_ARMOR_SLOTS);
+      if (items.length) viewer.method('setItems', [items.map(([slot, display]) => ({ slot, display, visual: 0 }))]);
+      statusOk(); return;
+    } catch (e) { await new Promise(r => setTimeout(r, 250)); }
+  }
+  console.warn('applyItems: viewer never became ready');
+}
+async function applyAppearance() {
+  if (!viewer) return;
+  for (let attempt = 0; attempt < 40; attempt++) {
+    try { viewer.method('setAppearance', { race: modelRace(), gender: state.gender, options: characterOptions() }); return; }
+    catch (e) { await new Promise(r => setTimeout(r, 250)); }
+  }
+}
+// Change race/gender in place when possible (classic races share one model set); rebuild only when the underlying
+// character model differs (Skyborne <-> classic race), so the page keeps a single WebGL viewer.
+async function changeCharacter() {
+  const r = race();
+  const needsRebuild = !viewer || !!r.model || !!lastBuiltCustomModel;
+  if (needsRebuild) return build();
+  setStatus('busy', `Loading ${race().name} ${state.gender ? 'female' : 'male'}…`);
+  try { await loadCustomization(); } catch (e) { console.error(e); return build(); }
+  renderAppearance();
+  await applyAppearance();
+  await applyItems();
+}
+let lastBuiltCustomModel = false;
 function setAnimation(name) { if (!viewer) return; try { viewer.renderer.actors[0].setAnimation(name); } catch (e) { try { viewer.method('setAnimation', name); } catch (e2) {} } }
 
 /* ---------------- UI rendering ---------------- */
@@ -426,7 +461,7 @@ function renderRaces() {
     b.addEventListener('click', () => {
       state.race = r.id;
       if (!raceAllows(r, state.cls)) { state.cls = r.classes[0]; state.setName = null; resetEquipped(); renderSets(); renderDoll(); }
-      renderRaces(); renderClasses(); renderCaption(); applyBackdrop(); build();
+      renderRaces(); renderClasses(); renderCaption(); applyBackdrop(); changeCharacter();
     });
     el.appendChild(b);
   }
@@ -511,7 +546,7 @@ function renderAppearance() {
 function onSetChanged() { resetEquipped(); renderSets(); renderDoll(); renderCaption(); applyItems(); }
 
 /* ---------------- Wire up ---------------- */
-qs('#gender').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; state.gender = +b.dataset.g; qs('#gender').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); renderRaces(); renderCaption(); build(); });
+qs('#gender').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; state.gender = +b.dataset.g; qs('#gender').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); renderRaces(); renderCaption(); changeCharacter(); });
 qs('#setSelect').addEventListener('change', (e) => { state.setName = e.target.value; onSetChanged(); });
 qs('#btnStand').addEventListener('click', () => setAnimation('Stand'));
 qs('#btnWalk').addEventListener('click', () => setAnimation('Walk'));
@@ -580,7 +615,15 @@ function applyBackdrop() {
   img.src = city.img;
 }
 qs('#bgPick').addEventListener('change', (e) => { state.backdrop = e.target.value; applyBackdrop(); });
-let resizeT; window.addEventListener('resize', () => { clearTimeout(resizeT); resizeT = setTimeout(() => { if (viewer) build(); }, 400); });
+let resizeT, builtWidth = 0, lastResizeBuild = 0;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeT);
+  resizeT = setTimeout(() => {
+    const w = qs('#viewer').clientWidth;
+    if (!viewer || !builtWidth) return;
+    if (Math.abs(w - builtWidth) / builtWidth > 0.35 && Date.now() - lastResizeBuild > 5000) { lastResizeBuild = Date.now(); build(); }
+  }, 600);
+});
 
 /* ---------------- Boot ---------------- */
 resetEquipped();
