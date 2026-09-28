@@ -423,7 +423,13 @@ async function applyItems() {
   for (let attempt = 0; attempt < 40; attempt++) {
     if (seq !== itemsSeq || !viewer) return;
     try {
-      viewer.method('clearSlots', ALL_ARMOR_SLOTS);
+      const actor = viewer.renderer && viewer.renderer.actors && viewer.renderer.actors[0];
+      if (!actor || !actor.loaded) throw new Error('not loaded');
+      // Wowhead's clearSlots mis-indexes its item list when given many slots at once, so clear one slot at a time.
+      for (const s of ALL_ARMOR_SLOTS.split(',')) viewer.method('clearSlots', s);
+      // clearSlots removes the item model but leaves the item's body geosets (e.g. a boot's leg shape) enabled;
+      // the actor's geoset rebuild (minified `q`) recomputes them from the remaining items.
+      if (typeof actor.q === 'function' && actor.q.length === 0) { actor.q(); actor.m = true; }
       if (items.length) viewer.method('setItems', [items.map(([slot, display]) => ({ slot, display, visual: 0 }))]);
       statusOk(); return;
     } catch (e) { await new Promise(r => setTimeout(r, 250)); }
