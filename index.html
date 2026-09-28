@@ -148,10 +148,6 @@
           <button type="button" data-g="0" aria-pressed="true">Male</button>
           <button type="button" data-g="1">Female</button>
         </div>
-        <div class="seg" id="hd" title="Forever ships both model sets; HD is the default in-game.">
-          <button type="button" data-hd="1" aria-pressed="true">HD</button>
-          <button type="button" data-hd="0">SD</button>
-        </div>
       </div>
     </div>
 
@@ -250,7 +246,7 @@
 /* ---------------- Static tables ---------------- */
 // Race/class combinations as of WoW: Forever (Classic combos plus Forever's additions: Dwarf Shaman, Gnome Priest,
 // Orc Mage, Troll Warlock, Undead Paladin, and the Skyborne). `model` = ChrModel ids on the model server (Skyborne: 218/219);
-// classic races use race*2-1+gender for HD and 256 + that for the legacy SD models.
+// classic races use race*2-1+gender (HD models; the legacy SD models would be 256 + that).
 const RACES = [
   { id:1, name:'Human', fac:'a', city:'stormwind', classes:['warrior','hunter','mage','rogue','priest','warlock','paladin'] },
   { id:3, name:'Dwarf', fac:'a', city:'ironforge', classes:['warrior','hunter','rogue','priest','paladin','shaman'] },
@@ -296,7 +292,7 @@ const SETS = window.SETS || [];
 
 /* ---------------- State ---------------- */
 const state = {
-  race: 1, gender: 0, hd: 1,
+  race: 1, gender: 0,
   cls: 'warrior', tier: 'S1', setName: null, backdrop: 'auto',
   equipped: {},           // slot key -> bool
   custom: null, choice: {},
@@ -344,8 +340,7 @@ function tier() { return TIERS.find(t => t.key === state.tier); }
 function modelId() {
   const r = race();
   if (r.model) return r.model[state.gender];
-  const hd = r.id * 2 - 1 + state.gender;
-  return state.hd ? hd : 256 + hd;
+  return r.id * 2 - 1 + state.gender;
 }
 function modelRace() { return race().modelRace || race().id; }
 function raceAllows(r, clsKey) { return r.classes.includes(clsKey); }
@@ -394,7 +389,7 @@ async function build() {
     const $c = jQuery('#viewer');
     const aspect = Math.max(1, $c.width()) / Math.max(1, $c.height());
     viewer = new ZamModelViewer({
-      type: 2, contentPath: base, container: $c, aspect, hd: !!state.hd,
+      type: 2, contentPath: base, container: $c, aspect, hd: true,
       dataEnv: 'classicplus', env: 'classicplus', gameDataEnv: 'classicplus',
       models: { id: modelId(), type: 16 }, items,
       charCustomization: { options: characterOptions() },
@@ -517,7 +512,6 @@ function onSetChanged() { resetEquipped(); renderSets(); renderDoll(); renderCap
 
 /* ---------------- Wire up ---------------- */
 qs('#gender').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; state.gender = +b.dataset.g; qs('#gender').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); renderRaces(); renderCaption(); build(); });
-qs('#hd').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; if (race().model && b.dataset.hd === '0') { setStatus('ok', 'Skyborne only have HD models'); return; } state.hd = +b.dataset.hd; qs('#hd').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); build(); });
 qs('#setSelect').addEventListener('change', (e) => { state.setName = e.target.value; onSetChanged(); });
 qs('#btnStand').addEventListener('click', () => setAnimation('Stand'));
 qs('#btnWalk').addEventListener('click', () => setAnimation('Walk'));

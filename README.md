@@ -19,7 +19,7 @@ It must be served over http(s); opening `index.html` straight from disk won't lo
 - 3D rendering is Wowhead's ZAM model viewer, loaded from `https://wow.zamimg.com/modelviewer/classicplus/viewer/viewer.min.js`.
   `classicplus` is Wowhead's data environment for WoW: Forever.
 - Character models come from `.../classicplus/meta/charactercustomization/<ChrModelId>.json`. For the classic races
-  ChrModelId = race*2-1+gender (HD) or 256 + that (legacy SD models). Skyborne (Wowhead race 95 High Order / 96 Windshaper)
+  ChrModelId = race*2-1+gender (HD models; 256 + that would be the legacy SD models, not used). Skyborne (Wowhead race 95 High Order / 96 Windshaper)
   use ChrModel 218 (male) / 219 (female) — HD only. `meta/character/<N>.json` maps any model id back to race/gender.
 - Race/class combos are Forever's (see `RACES` in `index.html`); disallowed classes are greyed out.
 - Backdrops are hotlinked capital-city screenshots (`CITIES` in `index.html`), shown behind the transparent canvas.
