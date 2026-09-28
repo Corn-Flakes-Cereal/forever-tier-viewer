@@ -123,7 +123,7 @@
   @media (max-width: 860px) { .stage { position: relative; height: 70vh; order: 1; } }
   #viewer { flex: 1; min-height: 0; width: 100%; position: relative; cursor: grab; touch-action: none; user-select: none; }
   #viewer:active { cursor: grabbing; }
-  #viewer canvas { display: block; max-width: 100%; filter: brightness(var(--bright, 1.35)) contrast(1.04); }
+  #viewer canvas { display: block; max-width: 100%; filter: brightness(var(--bright, 1.1)) contrast(1.02); }
   .stage.bg-stone { --stage-bg: #4a4540; }
   .stage.bg-light { --stage-bg: #d9d2c4; }
   .stage.bg-light .caption .set { color: #6b4e0c; } .stage.bg-light .caption .who { color: #4a4238; }
@@ -143,6 +143,7 @@
     position:absolute; inset: 0; display:flex; align-items:center; justify-content:center; padding: 24px; text-align:center;
     color: var(--muted); font-size: 13px; background: rgba(18,15,11,.6);
   }
+  .notice[hidden] { display: none; }
   .notice code { font-family: var(--font-mono); color: var(--gold-2); }
   footer { padding: 10px 20px 16px; border-top: 1px solid var(--line); font-size: 11px; color: var(--muted); display:flex; gap: 14px; flex-wrap: wrap; }
   @media (prefers-reduced-motion: reduce) { .status.busy .dot { animation: none; } }
@@ -209,7 +210,7 @@
         <button class="btn" id="btnRotL" type="button" title="Rotate left">⟲</button>
         <button class="btn" id="btnSpin" type="button" aria-pressed="false" title="Auto-rotate">Spin</button>
         <button class="btn" id="btnRotR" type="button" title="Rotate right">⟳</button>
-        <label class="slider" title="Brightness">☀ <input type="range" id="bright" min="0.8" max="2" step="0.05" value="1.35"></label>
+        <label class="slider" title="Brightness">☀ <input type="range" id="bright" min="0.7" max="1.8" step="0.05" value="1.1"></label>
         <div class="seg" id="bgPick" title="Backdrop">
           <button type="button" data-bg="" aria-pressed="true">Dark</button>
           <button type="button" data-bg="bg-stone">Stone</button>
