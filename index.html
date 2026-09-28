@@ -318,8 +318,8 @@ const chestSlotCache = {};   // displayId -> 5 | 20
 const ZAM = 'https://wow.zamimg.com/modelviewer/classicplus/';
 // Each entry is a base URL that serves the same files as ZAM. The relay (relay/worker.js) maps its root to ZAM.
 const RELAYS = [
-  'https://RELAY-URL-GOES-HERE.workers.dev/',   // your Cloudflare Worker (see relay/worker.js)
-  ZAM,                                          // direct (currently blocked by Wowhead's CORS policy)
+  'https://relay-production-df48.up.railway.app/',  // Railway relay (project hyjal-relay, service relay)
+  ZAM,                                               // direct (currently blocked by Wowhead's CORS policy)
 ];
 let resolvedBase = null;
 async function resolveBase() {

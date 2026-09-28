@@ -33,8 +33,7 @@ Not affiliated with Blizzard or Wowhead. Models and item data © Blizzard Entert
 ## Relay (required)
 
 Wowhead's model server blocks cross-site reads, so the page loads model files through a small relay.
-`relay/worker.js` is a Cloudflare Worker (free tier is plenty):
-
-1. dash.cloudflare.com → **Workers & Pages → Create → Start with Hello World** → name it (e.g. `hyjal-relay`) → Deploy.
-2. **Edit code**, replace everything with `relay/worker.js`, **Deploy**.
-3. Copy the worker URL (`https://hyjal-relay.<account>.workers.dev/`) into the first `RELAYS` entry in `index.html`.
+The live relay is a Railway Function (project `hyjal-relay`, service `relay`) at
+`https://relay-production-df48.up.railway.app/`; its source is `relay/railway-function.ts`.
+`relay/worker.js` is an equivalent Cloudflare Worker if you ever want to move it.
+The relay URL is the first entry of `RELAYS` in `index.html`.
